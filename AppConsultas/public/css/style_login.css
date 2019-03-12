@@ -24,6 +24,19 @@ div.card-content{
   font-size: 12px;
 }
 
+div.link{
+  text-align: center;
+  font-size: 12px;
+}
+
+a{
+  color:  rgba(0,56,101, 1);
+}
+
+a:hover{
+   color: rgba(0,56,101, 0.8);
+}
+
 div.footer{
   text-align: center;
   font-size: 10px;
@@ -40,4 +53,17 @@ div.footer{
 
 .btn:hover{
   background-color:rgba(255, 181, 0, 0.8);
+}
+
+.btn:active{
+  background-color:rgba(255, 181, 0, 0.8);
+}
+
+#username:focus + label, #password:focus + label {
+ color: #003865;
+}
+
+#username:focus, #password:focus{
+ border-bottom: 1px solid #003865;
+ box-shadow: none;
 }
