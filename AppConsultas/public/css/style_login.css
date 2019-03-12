@@ -1,0 +1,43 @@
+body{
+  font-family: verdana;
+  color: white;
+}
+
+div.background{
+  width:100vw;
+  height:100vh;
+  background-image: url('../img/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.bg-color{
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0,56,101, 0.8);
+  overflow: auto;
+}
+
+div.card-content{
+  text-align: center;
+  font-size: 12px;
+}
+
+div.footer{
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  opacity: .5;
+  width: 100%;
+}
+
+.btn{
+  background-color: #FFB500;
+  color: black;
+}
+
+.btn:hover{
+  background-color:rgba(255, 181, 0, 0.8);
+}
