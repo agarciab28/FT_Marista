@@ -1,0 +1,36 @@
+header, main, footer {
+	padding-left: 300px;
+}
+
+.nav-wrapper{
+  background-color: #FFB500;
+  overflow: hidden;
+}
+
+.sidenav{
+  background-color: #003865;
+}
+
+a{
+  color:white;
+}
+
+.btn{
+  /* background-color: rgba(0, 56, 101, 0.9); */
+  background-color: #003865;
+}
+
+.btn:hover{
+  background-color: rgba(0, 56, 101, 0.9);
+}
+
+.container{
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
+	}
+}
