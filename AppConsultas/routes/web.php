@@ -11,10 +11,12 @@
 |
 */
 
+// Ruta login
 Route::get('/', function () {
     return view('login');
 });
 
+// Rutas Admin
 Route::get('/admin', function(){
   return view('admin.home');
 });
@@ -33,4 +35,30 @@ Route::get('/admin/eliminar', function(){
 
 Route::get('/admin/ver', function(){
   return view('admin.ver');
+});
+
+// Rutas Medico
+Route::get('/medico', function(){
+  return view('medico.home');
+});
+
+Route::get('/medico/registrar', function(){
+  return view('medico.registrar');
+});
+
+Route::get('/medico/buscar', function(){
+  return view('medico.buscar');
+});
+
+// Rutas Practicante
+Route::get('/practicante', function(){
+  return view('practicante.home');
+});
+
+Route::get('/practicante/registrar', function(){
+  return view('practicante.registrar');
+});
+
+Route::get('/practicante/buscar', function(){
+  return view('practicante.buscar');
 });
