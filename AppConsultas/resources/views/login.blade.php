@@ -23,7 +23,7 @@
                 <p class="black-text">Bienvenido al sistema de control de consultas para la facultad de fisioterapia de la Universidad Marista</p>
               </div>
               <div class="row">
-                <form class="col s12" action="" method="post">
+                <form class="col s12" action="" method="">
                   <div class="row">
                     <div class="input-field col s10 push-s1 pull-s1">
                       <input type="text" class="validate" id="username">
@@ -34,11 +34,6 @@
                       <label for="password"><i class="fas fa-lock" style="margin-right:0.5em;"></i>Contraseña</label>
                     </div>
                     <button class="col s4 push-s4 pull-s4 btn waves-effect waves-light" type="submit" name="action">Acceder</button>
-                  </div>
-                  <div class="row">
-                    <div class="link col s8 push-s2">
-                      <a href="">¿Olvidaste tu contraseña?</a>
-                    </div>
                   </div>
                 </form>
               </div>

@@ -33,6 +33,10 @@ Route::get('/admin/eliminar', function(){
   return view('admin.eliminar');
 });
 
+Route::get('/admin/buscar', function(){
+  return view('admin.buscar');
+});
+
 Route::get('/admin/ver', function(){
   return view('admin.ver');
 });
@@ -53,10 +57,6 @@ Route::get('/medico/buscar', function(){
 // Rutas Practicante
 Route::get('/practicante', function(){
   return view('practicante.home');
-});
-
-Route::get('/practicante/registrar', function(){
-  return view('practicante.registrar');
 });
 
 Route::get('/practicante/buscar', function(){

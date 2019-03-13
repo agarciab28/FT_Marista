@@ -21,7 +21,7 @@
     					<a href="#" data-target="sidenav-1" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
               <a class="left black-text show-on-small-and-up">Titulo - Juanito Perez</a>
               <div class="section ">
-                <a href="#" class="waves-effect waves-light btn right show-on-medium-and-up hide-on-small-only">Cerrar Sesion</a>
+                <a href="../" class="waves-effect waves-light btn right show-on-medium-and-up hide-on-small-only">Cerrar Sesion</a>
               </div>
     				</div>
     			</div>
@@ -41,7 +41,9 @@
     	<li id="modificar"><a class="white-text" href="../admin/modificar"><i class="fas fa-user-edit white-text" style="margin-right:0;"></i>Modificar Usuario</a></li>
       <li id="eliminar"><a class="white-text" href="../admin/eliminar"><i class="fas fa-user-minus white-text" style="margin-right:0;"></i>Eliminar Usuario</a></li>
       <li id="ver"><a class="white-text" href="../admin/ver"><i class="fas fa-address-book white-text" style="margin-right:0px;"></i>Ver Identificacion</a></li>
-      <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
+     <li id="buscar"><a class="white-text" href="../admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
+     <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
+
     </ul>
 
     <main>
