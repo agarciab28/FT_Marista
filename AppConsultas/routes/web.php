@@ -16,5 +16,21 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function(){
-  return view('admin.dashboard');
+  return view('admin.home');
+});
+
+Route::get('/admin/registrar', function(){
+  return view('admin.registrar');
+});
+
+Route::get('/admin/modificar', function(){
+  return view('admin.modificar');
+});
+
+Route::get('/admin/eliminar', function(){
+  return view('admin.eliminar');
+});
+
+Route::get('/admin/ver', function(){
+  return view('admin.ver');
 });
