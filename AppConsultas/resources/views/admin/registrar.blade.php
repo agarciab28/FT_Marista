@@ -15,7 +15,7 @@
           <div class="row">
             <div class="input-field col s12 m4">
               <select>
-                <option value="" disabled selected>Escoge una opción</option>
+                <option value="" disabled selected>Eslige una opción</option>
                 <option value="rectoria">Rectoría</option>
                 <option value="coordinador">Coordinador</option>
                 <option value="medico">Medico</option>

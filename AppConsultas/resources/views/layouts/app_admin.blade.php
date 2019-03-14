@@ -38,8 +38,7 @@
       </li>
     	<li id="home"><a class="white-text" href="../admin"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
     	<li id="registrar"><a class="white-text" href="../admin/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Usuario</a></li>
-    	<li id="modificar"><a class="white-text" href="../admin/modificar"><i class="fas fa-user-edit white-text" style="margin-right:0;"></i>Modificar Usuario</a></li>
-      <li id="eliminar"><a class="white-text" href="../admin/eliminar"><i class="fas fa-user-minus white-text" style="margin-right:0;"></i>Eliminar Usuario</a></li>
+      <li id="usuarios"><a class="white-text" href="../admin/usuarios"><i class="fas fa-user white-text" style="margin-right:0;"></i>Usuarios</a></li>
       <li id="ver"><a class="white-text" href="../admin/ver"><i class="fas fa-address-book white-text" style="margin-right:0px;"></i>Ver Identificacion</a></li>
      <li id="buscar"><a class="white-text" href="../admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
      <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>

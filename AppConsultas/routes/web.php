@@ -25,12 +25,8 @@ Route::get('/admin/registrar', function(){
   return view('admin.registrar');
 });
 
-Route::get('/admin/modificar', function(){
-  return view('admin.modificar');
-});
-
-Route::get('/admin/eliminar', function(){
-  return view('admin.eliminar');
+Route::get('/admin/usuarios', function(){
+  return view('admin.usuarios');
 });
 
 Route::get('/admin/buscar', function(){
