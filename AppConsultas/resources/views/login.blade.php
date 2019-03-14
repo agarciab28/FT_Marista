@@ -20,7 +20,7 @@
           <div class="col s12 m8 push-m2">
             <div class="card-panel">
               <div class="card-content">
-                <p class="black-text">Bienvenido al sistema de control de consultas para la facultad de fisioterapia de la Universidad Marista</p>
+                <p class="black-text">Centro Universitario de Fisioterapia, Rehabilitación e Investigación (C.U.F.R.I.) "Hno. Gabriel Allec"</p>
               </div>
               <div class="row">
                 <form class="col s12" action="" method="">
