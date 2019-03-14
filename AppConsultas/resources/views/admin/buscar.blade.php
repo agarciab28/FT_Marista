@@ -36,35 +36,42 @@
            <td>García</td>
            <td>GABAasedfr12345678</td>
            <td>Rehabilitacion</td>
-           <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
          </tr>
          <tr>
            <td>Alejandro</td>
            <td>García</td>
            <td>GABAasedfr12345678</td>
            <td>Rehabilitacion</td>
-           <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
          </tr>
          <tr>
            <td>Alejandro</td>
            <td>García</td>
            <td>GABAasedfr12345678</td>
            <td>Rehabilitacion</td>
-           <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
          </tr>
          <tr>
            <td>Alejandro</td>
            <td>García</td>
            <td>GABAasedfr12345678</td>
            <td>Rehabilitacion</td>
-           <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
          </tr>
          <tr>
            <td>Alejandro</td>
            <td>García</td>
            <td>GABAasedfr12345678</td>
            <td>Rehabilitacion</td>
-           <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+         </tr>
+         <tr>
+           <td>Alejandro</td>
+           <td>García</td>
+           <td>GABAasedfr12345678</td>
+           <td>Rehabilitacion</td>
+           <td> <a href="" class="waves-effect waves-light btn">Ver Identificacion</a></td>
          </tr>
        </tbody>
      </table>
