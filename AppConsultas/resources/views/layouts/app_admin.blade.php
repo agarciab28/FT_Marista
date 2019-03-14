@@ -40,8 +40,9 @@
     	<li id="registrar"><a class="white-text" href="../admin/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Usuario</a></li>
       <li id="usuarios"><a class="white-text" href="../admin/usuarios"><i class="fas fa-user white-text" style="margin-right:0;"></i>Usuarios</a></li>
       <li id="ver"><a class="white-text" href="../admin/ver"><i class="fas fa-address-book white-text" style="margin-right:0px;"></i>Ver Identificacion</a></li>
-     <li id="buscar"><a class="white-text" href="../admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
-     <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
+      <li id="buscar"><a class="white-text" href="../admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
+      <li id="estadisticas"><a class="white-text" href="../admin/estadisticas"><i class="fas fa-chart-pie white-text" style="margin-right:0px;"></i>Estadisticas</a></li>
+      <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
 
     </ul>
 

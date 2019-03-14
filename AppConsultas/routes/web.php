@@ -33,6 +33,10 @@ Route::get('/admin/buscar', function(){
   return view('admin.buscar');
 });
 
+Route::get('/admin/estadisticas', function(){
+  return view('admin.estadisticas');
+});
+
 Route::get('/admin/ver', function(){
   return view('admin.ver');
 });

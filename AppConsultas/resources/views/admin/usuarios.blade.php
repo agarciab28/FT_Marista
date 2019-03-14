@@ -65,6 +65,76 @@
          <td>GABAasedfr12345678</td>
          <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
        </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
+       <tr>
+         <td>Coordinador</td>
+         <td>Alejandro</td>
+         <td>García</td>
+         <td>GABAasedfr12345678</td>
+         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
+       </tr>
      </tbody>
    </table>
     </div>
