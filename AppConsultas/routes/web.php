@@ -33,6 +33,10 @@ Route::get('/admin/buscar', function(){
   return view('admin.buscar');
 });
 
+Route::get('/admin/buscar/ver', function(){
+  return view('admin.ver');
+});
+
 Route::get('/admin/estadisticas', function(){
   return view('admin.estadisticas');
 });
@@ -51,6 +55,10 @@ Route::get('/medico/buscar', function(){
   return view('medico.buscar');
 });
 
+Route::get('/medico/buscar/ver', function(){
+  return view('medico.ver');
+});
+
 // Rutas Practicante
 Route::get('/practicante', function(){
   return view('practicante.home');
@@ -58,4 +66,8 @@ Route::get('/practicante', function(){
 
 Route::get('/practicante/buscar', function(){
   return view('practicante.buscar');
+});
+
+Route::get('/practicante/buscar/ver', function(){
+  return view('practicante.ver');
 });

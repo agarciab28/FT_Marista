@@ -43,8 +43,8 @@
         <div class="input-field col s12 m4">
           <select>
             <option value="" disabled selected>Elige una opcion</option>
-            <option value="masculino">Soltero</option>
-            <option value="femenino">Casado</option>
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
           </select>
           <label>Estado Civil</label>
         </div>
@@ -84,8 +84,8 @@
           <input id="tel2" type="tel" class="validate">
           <label for="tel2">Telefono/Celular</label>
         </div>
-        <button class="col s2 btn waves-effect waves-light" type="" name="action">Anterior</button>
-        <button class="col s2 push-s8 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+        <button class="col s4 m2 btn waves-effect waves-light" type="" name="action">Anterior</button>
+        <button class="col s4 m2 push-s4 push-m8 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </div>
 
     </form>

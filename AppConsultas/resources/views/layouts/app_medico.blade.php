@@ -36,9 +36,9 @@
           <img class="responsive-img col s10 push-s1" src="{{{ asset('img/logos/logo_1_b.png') }}}">
         </div>
       </li>
-    	<li id="home"><a class="white-text" href="../medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
-    	<li id="registrar"><a class="white-text" href="../medico/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
-    	<li id="buscar"><a class="white-text" href="../medico/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
+    	<li id="home"><a class="white-text" href="/medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
+    	<li id="registrar"><a class="white-text" href="/medico/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
+    	<li id="buscar"><a class="white-text" href="/medico/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
       <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
     </ul>
 
