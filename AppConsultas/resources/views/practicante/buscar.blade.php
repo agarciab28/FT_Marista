@@ -17,60 +17,61 @@
       {{-- <button class="btn waves-effect waves-light" type="submit" name="action"><i class="fas fa-search"></button> --}}
     </div>
   </div>
-
-      <table class="striped responsive-table">
-     <thead>
-       <tr>
-           <th>Nombre</th>
-           <th>Apellido</th>
-           <th>CURP</th>
-           <th>Estado</th>
-           <th>Acciones</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-     </tbody>
-   </table>
+  <div class="section container">
+    <table class="striped responsive-table">
+   <thead>
+     <tr>
+         <th>Nombre</th>
+         <th>Apellido</th>
+         <th>CURP</th>
+         <th>Estado</th>
+         <th>Acciones</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+     <tr>
+       <td>Alejandro</td>
+       <td>García</td>
+       <td>GABAasedfr12345678</td>
+       <td>Rehabilitacion</td>
+       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+     </tr>
+   </tbody>
+ </table>
+  </div>
 @endsection

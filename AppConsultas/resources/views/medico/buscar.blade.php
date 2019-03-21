@@ -18,6 +18,7 @@
     </div>
   </div>
 
+    <div class="section container">
       <table class="striped responsive-table">
      <thead>
        <tr>
@@ -73,5 +74,5 @@
        </tr>
      </tbody>
    </table>
-
+    </div>
 @endsection
