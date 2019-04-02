@@ -1,0 +1,12 @@
+th, td{
+  text-align: center;
+}
+
+thead{
+  background-color: #003865;
+  color: white;
+}
+
+.contenedor{
+  text-align: center;
+}
