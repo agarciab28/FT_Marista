@@ -35,12 +35,6 @@ class FichaDeIdentificacion extends Migration
             $table->string('familiaAC',45);
             $table->integer('celAC')->unsigned();
             $table->text('motivoDeConsulta');
-
-
-
-
-
-
         });
     }
 
