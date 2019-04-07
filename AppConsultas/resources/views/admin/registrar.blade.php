@@ -15,7 +15,7 @@
           <div class="row">
             <div class="input-field col s12 m4">
               <select>
-                <option value="" disabled selected>Eslige una opción</option>
+                <option value="" disabled selected>Elige una opción</option>
                 <option value="rectoria">Rectoría</option>
                 <option value="coordinador">Coordinador</option>
                 <option value="medico">Medico</option>
@@ -29,8 +29,12 @@
               <label for="nombre">Nombre</label>
             </div>
             <div class="input-field col s12 m4">
-              <input id="apellido" type="text" class="validate">
-              <label for="apellido">Apellido</label>
+              <input id="apellido_p" type="text" class="validate">
+              <label for="apellido_p">Apellido Paterno</label>
+            </div>
+            <div class="input-field col s12 m4">
+              <input id="apellido_m" type="text" class="validate">
+              <label for="apellido_m">Apellido Materno</label>
             </div>
             <div class="input-field col s12 m4">
               <input id="email" type="email" class="validate">
@@ -49,6 +53,14 @@
               <label for="curp">CURP</label>
             </div>
             <div class="input-field col s12 m4">
+              <input id="cedula_p" type="text">
+              <label for="cedula_p">Cedula Profesional</label>
+            </div>
+            <div class="input-field col s12 m4">
+              <input id="cedula_m" type="text">
+              <label for="cedula_m">Cedula de Especialiad o Maestría</label>
+            </div>
+            <div class="input-field col s12 m4">
               <select>
                 <option value="" disabled selected>Elige una opcion</option>
                 <option value="masculino">Masculino</option>
@@ -59,6 +71,9 @@
             <div class="input-field col s12 m4">
               <input id="telefono" type="tel">
               <label for="telefono">Numero de Telefono</label>
+            </div>
+            <div class="row">
+
             </div>
             <button class="col s4 push-s4 pull-s4 btn waves-effect waves-light" type="submit" name="action">Registrar</button>
           </div>

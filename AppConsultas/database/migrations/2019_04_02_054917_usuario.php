@@ -17,13 +17,13 @@ class Usuario extends Migration
             $table->string('curp',30)->primary();
             $table->string('nombre',70)->nullable();
             $table->string('password',45);
-            $table->integer('tipo')->unsigned();
+            $table->string('tipo', 50)->nullable();
             $table->string('apellidoP',45)->nullable();
             $table->string('apellidoM',45)->nullable();
             $table->integer('telefono')->unsigned();
             $table->string('correoElectronico',70)->nullable();
             $table->string('nombreDeUsuario',45);
-            $table->integer('tipoDeUsuario')->unsigned();
+            $table->string('tipoDeUsuario', 50)->nullable();
             $table->text('cedulaProfesional')->nullable();
             $table->text('cedulaMoE')->nullable();
         });
