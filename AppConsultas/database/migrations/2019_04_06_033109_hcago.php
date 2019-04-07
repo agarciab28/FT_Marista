@@ -23,6 +23,7 @@ class Hcago extends Migration
             $table->text('metodoanticoncept')->nullable();
             $table->text('fum')->nullable();
             $table->text('ivsa')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

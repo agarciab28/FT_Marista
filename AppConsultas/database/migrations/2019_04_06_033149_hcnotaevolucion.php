@@ -17,6 +17,7 @@ class Hcnotaevolucion extends Migration
             $table->increments('id_hcnotaevolucion',10);
             $table->date('fecha');
             $table->text('nota')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

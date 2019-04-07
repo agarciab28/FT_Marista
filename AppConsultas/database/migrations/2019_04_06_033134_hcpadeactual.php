@@ -19,6 +19,7 @@ class Hcpadeactual extends Migration
             $table->text('eva')->nullable();
             $table->text('evolucion')->nullable();
             $table->text('actual')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

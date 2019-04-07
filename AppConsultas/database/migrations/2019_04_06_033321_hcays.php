@@ -25,6 +25,7 @@ class Hcays extends Migration
             $table->text('aparatonervioso')->nullable();
             $table->text('aparatosensorial')->nullable();
             $table->text('aparatoosteomuscu')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

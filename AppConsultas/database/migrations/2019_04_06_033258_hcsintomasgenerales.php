@@ -20,6 +20,7 @@ class Hcsintomasgenerales extends Migration
             $table->text('anorexia')->nullable();
             $table->text('fiebre')->nullable();
             $table->text('perdidadepeso')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

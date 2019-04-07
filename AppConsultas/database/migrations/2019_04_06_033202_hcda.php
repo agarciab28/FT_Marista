@@ -19,6 +19,7 @@ class Hcda extends Migration
             $table->text('estudiog')->nullable();
             $table->text('tratamientosant')->nullable();
             $table->text('inquietudsub')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

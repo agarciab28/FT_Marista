@@ -19,6 +19,7 @@ class Hcparnervio extends Migration
             $table->text('escaladeashworth')->nullable();
             $table->text('reflejososteo')->nullable();
             $table->text('tipodemarcha')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

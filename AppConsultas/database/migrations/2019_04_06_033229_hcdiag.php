@@ -21,6 +21,7 @@ class Hcdiag extends Migration
             $table->text('planfisioterapeutico')->nullable();
             $table->text('dermatomasmpc')->nullable();
             $table->text('mapadeldolor')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }

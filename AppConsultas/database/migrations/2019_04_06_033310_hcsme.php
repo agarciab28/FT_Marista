@@ -18,6 +18,7 @@ class Hcsme extends Migration
             $table->text('columna')->nullable();
             $table->text('miembrosuperior')->nullable();
             $table->text('miembroinferior')->nullable();
+            $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
     }
