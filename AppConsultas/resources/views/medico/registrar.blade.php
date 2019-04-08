@@ -1291,6 +1291,393 @@
           <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
+      <div class="row">
+
+      </div>
+
+      {{-- Antescedentes Personales patologicos --}}
+      <form class="" id="antescedentes_pp" action="" method="">
+        <div class="row">
+          <h6 style="font-weight:bold;">Antescedentes Personales Patologicos</h6>
+          <table class="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Problema</th>
+                <th>Si o No</th>
+                <th>¿Cuál?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enfermedades infecciosas de la infancia</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="enf_inf" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="enf_inf" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Intervenciones quirúrjicas</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="inter" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="inter" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Traumatismos(Esguinces, <br> fracturas, luxaciones, desgarres)</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="trauma" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="trauma" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Infiltraciones</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="infi" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="infi" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Hospitalizaciones</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="hospi" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="hospi" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Perdida del conocimiento</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="per_con" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="per_con" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Intolerancia a medicamentos</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="int_med" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="int_med" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Transfuciones</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="trans" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="trans" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Medicamentos</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="meds" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="meds" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Enfermedades de transmisión sexual</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ets" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ets" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+
+          </div>
+          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </form>
+
+      <div class="row">
+
+      </div>
+
+      {{-- Antescedentes Personales patologicos --}}
+      <form class="" id="antescedentes_go" action="" method="">
+        <div class="row">
+          <h6 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h6>
+          <table class="responsive-table striped">
+            <thead>
+              <tr>
+                <th>Problema</th>
+                <th>Si o No</th>
+                <th>¿Cuántos?</th>
+                <th>Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Menarca</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="menarca" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="menarca" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Ritmo Menstrual</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ritmo" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ritmo" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Partos</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="partos" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="partos" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Abortos</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="abortos" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="abortos" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Cesáreas</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="cesareas" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="cesareas" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Métodos anticonceptivos</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="" type="text">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+
+          </div>
+          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </form>
+
 
 
   </div>
