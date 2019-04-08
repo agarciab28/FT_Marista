@@ -19,7 +19,7 @@
       {{-- Ficha de identificacion --}}
     <form class="" id="ficha_id" action="" method="">
       <div class="row">
-        <h6 style="font-weight:bold;">Ficha de Identificacion</h6>
+        <h5 style="font-weight:bold;">Ficha de Identificacion</h5>
         <div class="input-field col s12 m4">
           <input id="nombre" type="text" class="validate">
           <label for="nombre">Nombre</label>
@@ -145,7 +145,7 @@
         </div> --}}
         <form class="" id="antescedentes_hf" action="index.html" method="post">
         <div class="row">
-          <h6 style="font-weight:bold;">Antescedentes Familiares</h6>
+          <h5 style="font-weight:bold;">Antescedentes Familiares</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -911,7 +911,7 @@
       {{-- Antescedentes Personales no patologicos --}}
       <form class="" id="antescedentes_pnp" action="" method="">
         <div class="row">
-          <h6 style="font-weight:bold;">Antescedentes Personales no Patologicos</h6>
+          <h5 style="font-weight:bold;">Antescedentes Personales no Patologicos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -1298,7 +1298,7 @@
       {{-- Antescedentes Personales patologicos --}}
       <form class="" id="antescedentes_pp" action="" method="">
         <div class="row">
-          <h6 style="font-weight:bold;">Antescedentes Personales Patologicos</h6>
+          <h5 style="font-weight:bold;">Antescedentes Personales Patologicos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -1514,7 +1514,7 @@
       {{-- Antescedentes Personales patologicos --}}
       <form class="" id="antescedentes_go" action="" method="">
         <div class="row">
-          <h6 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h6>
+          <h5 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -1671,6 +1671,51 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </form>
+
+      <div class="row">
+
+      </div>
+
+      {{-- Padecimiento actual --}}
+      <form class="" id="antescedentes_go" action="" method="">
+        <div class="row">
+          <h5 style="font-weight:bold;">Padecimiento actual</h5>
+          <div class="inicio">
+            <h6 style="font-weight:bold; margin-bottom:30px;">Inicio</h6>
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="10" />
+            </p>
+            <div class="input-field col s12">
+              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+              <label for="ta_enf_reu">Escribe aquí</label>
+            </div>
+          </div>
+          <div class="evolucion">
+            <h6 style="font-weight:bold; margin-bottom:30px;">Evolucion</h6>
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="10" />
+            </p>
+            <div class="input-field col s12">
+              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+              <label for="ta_enf_reu">Escribe aquí</label>
+            </div>
+          </div>
+          <div class="actual">
+            <h6 style="font-weight:bold; margin-bottom:30px;">Actual</h6>
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="10" />
+            </p>
+            <div class="input-field col s12">
+              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+              <label for="ta_enf_reu">Escribe aquí</label>
+            </div>
+          </div>
           <div class="row">
 
           </div>
