@@ -1723,7 +1723,311 @@
           <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
+      <div class="row">
 
+      </div>
+
+      {{-- Sintomas Generales --}}
+      <form class="" id="antescedentes_go" action="" method="">
+        <div class="row">
+          <h5 style="font-weight:bold;">Sintomas Generales</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>Sintoma</th>
+                <th>Sí o No</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Astenia</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="astenia" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="astenia" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Adinamia</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="adinamia" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="adinamia" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Anorexia</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="anorexia" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="anorexia" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Fiebre</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="fiebre" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="fiebre" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>Perdida de peso</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="perd_peso" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="perd_peso" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+
+          </div>
+          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </form>
+
+      <div class="row">
+
+      </div>
+
+      {{-- Sintomas Generales --}}
+      <form class="" id="antescedentes_go" action="" method="">
+        <div class="row">
+          <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>Aparato</th>
+                <th>Sí o No</th>
+                <th>¿Cuál?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aparato Digestivo</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_diges" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_diges" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Aparato Cardiovacular</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_cardio" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_cardio" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Aparato Respiratorio</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_respi" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_respi" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Aparato Urinario</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_urin" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_urin" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Aparato Genital</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_genital" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_genital" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Aparato Hematológico</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="ap_hemato" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="ap_hemato" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sistema endocrino</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="sis_endo" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="sis_endo" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sistema Nervioso</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="sis_nerv" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="sis_nerv" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sistema Sensorial</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="sis_senso" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="sis_senso" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sistema Osteomuscular</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="sis_osteo" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="sis_osteo" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_reu">Escribe aquí</label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+
+          </div>
+          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </form>
 
   </div>
 @endsection
