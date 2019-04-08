@@ -71,3 +71,5 @@ Route::get('/practicante/buscar', function(){
 Route::get('/practicante/buscar/ver', function(){
   return view('practicante.ver');
 });
+
+Route::post('login', 'Auth\LoginController@login')->name('login');;

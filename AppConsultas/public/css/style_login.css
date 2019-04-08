@@ -67,3 +67,10 @@ div.footer{
  border-bottom: 1px solid #003865;
  box-shadow: none;
 }
+#error_msj{
+  color: red;
+}
+#error_msj2{
+  color: red;
+  text-align: center;
+}
