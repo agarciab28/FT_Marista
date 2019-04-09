@@ -1511,7 +1511,7 @@
 
       </div>
 
-      {{-- Antescedentes Personales patologicos --}}
+      {{-- Antescedentes Gineco-obstétricos --}}
       <form class="" id="antescedentes_go" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h5>
@@ -1683,7 +1683,7 @@
       </div>
 
       {{-- Padecimiento actual --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      <form class="" id="padecimiento_actual" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
@@ -1728,7 +1728,7 @@
       </div>
 
       {{-- Sintomas Generales --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      <form class="" id="sintomas_generales" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Sintomas Generales</h5>
           <table>
@@ -1817,8 +1817,8 @@
 
       </div>
 
-      {{-- Sintomas Generales --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      {{-- Aparatos y sistemas --}}
+      <form class="" id="apa_sis" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
           <table>
@@ -2034,7 +2034,7 @@
       </div>
 
       {{-- Diagnosticos anteriores --}}
-    <form class="" id="ficha_id" action="" method="">
+    <form class="" id="diag_ant" action="" method="">
       <div class="row">
         <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
         <div class="input-field col s12">
@@ -2066,7 +2066,7 @@
     </div>
 
     {{-- Exploracion fisica --}}
-  <form class="" id="ficha_id" action="" method="">
+  <form class="" id="explor_fisica" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Exploración Física</h5>
       <div class="input-field col s12 m3">
@@ -2121,41 +2121,105 @@
 
   </div>
 
-  {{-- Exploracion general--}}
-<form class="" id="ficha_id" action="" method="">
-  <div class="row">
-    <h5 style="font-weight:bold;">Exploración General</h5>
-    <div class="input-field col s12 m6">
-      <input type="text" id="est_conci" name="" value="">
-      <label for="est_conci">Estado de conciencia</label>
-    </div>
-    <div class="input-field col s12 m6">
-      <input type="text" id="acti" name="" value="">
-      <label for="acti">Actitud</label>
-    </div>
-    <div class="input-field col s12 m6">
-      <input type="text" id="mov_anormales" name="" value="">
-      <label for="mov_anormales">Movimientos anormales</label>
-    </div>
-    <div class="input-field col s12 m6">
-      <input type="text" id="postura" name="" value="">
-      <label for="psotura">Postura</label>
-    </div>
-    <div class="input-field col s12 m6">
-      <input type="text" id="marcha" name="" value="">
-      <label for="marcha">Marcha</label>
-    </div>
-    <div class="input-field col s12 m6">
-      <input type="text" id="est_nutri" name="" value="">
-      <label for="est_nutri">Estado general de nutrición</label>
-    </div>
+    {{-- Exploracion general--}}
+  <form class="" id="explor_general" action="" method="">
     <div class="row">
+      <h5 style="font-weight:bold;">Exploración General</h5>
+      <div class="input-field col s12 m6">
+        <input type="text" id="est_conci" name="" value="">
+        <label for="est_conci">Estado de conciencia</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="acti" name="" value="">
+        <label for="acti">Actitud</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="mov_anormales" name="" value="">
+        <label for="mov_anormales">Movimientos anormales</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="postura" name="" value="">
+        <label for="psotura">Postura</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="marcha" name="" value="">
+        <label for="marcha">Marcha</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="est_nutri" name="" value="">
+        <label for="est_nutri">Estado general de nutrición</label>
+      </div>
+      <div class="row">
 
+      </div>
+      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
     </div>
-    <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-    <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+  </form>
+
+  <div class="row">
+
   </div>
-</form>
+
+  {{-- Exploracion por region--}}
+  <form class="" id="explor_region" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Exploración por Región</h5>
+      <div class="input-field col s12">
+        <input type="text" id="piel" name="" value="">
+        <label for="est_conci">Piel y anexos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="cabeza" name="" value="">
+        <label for="acti">Cabeza</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="ojos" name="" value="">
+        <label for="mov_anormales">Ojos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="oidos" name="" value="">
+        <label for="psotura">Oídos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="nariz_senos" name="" value="">
+        <label for="marcha">Nariz y senos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="boca" name="" value="">
+        <label for="est_nutri">Boca</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="torax" name="" value="">
+        <label for="est_nutri">Tórax</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="vasos_sang" name="" value="">
+        <label for="est_nutri">Vasos Sanguíneos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="mamas" name="" value="">
+        <label for="est_nutri">Mamas</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="genitales" name="" value="">
+        <label for="est_nutri">Genitales</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="abdomen" name="" value="">
+        <label for="est_nutri">Abdomen</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="otros" name="" value="">
+        <label for="est_nutri">Otros</label>
+      </div>
+      <div class="row">
+
+      </div>
+      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+    </div>
+  </form>
 
   </div>
 @endsection
