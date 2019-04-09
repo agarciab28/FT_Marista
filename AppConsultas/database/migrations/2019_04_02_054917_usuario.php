@@ -16,11 +16,10 @@ class Usuario extends Migration
         Schema::create('usuario', function (Blueprint $table) {
             $table->string('curp',30)->primary();
             $table->string('nombre',70)->nullable();
-            $table->string('password',45);
-            $table->string('tipo', 50)->nullable();
+            $table->string('password',90)->nullable();
             $table->string('apellidoP',45)->nullable();
             $table->string('apellidoM',45)->nullable();
-            $table->integer('telefono')->unsigned();
+            $table->string('telefono', 10)->nullable();
             $table->string('correoElectronico',70)->nullable();
             $table->string('nombreDeUsuario',45);
             $table->string('tipoDeUsuario', 50)->nullable();
