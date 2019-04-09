@@ -73,3 +73,4 @@ Route::get('/practicante/buscar/ver', function(){
 });
 
 Route::post('login', 'Auth\LoginController@login')->name('login');;
+Route::resource('reguser', 'UsuarioController');
