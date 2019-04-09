@@ -41,10 +41,6 @@
               <label for="email">Correo Electronico</label>
             </div>
             <div class="input-field col s12 m4">
-              <input id="usuario" type="text" class="validate">
-              <label for="usuario">Usuario</label>
-            </div>
-            <div class="input-field col s12 m4">
               <input id="password" type="password" class="validate">
               <label for="password">Contraseña</label>
             </div>
