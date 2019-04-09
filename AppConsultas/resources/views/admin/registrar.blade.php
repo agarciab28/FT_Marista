@@ -48,6 +48,10 @@
               <input id="cedula_p" type="text">
               <label for="cedula_p">Cedula Profesional</label>
             </div>
+            <div class="input-field col s12 m4">
+              <input id="curp" type="text">
+              <label for="curp">CURP</label>
+            </div>
             <div class="input-field col s12 m8">
               <input id="cedula_m" type="text">
               <label for="cedula_m">Cedula de Especialiad o Maestría</label>
@@ -67,10 +71,6 @@
             <div class="input-field col s12 m4">
               <input id="telefono" type="tel">
               <label for="telefono">Numero de Telefono</label>
-            </div>
-            <div class="input-field col s12 m4">
-              <input id="curp" type="text">
-              <label for="curp">CURP</label>
             </div>
             <div class="row">
 
