@@ -2029,5 +2029,133 @@
           <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
+      <div class="row">
+
+      </div>
+
+      {{-- Diagnosticos anteriores --}}
+    <form class="" id="ficha_id" action="" method="">
+      <div class="row">
+        <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
+        <div class="input-field col s12">
+          <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+          <label for="ta_enf_reu">Diagnosticos Anteriores</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+          <label for="ta_enf_reu">Estudios de gabinete/Estudios de laboratorio</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+          <label for="ta_enf_reu">Tratamientos anteriores</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
+          <label for="ta_enf_reu">Inquietud subyacente</label>
+        </div>
+        <div class="row">
+
+        </div>
+        <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+        <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      </div>
+    </form>
+
+    <div class="row">
+
+    </div>
+
+    {{-- Exploracion fisica --}}
+  <form class="" id="ficha_id" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Exploración Física</h5>
+      <div class="input-field col s12 m3">
+        <input type="text" id="ta" name="" value="">
+        <label for="ta">T.A.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="fc" name="" value="">
+        <label for="fc">F.C.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="fr" name="" value="">
+        <label for="fc">F.R.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="temp" name="" value="">
+        <label for="temp">Temperatura</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="talla" name="" value="">
+        <label for="temp">Talla</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="s02" name="" value="">
+        <label for="s02">S02</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_actual" name="" value="">
+        <label for="peso_actual">Peso Actual</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_anterior" name="" value="">
+        <label for="peso_anterior">Peso Anterior</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_ideal" name="" value="">
+        <label for="peso_ideal">Peso Ideal</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="imc" name="" value="">
+        <label for="imc">IMC</label>
+      </div>
+      <div class="row">
+
+      </div>
+      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Exploracion general--}}
+<form class="" id="ficha_id" action="" method="">
+  <div class="row">
+    <h5 style="font-weight:bold;">Exploración General</h5>
+    <div class="input-field col s12 m6">
+      <input type="text" id="est_conci" name="" value="">
+      <label for="est_conci">Estado de conciencia</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input type="text" id="acti" name="" value="">
+      <label for="acti">Actitud</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input type="text" id="mov_anormales" name="" value="">
+      <label for="mov_anormales">Movimientos anormales</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input type="text" id="postura" name="" value="">
+      <label for="psotura">Postura</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input type="text" id="marcha" name="" value="">
+      <label for="marcha">Marcha</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input type="text" id="est_nutri" name="" value="">
+      <label for="est_nutri">Estado general de nutrición</label>
+    </div>
+    <div class="row">
+
+    </div>
+    <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
+    <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+  </div>
+</form>
+
   </div>
 @endsection
