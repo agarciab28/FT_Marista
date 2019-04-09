@@ -35,15 +35,6 @@ class Hcapp extends Migration
             $table->text('trabajodescanso')->nullable();
             $table->text('pasatiempo')->nullable();
             $table->text('deporte')->nullable();
-            $table->text('eninin')->nullable();
-            $table->text('intervencionesq')->nullable();
-            $table->text('traumatismos')->nullable();
-            $table->text('infiltraciones')->nullable();
-            $table->text('hospitalizaciones')->nullable();
-            $table->text('perdidadeconocimiento')->nullable();
-            $table->text('intoleranciamed')->nullable();
-            $table->text('transfusiones')->nullable();
-            $table->text('medicamentos')->nullable();
             $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
         });
