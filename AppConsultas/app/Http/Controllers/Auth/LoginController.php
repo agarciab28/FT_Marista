@@ -14,11 +14,11 @@ class LoginController extends Controller
 
   public function login(Request $request){
     $credentials = $this->validate(request(), [
-      'curp' => 'required|string',
+      'nombreDeUsuario' => 'required|string',
       'password' => 'required|string'
     ]);
 
-    $users = DB::table('usuario')->where('curp', ''.$request->curp)->get();
+    $users = DB::table('usuario')->where('nombreDeUsuario', ''.$request->nombreDeUsuario)->get();
     $tipo_u = "";
     foreach ($users as $user)
     {
@@ -30,8 +30,8 @@ class LoginController extends Controller
       return $tipo_u;
     }
     return back()
-    ->withErrors(['btn_s' => 'CURP o contraseña inválidos'])
-    ->withInput(request(['curp']));
+    ->withErrors(['btn_s' => 'Nombre de usuario o contraseña inválidos'])
+    ->withInput(request(['nombreDeUsuario']));
   }
 
 

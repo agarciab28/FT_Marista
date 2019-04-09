@@ -27,9 +27,9 @@
 {{ csrf_field() }}
                   <div class="row">
                     <div class="input-field col s10 push-s1 pull-s1">
-                      <input type="text"  id="curp" name="curp" class="validate " value="{{ old('curp') }}">
-                      <label for="curp"><i class="fas fa-user" style="margin-right:0.5em;"></i>Nombre de Usuario</label>
-                      {!! $errors->first('curp', '<span id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
+                      <input type="text"  id="nombreDeUsuario" name="nombreDeUsuario" class="validate " value="{{ old('nombreDeUsuario') }}">
+                      <label for="nombreDeUsuario"><i class="fas fa-user" style="margin-right:0.5em;"></i>Nombre de Usuario</label>
+                      {!! $errors->first('nombreDeUsuario', '<span id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
                     </div>
                     <div class="input-field col s10 push-s1 pull-s1">
                       <input type="password" id="password" name="password" class="validate " >
