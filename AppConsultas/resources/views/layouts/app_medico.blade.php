@@ -38,7 +38,7 @@
       </li>
     	<li id="home"><a class="white-text" href="/medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
       <ul id="registrar" class="collapsible collapsible-accordion">
-            <li>
+            <li id="menu_registro_collapse" class="active">
               <a class="collapsible-header white-text" accordion="false" style="margin-left:2em;"> Registrar Paciente <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul class="dropdown_menu">
