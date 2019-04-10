@@ -30,7 +30,11 @@
           <label for="apellido">Apellido</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="edad" name="edad" type="number" class="validate">
+          <input id="apellido_m" type="text" class="validate">
+          <label for="apellido_m">Apellido Materno</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="edad" type="number" class="validate">
           <label for="edad">Edad</label>
         </div>
         <div class="input-field col s12 m4">
@@ -62,15 +66,27 @@
           <label for="calle">Calle</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="numero" type="text" name="num" class="validate">
-          <label for="numero">Numero</label>
+          <input id="numero_int" type="text" class="validate">
+          <label for="numero_int">Numero interior</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="colonia" type="text" name="colonia" class="validate">
+          <input id="numero_ext" type="text" class="validate">
+          <label for="numero_ext">Numero exterior</label>
+        </div>
+          <input id="colonia" type="text" class="validate">
+        <div class="input-field col s12 m4">
           <label for="colonia">Colonia</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="tel1" type="tel" name="tel1" class="validate">
+          <input id="ciudad" type="text" class="validate">
+        </div>
+          <label for="ciudad">Ciudad</label>
+        <div class="input-field col s12 m4">
+          <input id="estado" type="text" class="validate">
+          <label for="estado">Estado</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="tel1" type="tel" class="validate">
           <label for="tel1">Telefono</label>
         </div>
         <div class="input-field col s12 m4">
@@ -97,6 +113,10 @@
           <input id="motivo" type="text" name="motivo" class="validate">
           <label for="motivo">Motivo de la consulta</label>
         </div>
+        <div class="row">
+
+        </div>
+        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
     </form>
 
@@ -908,6 +928,10 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </form>
 
@@ -1287,6 +1311,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1498,6 +1527,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1664,6 +1698,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1703,6 +1742,10 @@
               <textarea id="ta_pad_actual" class="materialize-textarea"></textarea>
               <label for="ta_pad_actual">Escribe aquí</label>
             </div>
+            <div class="row">
+
+            </div>
+            <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
           </div>
       </form>
 
@@ -1789,6 +1832,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -2000,6 +2048,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -2026,6 +2079,10 @@
           <textarea id="ta_inquietud" class="materialize-textarea"></textarea>
           <label for="ta_inquietud">Inquietud subyacente</label>
         </div>
+        <div class="row">
+
+        </div>
+        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
     </form>
 
@@ -2077,6 +2134,10 @@
         <input type="text" id="imc" name="" value="">
         <label for="imc">IMC</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2112,6 +2173,10 @@
         <input type="text" id="est_nutri" name="" value="">
         <label for="est_nutri">Estado general de nutrición</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2171,6 +2236,10 @@
         <input type="text" id="otros" name="" value="">
         <label for="otros">Otros</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2229,6 +2298,10 @@
         <input type="text" id="pie" name="" value="">
         <label for="pie">Pie (Pie equino, plano, cavo)</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2275,6 +2348,11 @@
         <label for="ta_paln_fisio">Plan fisioterapéutico</label>
       </div>
 
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+
     </div>
   </form>
 
@@ -2293,6 +2371,11 @@
         <textarea id="ta_dermatomas" class="materialize-textarea"></textarea>
         <label for="ta_dermatomas">Escribe aquí</label>
       </div>
+
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
     </div>
   </form>
@@ -2320,11 +2403,15 @@
           </label>
         </div>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
   {{-- Arcos de Movimiento--}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <form class="" id="arcos_movimiento" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
       <table class="responsive-table striped">
@@ -2817,7 +2904,360 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+      </div>
   </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Par Nervio--}}
+  <form class="" id="par_nervio" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Par Nervio</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Par</th>
+            <th>Nervio</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>Olfatorio</td>
+            <td>
+              <textarea id="ta_olfatorio" class="materialize-textarea"></textarea>
+              <label for="ta_olfatorio">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td>Óptico</td>
+            <td>
+              <textarea id="ta_optico" class="materialize-textarea"></textarea>
+              <label for="ta_optico">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td>Motor ocular común</td>
+            <td>
+              <textarea id="ta_mot_ocular_com" class="materialize-textarea"></textarea>
+              <label for="ta_mot_ocular_com">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>IV</td>
+            <td>Patético o troclear</td>
+            <td>
+              <textarea id="ta_patetico" class="materialize-textarea"></textarea>
+              <label for="ta_patetico">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>Trigémino</td>
+            <td>
+              <textarea id="ta_trige" class="materialize-textarea"></textarea>
+              <label for="ta_trige">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VI</td>
+            <td>Motor ocular externo</td>
+            <td>
+              <textarea id="ta_mot_ocular_ext" class="materialize-textarea"></textarea>
+              <label for="ta_mot_ocular_ext">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VII</td>
+            <td>Facial</td>
+            <td>
+              <textarea id="ta_facial" class="materialize-textarea"></textarea>
+              <label for="ta_facial">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VIII</td>
+            <td>Auditivo</td>
+            <td>
+              <textarea id="ta_auditivo" class="materialize-textarea"></textarea>
+              <label for="ta_auditivo">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>IX</td>
+            <td>Glosofaríngeo</td>
+            <td>
+              <textarea id="ta_gloso" class="materialize-textarea"></textarea>
+              <label for="ta_gloso">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>Vago</td>
+            <td>
+              <textarea id="ta_vago" class="materialize-textarea"></textarea>
+              <label for="ta_vago">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>XI</td>
+            <td>Espinal</td>
+            <td>
+              <textarea id="ta_espinal" class="materialize-textarea"></textarea>
+              <label for="ta_espinal">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>XII</td>
+            <td>Hipogloso</td>
+            <td>
+              <textarea id="ta_hipogloso" class="materialize-textarea"></textarea>
+              <label for="ta_hipogloso">Escribe aquí</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Escala de ashwoth --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Escala de ashworth</h5>
+      <p class="range-field">
+        <input type="range" id="eva_evolucion" min="0" max="4" />
+      </p>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tono musscular normal</td>
+            <td>Hipertonía leve</td>
+            <td>Hipertonía moderada</td>
+            <td>Hipertonía intensa</td>
+            <td>Hipertonía extrema</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Reflejos Osteotendinosos --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Metámera</th>
+            <th>Nervio</th>
+            <th>Reflejo</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Par V</td>
+            <td>Trigémino</td>
+            <td>Maseterino</td>
+            <td>
+              <textarea id="ta_maseterino" class="materialize-textarea"></textarea>
+              <label for="ta_maseterino">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C5 y C6</td>
+            <td>Musculocutáneo</td>
+            <td>Bicipital</td>
+            <td>
+              <textarea id="ta_bicipital" class="materialize-textarea"></textarea>
+              <label for="ta_bicipital">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C5 y C6</td>
+            <td>Radial</td>
+            <td>Estilorradical</td>
+            <td>
+              <textarea id="ta_estilo" class="materialize-textarea"></textarea>
+              <label for="ta_estilo">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C6, C7 y C8</td>
+            <td>Radial</td>
+            <td>Tricipital</td>
+            <td>
+              <textarea id="ta_tricipital" class="materialize-textarea"></textarea>
+              <label for="ta_tricipital">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>L2, L3 y L4</td>
+            <td>Crural</td>
+            <td>Rotuliano</td>
+            <td>
+              <textarea id="ta_rotul" class="materialize-textarea"></textarea>
+              <label for="ta_rotul">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>L5, S1 y S2</td>
+            <td>Tibial</td>
+            <td>Aquíleo</td>
+            <td>
+              <textarea id="ta_aquileo" class="materialize-textarea"></textarea>
+              <label for="ta_aquileo">Escribe aquí</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Tipo de marcha --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Tipo de marcha</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Marcha</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hemiparética/Hemipléjica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Cerebelosa/Atáxica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Paraparética</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Hipocinética/Parkinsoniana</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Vestibular</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de las correas</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de la ataxia sensorial</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de las miopatías</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha histerica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+    </div>
+  </form>
+
 
   </div>
 @endsection
