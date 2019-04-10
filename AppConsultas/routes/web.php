@@ -21,9 +21,7 @@ Route::get('/admin', function(){
   return view('admin.home');
 });
 
-Route::get('/admin/registrar', function(){
-  return view('admin.registrar');
-});
+Route::get('/admin/registrar', function(){return view('admin.registrar');});
 
 Route::get('/admin/usuarios', function(){
   return view('admin.usuarios');
@@ -51,9 +49,8 @@ Route::get('/medico/registrar', function(){
   return view('medico.registrar');
 });
 
-Route::get('/medico/buscar', function(){
-  return view('medico.buscar');
-});
+//Route::get('/medico/buscar', function(){return view('medico.buscar');});
+Route::get('/medico/buscar', 'UsuarioController@listpacientes');
 
 Route::get('/medico/buscar/ver', function(){
   return view('medico.ver');
@@ -76,7 +73,7 @@ Route::post('login', 'Auth\LoginController@login')->name('login');
 
 Route::resource('reguser', 'UsuarioController');
 
-Route::get('listu', 'UsuarioController@listusuarios')->name('listu'); 
+Route::get('listu', 'UsuarioController@listusuarios')->name('listu');
 
 
 Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');

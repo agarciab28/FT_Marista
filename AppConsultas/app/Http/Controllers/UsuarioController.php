@@ -27,6 +27,14 @@ class UsuarioController extends Controller
 
     }
 
+    public function listpacientes()
+    {
+
+        $paciente=ficha_id::orderBy('apellidoP','asc')->get();
+        return view('medico.buscar',compact('paciente'));
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

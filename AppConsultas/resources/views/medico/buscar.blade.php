@@ -30,48 +30,26 @@
        </tr>
      </thead>
      <tbody>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
-       <tr>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td>Rehabilitacion</td>
-         <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-       </tr>
+       @if($paciente->count())
+         @foreach($paciente as $usuario)
+           <tr>
+
+             <td>{{$usuario->apellidoP}}</td>
+             <td>{{$usuario->nombre}}</td>
+
+             <td>{{$usuario->curp}}</td>
+              <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+           </tr>
+
+
+
+         @endforeach
+         @else
+           <tr>
+             <td colspan="8">No hay registro !!</td>
+           </tr>
+         @endif
+
      </tbody>
    </table>
     </div>
