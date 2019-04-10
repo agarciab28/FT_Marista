@@ -200,6 +200,8 @@
         <div class="input-field col s12 m4">
           <input id="nombre2" type="text" name="nombre2" class="validate" required>
           <label for="nombre2">Persona en caso de emergencia</label>
+          {!! $errors->first('nombre2', '<span style="color:red" id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
+
         </div>
         <div class="input-field col s12 m4">
           <input id="tel2" type="tel" name="tel2" class="validate" required>
@@ -3374,5 +3376,5 @@
 @endsection
 
 @section('scripts')
-    
+
 @endsection
