@@ -8,6 +8,14 @@
 @section('title', 'Usuarios')
 
 @section('content')
+<div class="col-sm-12">
+
+  @if(session()->get('success'))
+    <div class="alert alert-success">
+      {{ session()->get('success') }}  
+    </div>
+  @endif
+</div>
   <div class="section container">
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
@@ -25,117 +33,43 @@
     </div>
   </div>
 
-    <div class="section container">
-      <table class="striped responsive-table">
-     <thead>
-       <tr>
-           <th>Tipo de Usuario</th>
-           <th>Nombre</th>
-           <th>Apellido</th>
-           <th>CURP</th>
-           <th>Acciones</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-       <tr>
-         <td>Coordinador</td>
-         <td>Alejandro</td>
-         <td>García</td>
-         <td>GABAasedfr12345678</td>
-         <td> <a href="" class="waves-effect waves-light btn">Modificar</a> <a href="" class="waves-effect waves-light btn">Eliminar</a></td>
-       </tr>
-     </tbody>
-   </table>
-    </div>
+  <div class="section container">
+    <table class="striped responsive-table">
+      <thead>
+        <tr>
+        <th>Apellido</th>
+          <th>Nombre</th>
+          <th>Tipo de Usuario</th>          
+          <th>CURP</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @if($usuario->count())
+          @foreach($usuario as $usuario)
+            <tr>
+              
+              <td>{{$usuario->apellidoP}}</td>
+              <td>{{$usuario->nombre}}</td>
+              <td>{{$usuario->tipoDeUsuario}}</td>
+              <td>{{$usuario->curp}}</td>
+              <td> 
+                <a href="" class="waves-effect waves-light btn">Modificar</a> 
+                <a href="{{ route('reguser.destroy', $usuario->curp) }}" class="waves-effect waves-light btn">Eliminar</a> 
+              </td>
+            </tr>
+
+
+
+          @endforeach 
+          @else
+            <tr>
+              <td colspan="8">No hay registro !!</td>
+            </tr>
+          @endif
+      </tbody>
+    </table>
+  </div>
+   
 @endsection

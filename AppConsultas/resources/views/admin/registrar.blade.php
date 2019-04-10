@@ -10,7 +10,7 @@
 @section('content')
   <div class="section container">
   @if ($errors->any())
-      <div class="alert alert-danger">
+      <div  class="alert alert-danger">
         <ul>
             @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
@@ -18,11 +18,19 @@
         </ul>
       </div><br />
     @endif
+    
+    @if(Session::has('success'))
+			<div class="alert alert-info">
+				{{Session::get('success')}}
+			</div>
+			@endif
   
     <form role="form" action="{{ route('reguser.store') }}" method="POST">
     
+  
 
     {{ csrf_field() }}
+    
       <div class="row">
         <div class="col s12">
           <div class="row">
@@ -89,11 +97,13 @@
             </div>
           
             <button class="col s4 push-s4 pull-s4 btn waves-effect waves-light" type="submit" name="action">Registrar</button>
+
             
           </div>
         </div>
       </div>
     </form>
+    
   </div>
 
 @endsection

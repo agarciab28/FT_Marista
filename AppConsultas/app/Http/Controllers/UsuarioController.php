@@ -13,8 +13,17 @@ class UsuarioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    
     {
+        
         return view('\admin\registrar');
+    }
+    public function listusuarios()
+    {
+        
+        $usuario=Usuario::orderBy('apellidoP','asc')->get();
+        return view('admin.usuarios',compact('usuario'));
+
     }
 
     /**
@@ -35,12 +44,18 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-    
+        //dd($request);
       // dd($request->get( 'nombreDeUsuario'));
+
+      $this->validate($request,[ 'curp'=>'required', 'nombre'=>'required', 'password'=>'required', 'apellidoP'=>'required', 
+      'apellidoM'=>'required', 'telefono'=>'required' , 'correoElectronico'=>'required', 'nombreDeUsuario'=>'required' ,
+       'tipoDeUsuario'=>'required', 'cedulaProfesional'=>'required', 'cedulaMoE'=>'required']);
+
+
         $Usuario = new Usuario([
             'curp' => $request->get('curp'),
             'nombre' => $request->get('nombre'),
-            'password' => $request->get('password'),
+            'password' => bcrypt($request->get('password')),
             'apellidoP' => $request->get('apellidoP'),
             'apellidoM' => $request->get('apellidoM'),
             'telefono' => $request->get('telefono'),
@@ -50,9 +65,10 @@ class UsuarioController extends Controller
             'cedulaProfesional' => $request->get('cedulaProfesional'),
             'cedulaMoE' => $request->get('cedulaMoE')
         ]);
-       // dd($Usuario);
+        //dd($Usuario);
         $Usuario->save();
-        return redirect()->route('reguser.index')->with('success','Usuario Registrado');
+        //return back()->with('status','Usuario registrado exitosamente');
+        return view('\admin\registrar')->with('success','Usuario Registrado');
     
     }
 
@@ -62,10 +78,12 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($curp)
     {
-        //
+        $usuario=Usuario::find($curp);
+        return  view('admin.usuarios',compact('usuario'))->with('success','Usuario RegistradoS');    
     }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -96,8 +114,12 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($curp)
+    {   //$usuario = Usuario::where('usuario',$curp)->delete();
+        $usuario = Usuario::table('usuarios')->where('curp',$curp)->delete();
+        
+        //$usuario->delete();
+        return back()->with('success','Usuario eliminado exitosamente');
+        //return redirect('')->with('success', 'Contact deleted!');
     }
 }
