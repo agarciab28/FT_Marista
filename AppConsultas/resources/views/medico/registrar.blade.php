@@ -88,7 +88,6 @@
           <input id="tel2" type="tel" class="validate">
           <label for="tel2">Telefono/Celular</label>
         </div>
-        <button class="col s4 m4 push-s8 push-m8 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </div>
     </form>
 
@@ -900,11 +899,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
         </div>
       </form>
 
@@ -1284,11 +1278,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1500,11 +1489,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1671,11 +1655,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1716,11 +1695,6 @@
               <label for="ta_pad_actual">Escribe aquí</label>
             </div>
           </div>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1806,11 +1780,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -2022,11 +1991,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -2053,11 +2017,6 @@
           <textarea id="ta_inquietud" class="materialize-textarea"></textarea>
           <label for="ta_inquietud">Inquietud subyacente</label>
         </div>
-        <div class="row">
-
-        </div>
-        <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-        <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </div>
     </form>
 
@@ -2109,11 +2068,6 @@
         <input type="text" id="imc" name="" value="">
         <label for="imc">IMC</label>
       </div>
-      <div class="row">
-
-      </div>
-      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
     </div>
   </form>
 
@@ -2149,11 +2103,6 @@
         <input type="text" id="est_nutri" name="" value="">
         <label for="est_nutri">Estado general de nutrición</label>
       </div>
-      <div class="row">
-
-      </div>
-      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
     </div>
   </form>
 
@@ -2213,11 +2162,6 @@
         <input type="text" id="otros" name="" value="">
         <label for="otros">Otros</label>
       </div>
-      <div class="row">
-
-      </div>
-      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
     </div>
   </form>
 
@@ -2276,11 +2220,6 @@
         <input type="text" id="pie" name="" value="">
         <label for="pie">Pie (Pie equino, plano, cavo)</label>
       </div>
-      <div class="row">
-
-      </div>
-      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
     </div>
   </form>
 
@@ -2327,11 +2266,53 @@
         <label for="ta_paln_fisio">Plan fisioterapéutico</label>
       </div>
 
-      <div class="row">
+    </div>
+  </form>
 
+  <div class="row">
+
+  </div>
+
+  {{-- Dermatomas, miotomas y pares craneales--}}
+  <form class="" id="dermatomas_etc" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Dermatomas, miotomas y pares craneales</h5>
+      <div class="contenedor row">
+        <img class="col s8 push-s2 responsive-img" src="{{ asset('img/musculos1.png') }}" alt="">
       </div>
-      <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-      <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+      <div class="input-field col s12">
+        <textarea id="ta_dermatomas" class="materialize-textarea"></textarea>
+        <label for="ta_dermatomas">Escribe aquí</label>
+      </div>
+
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Mapa de Dolor--}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Mapa de Dolor</h5>
+      <div class="contenedor row">
+        <img class="col s12 responsive-img" src="{{ asset('img/musculos2.png') }}" alt="">
+      </div>
+      <div class="row contenedor">
+        <div class="col s6 push-s3">
+          <label>
+            <input class="with-gap" name="color" type="radio"/>
+            <span>Rojo</span>
+          </label>
+          <label>
+            <input class="with-gap" name="color" type="radio"/>
+            <span>Amarillo</span>
+          </label>
+        </div>
+      </div>
+
+
     </div>
   </form>
 
