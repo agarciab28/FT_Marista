@@ -2319,9 +2319,503 @@
           </label>
         </div>
       </div>
-
-
     </div>
+  </form>
+
+  {{-- Arcos de Movimiento--}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Parte del cuerpo</th>
+            <th>Flexión</th>
+            <th>Extensión</th>
+            <th>Rotación interna</th>
+            <th>Rotación externa</th>
+            <th>Abducción</th>
+            <th>Aducción</th>
+            <th>Desviación radial</th>
+            <th>Desviación cubital</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Columna cervical</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columcerv_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Columna dorsal</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columdors_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Columna lumbar</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="columlumb_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Hombro</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="hombro_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Codo</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="codo_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Muñeca</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="muñeca_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Mano</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="mano_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Cadera</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="cadera_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Rodilla</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="rodilla_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Tobillo</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="tobillo_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Pie</th>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_flex" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_exten" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_rotintern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_rotextern" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_abdu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_adu" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_desvrad" name="" value="">
+              </div>
+            </td>
+            <td>
+              <div class="input-field">
+                <input type="text" id="pie_desvcubi" name="" value="">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
   </form>
 
   </div>
