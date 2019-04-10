@@ -80,6 +80,10 @@
           <input id="religion" type="tel" class="validate">
           <label for="religion">Religion</label>
         </div>
+        <div class="input-field col s12 m4">
+          <input id="curp" type="text" class="validate">
+          <label for="curp">CURP</label>
+        </div>
         <div class="input-field col s12 m8">
           <input id="nombre2" type="text" class="validate">
           <label for="nombre2">Persona en caso de emergencia</label>
@@ -87,6 +91,10 @@
         <div class="input-field col s12 m4">
           <input id="tel2" type="tel" class="validate">
           <label for="tel2">Telefono/Celular</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="motivo" type="text" class="validate">
+          <label for="motivo">Motivo de la consulta</label>
         </div>
       </div>
     </form>
