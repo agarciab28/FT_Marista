@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="section container">
+    {{-- <div class="section container">
       <ul class="collapsible">
         <li>
           <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
@@ -51,7 +51,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </div> --}}
 
     {{-- <div class="section container">
       <ul class="collapsible">
@@ -180,8 +180,6 @@
         <div class="input-field col s12 m4">
           <input id="tel1" type="tel" class="validate" name="tel1" required>
           <label for="tel1">Telefono</label>
-          {!! $errors->first('tel1', '<span style="color:red" id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
-
         </div>
         <div class="input-field col s12 m4">
           <input id="celular" type="tel" name="celular" class="validate" required>
@@ -190,7 +188,7 @@
 
         </div>
         <div class="input-field col s12 m4">
-          <input id="religion" type="text" name="religion" class="validate" required>
+          <input id="religion" type="tel" name="religion" class="validate" required>
           <label for="religion">Religion</label>
           {!! $errors->first('religion', '<span style="color:red" id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
 
@@ -3376,5 +3374,5 @@
 @endsection
 
 @section('scripts')
-    <script src="{{{ asset('js/registro.js') }}}"></script>
+    
 @endsection

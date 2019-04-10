@@ -37,7 +37,36 @@
         </div>
       </li>
     	<li id="home"><a class="white-text" href="/medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
-    	<li id="registrar"><a class="white-text" href="/medico/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
+      <ul id="registrar" class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header white-text" accordion="false" style="margin-left:2em;"> Registrar Paciente <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul class="dropdown_menu">
+                  <li><a href="/medico/registrar" class="white-text menu_registro" id="menu_ficha_id">Ficha de Identificación</a></li>
+                  <li><a href="" class="white-text menu_registro">Antecedentes Heredo Familiares</a></li>
+                  <li><a href="" class="white-text menu_registro">Antecedentes Personales N.P.</a></li>
+                  <li><a href="" class="white-text menu_registro">Antescedentes Personales P.</a></li>
+                  <li><a href="" class="white-text menu_registro">Antecedentes Gineco Obstetricos</a></li>
+                  <li><a href="" class="white-text menu_registro">Padecimiento Actual</a></li>
+                  <li><a href="" class="white-text menu_registro">Sintomas Generales</a></li>
+                  <li><a href="" class="white-text menu_registro">Aparatos y Sistemas</a></li>
+                  <li><a href="" class="white-text menu_registro">Diagnósticos Anteriores</a></li>
+                  <li><a href="" class="white-text menu_registro">Exploración Física</a></li>
+                  <li><a href="" class="white-text menu_registro">Exploración General</a></li>
+                  <li><a href="" class="white-text menu_registro">Exploración por Región</a></li>
+                  <li><a href="" class="white-text menu_registro">Sistema Musculo Esqueletico</a></li>
+                  <li><a href="" class="white-text menu_registro">Diagnóstico Fisioterapéutico</a></li>
+                  <li><a href="" class="white-text menu_registro">Dermatomas</a></li>
+                  <li><a href="" class="white-text menu_registro">Mapa de Dolor</a></li>
+                  <li><a href="" class="white-text menu_registro">Arcos de Movimiento</a></li>
+                  <li><a href="" class="white-text menu_registro">Par/Nervio</a></li>
+                  <li><a href="" class="white-text menu_registro">Escala de Ashworth</a></li>
+                  <li><a href="" class="white-text menu_registro">Reflejos Osteotendinosos</a></li>
+                  <li><a href="" class="white-text menu_registro">Tipos de Marcha</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
     	<li id="buscar"><a class="white-text" href="/medico/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
       <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
     </ul>
@@ -49,5 +78,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="{{{ asset('js/init.js') }}}"></script>
+  <script src="{{{ asset('js/registro.js') }}}"></script>
   @yield('scripts')
 </html>
