@@ -69,7 +69,7 @@
           <label for="colonia">Colonia</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="tel1" type="text" class="validate">
+          <input id="tel1" type="tel" class="validate">
           <label for="tel1">Telefono</label>
         </div>
         <div class="input-field col s12 m4">
@@ -80,6 +80,10 @@
           <input id="religion" type="tel" class="validate">
           <label for="religion">Religion</label>
         </div>
+        <div class="input-field col s12 m4">
+          <input id="curp" type="text" class="validate">
+          <label for="curp">CURP</label>
+        </div>
         <div class="input-field col s12 m8">
           <input id="nombre2" type="text" class="validate">
           <label for="nombre2">Persona en caso de emergencia</label>
@@ -88,7 +92,10 @@
           <input id="tel2" type="tel" class="validate">
           <label for="tel2">Telefono/Celular</label>
         </div>
-        <button class="col s4 m4 push-s8 push-m8 btn waves-effect waves-light" type="" name="action">Siguiente</button>
+        <div class="input-field col s12">
+          <input id="motivo" type="text" class="validate">
+          <label for="motivo">Motivo de la consulta</label>
+        </div>
       </div>
     </form>
 
@@ -236,8 +243,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_enf_sisnerv" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_sisnerv">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -278,8 +285,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sindromes" class="materialize-textarea"></textarea>
+                    <label for="ta_sindromes">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -319,8 +326,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_malfor" class="materialize-textarea"></textarea>
+                    <label for="ta_malfor">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -360,8 +367,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_congenitas" class="materialize-textarea"></textarea>
+                    <label for="ta_congenitas">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -401,8 +408,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_diabetes" class="materialize-textarea"></textarea>
+                    <label for="ta_diabetes">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -442,8 +449,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_hiper_art" class="materialize-textarea"></textarea>
+                    <label for="ta_hiper_art">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -483,8 +490,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_cancer" class="materialize-textarea"></textarea>
+                    <label for="ta_cancer">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -524,8 +531,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_cardio" class="materialize-textarea"></textarea>
+                    <label for="ta_cardio">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -565,8 +572,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_vascu" class="materialize-textarea"></textarea>
+                    <label for="ta_vascu">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -606,8 +613,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_pulmon" class="materialize-textarea"></textarea>
+                    <label for="ta_pulmon">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -647,8 +654,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_hepto" class="materialize-textarea"></textarea>
+                    <label for="ta_hepto">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -688,8 +695,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_nefro" class="materialize-textarea"></textarea>
+                    <label for="ta_nefro">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -729,8 +736,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_diges" class="materialize-textarea"></textarea>
+                    <label for="ta_diges">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -770,8 +777,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_endo" class="materialize-textarea"></textarea>
+                    <label for="ta_endo">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -811,8 +818,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_trans_hemato" class="materialize-textarea"></textarea>
+                    <label for="ta_trans_hemato">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -852,8 +859,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_disli" class="materialize-textarea"></textarea>
+                    <label for="ta_disli">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -893,18 +900,13 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_otros" class="materialize-textarea"></textarea>
+                    <label for="ta_otros">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
         </div>
       </form>
 
@@ -935,8 +937,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_construc" class="materialize-textarea"></textarea>
+                    <label for="ta_construc">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -954,8 +956,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_suelo" class="materialize-textarea"></textarea>
+                    <label for="ta_suelo">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -973,8 +975,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_escaleras" class="materialize-textarea"></textarea>
+                    <label for="ta_escaleras">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -992,8 +994,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_vent" class="materialize-textarea"></textarea>
+                    <label for="ta_vent">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1011,8 +1013,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_hacin" class="materialize-textarea"></textarea>
+                    <label for="ta_hacin">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1030,8 +1032,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_aya" class="materialize-textarea"></textarea>
+                    <label for="ta_aya">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1049,8 +1051,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sda" class="materialize-textarea"></textarea>
+                    <label for="ta_sda">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1068,8 +1070,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sdl" class="materialize-textarea"></textarea>
+                    <label for="ta_sdl">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1087,8 +1089,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sdd" class="materialize-textarea"></textarea>
+                    <label for="ta_sdd">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1106,8 +1108,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">¿Cuantas veces a la semana?</label>
+                    <textarea id="ta_hpb" class="materialize-textarea"></textarea>
+                    <label for="ta_hpb">¿Cuantas veces a la semana?</label>
                   </div>
                 </td>
               </tr>
@@ -1125,8 +1127,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">¿Cuántas veces al día?</label>
+                    <textarea id="ta_hb" class="materialize-textarea"></textarea>
+                    <label for="ta_hb">¿Cuántas veces al día?</label>
                   </div>
                 </td>
               </tr>
@@ -1144,8 +1146,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">¿Cuántas veces al día?</label>
+                    <textarea id="ta_defec" class="materialize-textarea"></textarea>
+                    <label for="ta_defec">¿Cuántas veces al día?</label>
                   </div>
                 </td>
               </tr>
@@ -1163,8 +1165,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">¿Cuántos cigarros al día?</label>
+                    <textarea id="ta_taba" class="materialize-textarea"></textarea>
+                    <label for="ta_taba">¿Cuántos cigarros al día?</label>
                   </div>
                 </td>
               </tr>
@@ -1182,8 +1184,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Frecuencia/Tipo/Tiempo</label>
+                    <textarea id="ta_alco" class="materialize-textarea"></textarea>
+                    <label for="ta_alco">Frecuencia/Tipo/Tiempo</label>
                   </div>
                 </td>
               </tr>
@@ -1201,8 +1203,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Frecuencia/Tipo/Tiempo</label>
+                    <textarea id="ta_toxi" class="materialize-textarea"></textarea>
+                    <label for="ta_toxi">Frecuencia/Tipo/Tiempo</label>
                   </div>
                 </td>
               </tr>
@@ -1220,8 +1222,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Frecuencia/Tipo</label>
+                    <textarea id="ta_alim" class="materialize-textarea"></textarea>
+                    <label for="ta_alim">Frecuencia/Tipo</label>
                   </div>
                 </td>
               </tr>
@@ -1239,8 +1241,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Tiempo/Sentado/Parado</label>
+                    <textarea id="ta_trades" class="materialize-textarea"></textarea>
+                    <label for="ta_trades">Tiempo/Sentado/Parado</label>
                   </div>
                 </td>
               </tr>
@@ -1258,8 +1260,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Tipo</label>
+                    <textarea id="ta_pas" class="materialize-textarea"></textarea>
+                    <label for="ta_pas">Tipo</label>
                   </div>
                 </td>
               </tr>
@@ -1277,18 +1279,13 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_dep" class="materialize-textarea"></textarea>
+                    <label for="ta_dep">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1322,8 +1319,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_enf_inf" class="materialize-textarea"></textarea>
+                    <label for="ta_enf_inf">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1341,8 +1338,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_inter" class="materialize-textarea"></textarea>
+                    <label for="ta_inter">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1360,8 +1357,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_trauma" class="materialize-textarea"></textarea>
+                    <label for="ta_trauma">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1379,8 +1376,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_infi" class="materialize-textarea"></textarea>
+                    <label for="ta_infi">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1398,8 +1395,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_hospi" class="materialize-textarea"></textarea>
+                    <label for="ta_hospi">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1417,8 +1414,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_per_con" class="materialize-textarea"></textarea>
+                    <label for="ta_per_con">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1436,8 +1433,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_int_med" class="materialize-textarea"></textarea>
+                    <label for="ta_int_med">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1455,8 +1452,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_trans" class="materialize-textarea"></textarea>
+                    <label for="ta_trans">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1474,8 +1471,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_meds" class="materialize-textarea"></textarea>
+                    <label for="ta_meds">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1493,25 +1490,20 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ets" class="materialize-textarea"></textarea>
+                    <label for="ta_ets">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
 
       </div>
 
-      {{-- Antescedentes Personales patologicos --}}
+      {{-- Antescedentes Gineco-obstétricos --}}
       <form class="" id="antescedentes_go" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h5>
@@ -1539,8 +1531,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_menarca" class="materialize-textarea"></textarea>
+                    <label for="ta_menarca">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1563,8 +1555,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ritmo" class="materialize-textarea"></textarea>
+                    <label for="ta_ritmo">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1587,8 +1579,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_partos" class="materialize-textarea"></textarea>
+                    <label for="ta_partos">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1611,8 +1603,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_abortos" class="materialize-textarea"></textarea>
+                    <label for="ta_abortos">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1635,8 +1627,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_cesareas" class="materialize-textarea"></textarea>
+                    <label for="ta_cesareas">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1659,8 +1651,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_met_anti" class="materialize-textarea"></textarea>
+                    <label for="ta_met_anti">Escribe aquí</label>
                   </div>
                 </td>
                 <td>
@@ -1671,11 +1663,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1683,44 +1670,39 @@
       </div>
 
       {{-- Padecimiento actual --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      <form class="" id="padecimiento_actual" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
             <h6 style="font-weight:bold; margin-bottom:30px;">Inicio</h6>
             <p class="range-field">
-              <input type="range" id="test5" min="0" max="10" />
+              <input type="range" id="eva_inicio" min="0" max="10" />
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-              <label for="ta_enf_reu">Escribe aquí</label>
+              <textarea id="ta_pad_inicio" class="materialize-textarea"></textarea>
+              <label for="ta_pad_inicio">Escribe aquí</label>
             </div>
           </div>
           <div class="evolucion">
             <h6 style="font-weight:bold; margin-bottom:30px;">Evolucion</h6>
             <p class="range-field">
-              <input type="range" id="test5" min="0" max="10" />
+              <input type="range" id="eva_evolucion" min="0" max="10" />
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-              <label for="ta_enf_reu">Escribe aquí</label>
+              <textarea id="ta_pad_evol" class="materialize-textarea"></textarea>
+              <label for="ta_pad_evol">Escribe aquí</label>
             </div>
           </div>
           <div class="actual">
             <h6 style="font-weight:bold; margin-bottom:30px;">Actual</h6>
             <p class="range-field">
-              <input type="range" id="test5" min="0" max="10" />
+              <input type="range" id="eva_actual" min="0" max="10" />
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-              <label for="ta_enf_reu">Escribe aquí</label>
+              <textarea id="ta_pad_actual" class="materialize-textarea"></textarea>
+              <label for="ta_pad_actual">Escribe aquí</label>
             </div>
           </div>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
@@ -1728,7 +1710,7 @@
       </div>
 
       {{-- Sintomas Generales --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      <form class="" id="sintomas_generales" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Sintomas Generales</h5>
           <table>
@@ -1806,19 +1788,14 @@
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
 
       <div class="row">
 
       </div>
 
-      {{-- Sintomas Generales --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      {{-- Aparatos y sistemas --}}
+      <form class="" id="apa_sis" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
           <table>
@@ -1844,8 +1821,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_diges" class="materialize-textarea"></textarea>
+                    <label for="ta_ap_diges">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1863,8 +1840,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_cardio" class="materialize-textarea"></textarea>
+                    <label for="ta_ap_cardio">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1882,8 +1859,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_respi" class="materialize-textarea"></textarea>
+                    <label for="ta_ap_respi">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1901,8 +1878,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_urin" class="materialize-textarea"></textarea>
+                    <label for="taap_urin">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1920,8 +1897,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_genital" class="materialize-textarea"></textarea>
+                    <label for="ta_ap_genital">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1939,8 +1916,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_ap_hemato" class="materialize-textarea"></textarea>
+                    <label for="ta_ap_hemato">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1958,8 +1935,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sis_endo" class="materialize-textarea"></textarea>
+                    <label for="ta_sis_endo">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1977,8 +1954,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sis_nerv" class="materialize-textarea"></textarea>
+                    <label for="ta_sis_nerv">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -1996,8 +1973,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sis_senso" class="materialize-textarea"></textarea>
+                    <label for="ta_sis_senso">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
@@ -2015,19 +1992,337 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
+                    <textarea id="ta_sis_osteo" class="materialize-textarea"></textarea>
+                    <label for="ta_sis_osteo">Escribe aquí</label>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button class="col s4 m4 btn waves-effect waves-light" type="" name="action">Anterior</button>
-          <button class="col s4 m4 push-s4 push-m4 btn waves-effect waves-light" type="" name="action">Siguiente</button>
       </form>
+
+      <div class="row">
+
+      </div>
+
+      {{-- Diagnosticos anteriores --}}
+    <form class="" id="diag_ant" action="" method="">
+      <div class="row">
+        <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
+        <div class="input-field col s12">
+          <textarea id="ta_diag_ant" class="materialize-textarea"></textarea>
+          <label for="ta_diag_ant">Diagnosticos Anteriores</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_est_gab" class="materialize-textarea"></textarea>
+          <label for="ta_est_gab">Estudios de gabinete/Estudios de laboratorio</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_trat_ant" class="materialize-textarea"></textarea>
+          <label for="ta_trat_ant">Tratamientos anteriores</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_inquietud" class="materialize-textarea"></textarea>
+          <label for="ta_inquietud">Inquietud subyacente</label>
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+
+    </div>
+
+    {{-- Exploracion fisica --}}
+  <form class="" id="explor_fisica" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Exploración Física</h5>
+      <div class="input-field col s12 m3">
+        <input type="text" id="ta" name="" value="">
+        <label for="ta">T.A.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="fc" name="" value="">
+        <label for="fc">F.C.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="fr" name="" value="">
+        <label for="fc">F.R.</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="temp" name="" value="">
+        <label for="temp">Temperatura</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="talla" name="" value="">
+        <label for="temp">Talla</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="s02" name="" value="">
+        <label for="s02">S02</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_actual" name="" value="">
+        <label for="peso_actual">Peso Actual</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_anterior" name="" value="">
+        <label for="peso_anterior">Peso Anterior</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="peso_ideal" name="" value="">
+        <label for="peso_ideal">Peso Ideal</label>
+      </div>
+      <div class="input-field col s12 m3">
+        <input type="text" id="imc" name="" value="">
+        <label for="imc">IMC</label>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+    {{-- Exploracion general--}}
+  <form class="" id="explor_general" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Exploración General</h5>
+      <div class="input-field col s12 m6">
+        <input type="text" id="est_conci" name="" value="">
+        <label for="est_conci">Estado de conciencia</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="acti" name="" value="">
+        <label for="acti">Actitud</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="mov_anormales" name="" value="">
+        <label for="mov_anormales">Movimientos anormales</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="postura" name="" value="">
+        <label for="psotura">Postura</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="marcha" name="" value="">
+        <label for="marcha">Marcha</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="est_nutri" name="" value="">
+        <label for="est_nutri">Estado general de nutrición</label>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Exploracion por region--}}
+  <form class="" id="explor_region" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Exploración por Región</h5>
+      <div class="input-field col s12">
+        <input type="text" id="piel" name="" value="">
+        <label for="piel">Piel y anexos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="cabeza" name="" value="">
+        <label for="cabeza">Cabeza</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="ojos" name="" value="">
+        <label for="ojos">Ojos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="oidos" name="" value="">
+        <label for="oidos">Oídos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="nariz_senos" name="" value="">
+        <label for="nariz_senos">Nariz y senos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="boca" name="" value="">
+        <label for="boca">Boca</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="torax" name="" value="">
+        <label for="torax">Tórax</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="vasos_sang" name="" value="">
+        <label for="vasos_sang">Vasos Sanguíneos</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="mamas" name="" value="">
+        <label for="mamas">Mamas</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="genitales" name="" value="">
+        <label for="genitales">Genitales</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="abdomen" name="" value="">
+        <label for="abdomen">Abdomen</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="otros" name="" value="">
+        <label for="otros">Otros</label>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Sistemas Musculoesqueletico por regiones--}}
+  <form class="" id="sis_muscu" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Sistema Musculoesquelético por Regiones</h5>
+      <h6 style="font-weight:bold;">Columna</h6>
+      <div class="input-field col s12">
+        <input type="text" id="cervical" name="" value="">
+        <label for="cervical">Cervical</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="dorso" name="" value="">
+        <label for="dorso">Dorsolumbar</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="sacro" name="" value="">
+        <label for="sacro">Sacroiliaca</label>
+      </div>
+      <h6 style="font-weight:bold;">Miembro Superior</h6>
+      <div class="input-field col s12">
+        <input type="text" id="hombros" name="" value="">
+        <label for="hombros">Hombros</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="codo" name="" value="">
+        <label for="codo">Codo</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="muñeca" name="" value="">
+        <label for="muñeca">Muñeca</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="mano" name="" value="">
+        <label for="mano">Mano</label>
+      </div>
+      <h6 style="font-weight:bold;">Miembro Inferior</h6>
+      <div class="input-field col s12">
+        <input type="text" id="cadera" name="" value="">
+        <label for="cadera">Cadera</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="rodilla" name="" value="">
+        <label for="rodilla">Rodilla</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="tobillo" name="" value="">
+        <label for="tobillo">Tobillo</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="pie" name="" value="">
+        <label for="pie">Pie (Pie equino, plano, cavo)</label>
+      </div>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Diagnostico Fisioterapeutico--}}
+  <form class="" id="diagnostico_fisio" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Diagnostico Fisiterapéutico</h5>
+      <div class="input-field col s12">
+        <input type="text" id="diag_fisio" name="" value="">
+        <label for="diag_fisio">Diagnostico fisioterapéutico</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="pronostico" name="" value="">
+        <label for="pronostico">Pronóstico</label>
+      </div>
+      <h6 style="font-weight:bold;">Objetivos</h6>
+      <div class="input-field col s12">
+        <input type="text" id="obj1" name="" value="">
+        <label for="obj1">Objetivo #1</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="obj2" name="" value="">
+        <label for="obj2">Objetivo #2</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="obj3" name="" value="">
+        <label for="obj3">Objetivo #3</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="text" id="obj4" name="" value="">
+        <label for="obj4">Objetivo #4</label>
+      </div>
+
+      <div class="row">
+
+      </div>
+
+      <div class="input-field col s12">
+        <textarea id="ta_plan_fisio" class="materialize-textarea"></textarea>
+        <label for="ta_paln_fisio">Plan fisioterapéutico</label>
+      </div>
+
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Dermatomas, miotomas y pares craneales--}}
+  <form class="" id="dermatomas_etc" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Dermatomas, miotomas y pares craneales</h5>
+      <div class="contenedor row">
+        <img class="col s8 push-s2 responsive-img" src="{{ asset('img/musculos1.png') }}" alt="">
+      </div>
+      <div class="input-field col s12">
+        <textarea id="ta_dermatomas" class="materialize-textarea"></textarea>
+        <label for="ta_dermatomas">Escribe aquí</label>
+      </div>
+
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Mapa de Dolor--}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Mapa de Dolor</h5>
+      <div class="contenedor row">
+        <img class="col s12 responsive-img" src="{{ asset('img/musculos2.png') }}" alt="">
+      </div>
+      <div class="row contenedor">
+        <div class="col s6 push-s3">
+          <label>
+            <input class="with-gap" name="color" type="radio"/>
+            <span>Rojo</span>
+          </label>
+          <label>
+            <input class="with-gap" name="color" type="radio"/>
+            <span>Amarillo</span>
+          </label>
+        </div>
+      </div>
+
+
+    </div>
+  </form>
 
   </div>
 @endsection

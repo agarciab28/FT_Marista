@@ -16,7 +16,6 @@ class Hcpadeactual extends Migration
         Schema::create('hcpadecimientoactual', function (Blueprint $table) {
             $table->increments('id_hcpadecimientoactual',10);
             $table->text('inicio')->nullable();
-            $table->text('eva')->nullable();
             $table->text('evolucion')->nullable();
             $table->text('actual')->nullable();
             $table->string('curp',30);
