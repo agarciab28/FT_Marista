@@ -2323,7 +2323,7 @@
   </form>
 
   {{-- Arcos de Movimiento--}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <form class="" id="arcos_movimiento" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
       <table class="responsive-table striped">
@@ -2816,6 +2816,125 @@
           </tr>
         </tbody>
       </table>
+      </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Par Nervio--}}
+  <form class="" id="par_nervio" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Par Nervio</h5>
+      <table>
+        <thead>
+          <tr>
+            <th>Par</th>
+            <th>Nervio</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>Olfatorio</td>
+            <td>
+              <textarea id="ta_olfatorio" class="materialize-textarea"></textarea>
+              <label for="ta_olfatorio">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td>Óptico</td>
+            <td>
+              <textarea id="ta_optico" class="materialize-textarea"></textarea>
+              <label for="ta_optico">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td>Motor ocular común</td>
+            <td>
+              <textarea id="ta_mot_ocular_com" class="materialize-textarea"></textarea>
+              <label for="ta_mot_ocular_com">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>IV</td>
+            <td>Patético o troclear</td>
+            <td>
+              <textarea id="ta_patetico" class="materialize-textarea"></textarea>
+              <label for="ta_patetico">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>Trigémino</td>
+            <td>
+              <textarea id="ta_trige" class="materialize-textarea"></textarea>
+              <label for="ta_trige">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VI</td>
+            <td>Motor ocular externo</td>
+            <td>
+              <textarea id="ta_mot_ocular_ext" class="materialize-textarea"></textarea>
+              <label for="ta_mot_ocular_ext">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VII</td>
+            <td>Facial</td>
+            <td>
+              <textarea id="ta_facial" class="materialize-textarea"></textarea>
+              <label for="ta_facial">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>VIII</td>
+            <td>Auditivo</td>
+            <td>
+              <textarea id="ta_auditivo" class="materialize-textarea"></textarea>
+              <label for="ta_auditivo">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>IX</td>
+            <td>Glosofaríngeo</td>
+            <td>
+              <textarea id="ta_gloso" class="materialize-textarea"></textarea>
+              <label for="ta_gloso">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>Vago</td>
+            <td>
+              <textarea id="ta_vago" class="materialize-textarea"></textarea>
+              <label for="ta_vago">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>XI</td>
+            <td>Espinal</td>
+            <td>
+              <textarea id="ta_espinal" class="materialize-textarea"></textarea>
+              <label for="ta_espinal">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>XII</td>
+            <td>Hipogloso</td>
+            <td>
+              <textarea id="ta_hipogloso" class="materialize-textarea"></textarea>
+              <label for="ta_hipogloso">Escribe aquí</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </form>
 
   </div>
