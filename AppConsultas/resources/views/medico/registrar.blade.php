@@ -2827,7 +2827,7 @@
   <form class="" id="par_nervio" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Par Nervio</h5>
-      <table>
+      <table class="responsive-table striped">
         <thead>
           <tr>
             <th>Par</th>
@@ -2936,6 +2936,220 @@
       </table>
     </div>
   </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Escala de ashwoth --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Escala de ashworth</h5>
+      <p class="range-field">
+        <input type="range" id="eva_evolucion" min="0" max="4" />
+      </p>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tono musscular normal</td>
+            <td>Hipertonía leve</td>
+            <td>Hipertonía moderada</td>
+            <td>Hipertonía intensa</td>
+            <td>Hipertonía extrema</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Reflejos Osteotendinosos --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Metámera</th>
+            <th>Nervio</th>
+            <th>Reflejo</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Par V</td>
+            <td>Trigémino</td>
+            <td>Maseterino</td>
+            <td>
+              <textarea id="ta_maseterino" class="materialize-textarea"></textarea>
+              <label for="ta_maseterino">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C5 y C6</td>
+            <td>Musculocutáneo</td>
+            <td>Bicipital</td>
+            <td>
+              <textarea id="ta_bicipital" class="materialize-textarea"></textarea>
+              <label for="ta_bicipital">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C5 y C6</td>
+            <td>Radial</td>
+            <td>Estilorradical</td>
+            <td>
+              <textarea id="ta_estilo" class="materialize-textarea"></textarea>
+              <label for="ta_estilo">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>C6, C7 y C8</td>
+            <td>Radial</td>
+            <td>Tricipital</td>
+            <td>
+              <textarea id="ta_tricipital" class="materialize-textarea"></textarea>
+              <label for="ta_tricipital">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>L2, L3 y L4</td>
+            <td>Crural</td>
+            <td>Rotuliano</td>
+            <td>
+              <textarea id="ta_rotul" class="materialize-textarea"></textarea>
+              <label for="ta_rotul">Escribe aquí</label>
+            </td>
+          </tr>
+          <tr>
+            <td>L5, S1 y S2</td>
+            <td>Tibial</td>
+            <td>Aquíleo</td>
+            <td>
+              <textarea id="ta_aquileo" class="materialize-textarea"></textarea>
+              <label for="ta_aquileo">Escribe aquí</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+
+  <div class="row">
+
+  </div>
+
+  {{-- Tipo de marcha --}}
+  <form class="" id="mapa_dolor" action="" method="">
+    <div class="row">
+      <h5 style="font-weight:bold;">Tipo de marcha</h5>
+      <table class="responsive-table striped">
+        <thead>
+          <tr>
+            <th>Marcha</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hemiparética/Hemipléjica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Cerebelosa/Atáxica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Paraparética</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Hipocinética/Parkinsoniana</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Vestibular</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de las correas</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de la ataxia sensorial</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha de las miopatías</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Marcha histerica</td>
+            <td>
+              <label>
+                <input type="checkbox" class="filled-in"/>
+                <span>Si</span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+
 
   </div>
 @endsection
