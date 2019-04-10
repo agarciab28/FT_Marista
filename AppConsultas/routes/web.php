@@ -76,7 +76,7 @@ Route::post('login', 'Auth\LoginController@login')->name('login');
 
 Route::resource('reguser', 'UsuarioController');
 
-Route::get('listu', 'UsuarioController@listusuarios')->name('listu');
+Route::get('listu', 'UsuarioController@listusuarios')->name('listu'); 
 
 
 Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');
