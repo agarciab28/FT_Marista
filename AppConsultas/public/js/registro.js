@@ -3,13 +3,16 @@ function backTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+$( document ).ready(function() {
+  $(".menu_registro").hide();
+  $("#menu_ficha_id").show();
+});
+
 function habilitarBotones(){
-  $(".menu").removeAttr("disabled");
-  collapseAll();
+  $(".menu_registro").show();
 }
 
 function collapseAll(){
-  alert('Hola Mundo');
   $(".collapsible-header").removeClass(function(){
     return "active";
   });
