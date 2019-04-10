@@ -9,7 +9,7 @@ function habilitarBotones(){
 }
 
 function collapseAll(){
-  alert('Hola Mundo');
+
   $(".collapsible-header").removeClass(function(){
     return "active";
   });
