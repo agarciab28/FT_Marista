@@ -18,7 +18,7 @@
                 <option value="" disabled selected>Elige una opción</option>
                 <option value="rectoria">Rectoría</option>
                 <option value="coordinador">Coordinador</option>
-                <option value="medico">Medico</option>
+                <option value="medico">Médico</option>
                 <option value="pasante">Pasante</option>
                 <option value="fisioterapeuta">Fisioterapeuta</option>
               </select>

@@ -72,4 +72,5 @@ Route::get('/practicante/buscar/ver', function(){
   return view('practicante.ver');
 });
 
-Route::post('login_validate', 'Auth\LoginController@login')->name('login');;
+//rutas login
+Route::post('login', 'Auth\LoginController@login')->name('login');

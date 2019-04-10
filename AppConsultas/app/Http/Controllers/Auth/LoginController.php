@@ -27,7 +27,17 @@ class LoginController extends Controller
 //$request->curp;
 
     if(Auth::attempt($credentials)){
-      return $tipo_u;
+      if ($tipo_u == "rectoria") {
+        return view('admin.home');
+      }elseif ($tipo_u == "coordinador") {
+        return view('admin.home');
+      } elseif ($tipo_u == "medico") {
+        return view('medico.home');
+      } elseif ($tipo_u == "pasante") {
+        return view('practicante.home');
+      }elseif ($tipo_u == "fisioterapeuta") {
+        return view('medico.home');
+      }
     }
     return back()
     ->withErrors(['btn_s' => 'Nombre de usuario o contraseña inválidos'])
