@@ -72,5 +72,8 @@ Route::get('/practicante/buscar/ver', function(){
   return view('practicante.ver');
 });
 
-Route::post('login', 'Auth\LoginController@login')->name('login');;
+Route::post('login', 'Auth\LoginController@login')->name('login');
+
 Route::resource('reguser', 'UsuarioController');
+
+Route::post('/registrarf','Auth\RegisterController@store_ficha_id')->name('store_ficha_id');

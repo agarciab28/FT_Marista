@@ -17,23 +17,24 @@
     <div class="section container">
 
       {{-- Ficha de identificacion --}}
-    <form class="" id="ficha_id" action="" method="">
+    <form class="" id="ficha_id" action="{{ route('store_ficha_id') }}" method="POST">
+        {{ csrf_field() }}
       <div class="row">
         <h5 style="font-weight:bold;">Ficha de Identificacion</h5>
         <div class="input-field col s12 m4">
-          <input id="nombre" type="text" class="validate">
+          <input id="nombre" name="nombre" type="text" class="validate">
           <label for="nombre">Nombre</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="apellido" type="text" class="validate">
+          <input id="apellido" name="apellido" type="text" class="validate">
           <label for="apellido">Apellido</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="edad" type="number" class="validate">
+          <input id="edad" name="edad" type="number" class="validate">
           <label for="edad">Edad</label>
         </div>
         <div class="input-field col s12 m4">
-          <select>
+          <select name="sex">
             <option value="" disabled selected>Elige una opcion</option>
             <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
@@ -41,11 +42,11 @@
           <label>Genero</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="nacionalidad" type="text" class="validate">
+          <input id="nacionalidad" name="nacionalidad" type="text" class="validate">
           <label for="nacionalidad">Nacionalidad</label>
         </div>
         <div class="input-field col s12 m4">
-          <select>
+          <select name="est_civ">
             <option value="" disabled selected>Elige una opcion</option>
             <option value="soltero">Soltero</option>
             <option value="casado">Casado</option>
@@ -53,47 +54,47 @@
           <label>Estado Civil</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="ocupacion" type="text" class="validate">
+          <input id="ocupacion" name="ocupacion" type="text" class="validate">
           <label for="ocupacion">Ocupación</label>
         </div>
         <div class="input-field col s12 m8">
-          <input id="calle" type="text" class="validate">
+          <input id="calle" type="text" name="calle" class="validate">
           <label for="calle">Calle</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="numero" type="text" class="validate">
+          <input id="numero" type="text" name="num" class="validate">
           <label for="numero">Numero</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="colonia" type="text" class="validate">
+          <input id="colonia" type="text" name="colonia" class="validate">
           <label for="colonia">Colonia</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="tel1" type="tel" class="validate">
+          <input id="tel1" type="tel" name="tel1" class="validate">
           <label for="tel1">Telefono</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="celular" type="tel" class="validate">
+          <input id="celular" type="tel" name="celular" class="validate">
           <label for="celular">Celular</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="religion" type="tel" class="validate">
+          <input id="religion" type="tel" name="religion" class="validate">
           <label for="religion">Religion</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="curp" type="text" class="validate">
+          <input id="curp" type="text" name="curp" class="validate">
           <label for="curp">CURP</label>
         </div>
         <div class="input-field col s12 m8">
-          <input id="nombre2" type="text" class="validate">
+          <input id="nombre2" type="text" name="nombre2" class="validate">
           <label for="nombre2">Persona en caso de emergencia</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="tel2" type="tel" class="validate">
+          <input id="tel2" type="tel" name="tel2" class="validate">
           <label for="tel2">Telefono/Celular</label>
         </div>
         <div class="input-field col s12">
-          <input id="motivo" type="text" class="validate">
+          <input id="motivo" type="text" name="motivo" class="validate">
           <label for="motivo">Motivo de la consulta</label>
         </div>
       </div>

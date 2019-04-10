@@ -18,10 +18,8 @@
         </ul>
       </div><br />
     @endif
-  
-    <form role="form" action="{{ route('reguser.store') }}" method="POST">
-    
 
+    <form role="form" action="{{ route('reguser.store') }}" method="POST">
     {{ csrf_field() }}
       <div class="row">
         <div class="col s12">
@@ -55,7 +53,7 @@
               <input id="email" type="email" name="correoElectronico" class="validate">
               <label for="email">Correo Electrónico</label>
             </div>
-           
+
             <div class="input-field col s12 m4">
               <input id="nombreDeUsuario" type="text" name="nombreDeUsuario" class="validate">
               <label for="nombreDeUsuario">Usuario</label>
@@ -76,8 +74,8 @@
               <label for="cedula_m">Cédula de Especialiad o Maestría</label>
             </div>
 
-          
-            
+
+
             <div class="input-field col s12 m4">
               <input id="telefono" type="tel" name="telefono">
               <label for="telefono">Número de Teléfono</label>
@@ -87,9 +85,9 @@
               <input id="curp" type="text" name="curp">
               <label for="curp">CURP</label>
             </div>
-          
+
             <button class="col s4 push-s4 pull-s4 btn waves-effect waves-light" type="submit" name="action">Registrar</button>
-            
+
           </div>
         </div>
       </div>

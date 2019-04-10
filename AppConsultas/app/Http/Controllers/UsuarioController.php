@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuario;
+use App\Models\*;
 
 class UsuarioController extends Controller
 {
@@ -35,7 +36,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-    
+
       // dd($request->get( 'nombreDeUsuario'));
         $Usuario = new Usuario([
             'curp' => $request->get('curp'),
@@ -53,7 +54,34 @@ class UsuarioController extends Controller
        // dd($Usuario);
         $Usuario->save();
         return redirect()->route('reguser.index')->with('success','Usuario Registrado');
-    
+
+    }
+
+    public function store_ficha_id(Request $request)
+    {
+        $ficha = new ficha_id([
+            'nombre' => $request->get('nombre'),
+            'apellido' => $request->get('apellido'),
+            'edad' => $request->get('edad'),
+            'sex' => $request->get('sex'),
+            'nacionalidad' => $request->get('nacionalidad'),
+            'est_civ' => $request->get('est_civ'),
+            'ocupacion' => $request->get('ocupacion'),
+            'calle' => $request->get('calle'),
+            'num' => $request->get('num'),
+            'colonia' => $request->get('colonia'),
+            'tel1' => $request->get('tel1'),
+            'celular' => $request->get('celular'),
+            'religion' => $request->get('religion'),
+            'curp' => $request->get('curp'),
+            'nombre2' => $request->get('nombre2'),
+            'tel2' => $request->get('tel2'),
+            'motivo' => $request->get('motivo')
+        ]);
+       // dd($Usuario);
+        $ficha->save();
+        return redirect()->route('reguser.index')->with('success','Usuario Registrado');
+
     }
 
     /**
