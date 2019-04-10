@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Usuario;
-use App\Models\*;
+use App\Models\ficha_id;
 
 class UsuarioController extends Controller
 {
@@ -59,28 +59,58 @@ class UsuarioController extends Controller
 
     public function store_ficha_id(Request $request)
     {
+
+      $this->validate(request(), [
+        'curp'  => 'required|max:30',
+        'nombre' => 'required|max:70',
+        'apellido_p' => 'required|max:45',
+        'apellido_m' => 'required|max:45',
+        'edad' => 'required|numeric|min:1|max:130',
+        'sex' => 'required|in:M,V',
+        'nacionalidad' => 'required|max:30',
+        'est_civ' => 'required|in:S,C',
+        'ocupacion' => 'required|max:40',
+        'calle' => 'required|max:30',
+        'numero_int' => 'required|numeric',
+        'numero_ext' => 'required|numeric',
+        'colonia' => 'required|max:30',
+        'ciudad' => 'required|max:30',
+        'estado' => 'required|max:20',
+        'tel1' => 'required|max:15|numeric',
+        'celular' => 'required|max:15|numeric',
+        'religion' => 'required||max:20',
+        'nombre2' => 'required||max:15',
+        'tel2' => 'required||max:15|numeric',
+        'motivo' => 'required|max:50'
+      ]);
+
         $ficha = new ficha_id([
-            'nombre' => $request->get('nombre'),
-            'apellido' => $request->get('apellido'),
-            'edad' => $request->get('edad'),
-            'sex' => $request->get('sex'),
-            'nacionalidad' => $request->get('nacionalidad'),
-            'est_civ' => $request->get('est_civ'),
-            'ocupacion' => $request->get('ocupacion'),
-            'calle' => $request->get('calle'),
-            'num' => $request->get('num'),
-            'colonia' => $request->get('colonia'),
-            'tel1' => $request->get('tel1'),
-            'celular' => $request->get('celular'),
-            'religion' => $request->get('religion'),
-            'curp' => $request->get('curp'),
-            'nombre2' => $request->get('nombre2'),
-            'tel2' => $request->get('tel2'),
-            'motivo' => $request->get('motivo')
+          'curp'  => $request->get('curp'),
+          'nombre' => $request->get('nombre'),
+          'apellidoP' => $request->get('apellido_p'),
+          'apellidoM' => $request->get('apellido_m'),
+          'edad' => $request->get('edad'),
+          'sexo'  => $request->get('sex'),
+          'nacionalidad'  => $request->get('nacionalidad'),
+          'estadoCivil'  => $request->get('est_civ'),
+          'ocupacion' => $request->get('ocupacion'),
+          'calle' => $request->get('calle'),
+          'num_int' => $request->get('numero_int'),
+          'num_ext' => $request->get('numero_ext'),
+          'colonia' => $request->get('colonia'),
+          'ciudad' => $request->get('ciudad'),
+          'estado' => $request->get('estado'),
+          'telTrabajo' => $request->get('tel1'),
+          'celular' => $request->get('celular'),
+          'religion' => $request->get('religion'),
+          'familiaAC' => $request->get('nombre2'),
+          'celAC' => $request->get('tel2'),
+          'motivoDeConsulta' => $request->get('motivo')
+
         ]);
        // dd($Usuario);
         $ficha->save();
-        return redirect()->route('reguser.index')->with('success','Usuario Registrado');
+        return redirect()->back()->withSuccess('Registro completado');
 
     }
 

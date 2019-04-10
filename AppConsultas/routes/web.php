@@ -76,4 +76,4 @@ Route::post('login', 'Auth\LoginController@login')->name('login');
 
 Route::resource('reguser', 'UsuarioController');
 
-Route::post('/registrarf','Auth\RegisterController@store_ficha_id')->name('store_ficha_id');
+Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');

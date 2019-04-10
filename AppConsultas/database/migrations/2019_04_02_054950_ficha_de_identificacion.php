@@ -29,13 +29,14 @@ class FichaDeIdentificacion extends Migration
             $table->string('colonia',50)->nullable();
             $table->string('ciudad',30)->nullable();
             $table->string('estado',30)->nullable();
-            $table->integer('telTrabajo')->unsigned();
-            $table->integer('celular')->unsigned();
+            $table->string('telTrabajo',15);
+            $table->string('celular',15);
             $table->string('religion',45);
             $table->string('familiaAC',45);
-            $table->integer('celAC')->unsigned();
+            $table->string('celAC');
             $table->text('motivoDeConsulta');
-
+            $table->string('updated_at', 20);
+            $table->string('created_at', 20);
 
 
 
