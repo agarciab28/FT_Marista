@@ -25,8 +25,12 @@
           <label for="nombre">Nombre</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="apellido" type="text" class="validate">
-          <label for="apellido">Apellido</label>
+          <input id="apellido_p" type="text" class="validate">
+          <label for="apellido_p">Apellido Paterno</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="apellido_m" type="text" class="validate">
+          <label for="apellido_m">Apellido Materno</label>
         </div>
         <div class="input-field col s12 m4">
           <input id="edad" type="number" class="validate">
@@ -61,12 +65,24 @@
           <label for="calle">Calle</label>
         </div>
         <div class="input-field col s12 m4">
-          <input id="numero" type="text" class="validate">
-          <label for="numero">Numero</label>
+          <input id="numero_int" type="text" class="validate">
+          <label for="numero_int">Numero interior</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="numero_ext" type="text" class="validate">
+          <label for="numero_ext">Numero exterior</label>
         </div>
         <div class="input-field col s12 m4">
           <input id="colonia" type="text" class="validate">
           <label for="colonia">Colonia</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="ciudad" type="text" class="validate">
+          <label for="ciudad">Ciudad</label>
+        </div>
+        <div class="input-field col s12 m4">
+          <input id="estado" type="text" class="validate">
+          <label for="estado">Estado</label>
         </div>
         <div class="input-field col s12 m4">
           <input id="tel1" type="tel" class="validate">
@@ -96,6 +112,10 @@
           <input id="motivo" type="text" class="validate">
           <label for="motivo">Motivo de la consulta</label>
         </div>
+        <div class="row">
+
+        </div>
+        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
     </form>
 
@@ -907,6 +927,10 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </form>
 
@@ -1286,6 +1310,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1497,6 +1526,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1663,6 +1697,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1702,6 +1741,10 @@
               <textarea id="ta_pad_actual" class="materialize-textarea"></textarea>
               <label for="ta_pad_actual">Escribe aquí</label>
             </div>
+            <div class="row">
+
+            </div>
+            <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
           </div>
       </form>
 
@@ -1788,6 +1831,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -1999,6 +2047,11 @@
               </tr>
             </tbody>
           </table>
+          <div class="row">
+
+          </div>
+          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        </div>
       </form>
 
       <div class="row">
@@ -2025,6 +2078,10 @@
           <textarea id="ta_inquietud" class="materialize-textarea"></textarea>
           <label for="ta_inquietud">Inquietud subyacente</label>
         </div>
+        <div class="row">
+
+        </div>
+        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
     </form>
 
@@ -2076,6 +2133,10 @@
         <input type="text" id="imc" name="" value="">
         <label for="imc">IMC</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2111,6 +2172,10 @@
         <input type="text" id="est_nutri" name="" value="">
         <label for="est_nutri">Estado general de nutrición</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2170,6 +2235,10 @@
         <input type="text" id="otros" name="" value="">
         <label for="otros">Otros</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2228,6 +2297,10 @@
         <input type="text" id="pie" name="" value="">
         <label for="pie">Pie (Pie equino, plano, cavo)</label>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2274,6 +2347,11 @@
         <label for="ta_paln_fisio">Plan fisioterapéutico</label>
       </div>
 
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+
     </div>
   </form>
 
@@ -2292,6 +2370,11 @@
         <textarea id="ta_dermatomas" class="materialize-textarea"></textarea>
         <label for="ta_dermatomas">Escribe aquí</label>
       </div>
+
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
     </div>
   </form>
@@ -2319,6 +2402,10 @@
           </label>
         </div>
       </div>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2816,6 +2903,10 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
   </form>
 
@@ -2934,6 +3025,10 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -2968,6 +3063,10 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -3045,6 +3144,10 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
@@ -3147,6 +3250,10 @@
           </tr>
         </tbody>
       </table>
+      <div class="row">
+
+      </div>
+      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
