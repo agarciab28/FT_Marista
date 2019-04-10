@@ -186,7 +186,7 @@
         <div class="row">
 
         </div>
-        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        <button type="submit" onclick="habilitarBotones()" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
 
     </form>
