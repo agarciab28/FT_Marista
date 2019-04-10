@@ -33,7 +33,7 @@ class FichaDeIdentificacion extends Migration
             $table->string('celular',15);
             $table->string('religion',45);
             $table->string('familiaAC',45);
-            $table->string('celAC');
+            $table->string('celAC',15);
             $table->text('motivoDeConsulta');
             $table->string('updated_at', 20);
             $table->string('created_at', 20);

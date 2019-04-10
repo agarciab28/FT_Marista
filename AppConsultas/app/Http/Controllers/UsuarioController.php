@@ -14,14 +14,14 @@ class UsuarioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    
+
     {
-        
+
         return view('\admin\registrar');
     }
     public function listusuarios()
     {
-        
+
         $usuario=Usuario::orderBy('apellidoP','asc')->get();
         return view('admin.usuarios',compact('usuario'));
 
@@ -48,7 +48,7 @@ class UsuarioController extends Controller
         //dd($request);
       // dd($request->get( 'nombreDeUsuario'));
 
-      $this->validate($request,[ 'curp'=>'required', 'nombre'=>'required', 'password'=>'required', 'apellidoP'=>'required', 
+      $this->validate($request,[ 'curp'=>'required', 'nombre'=>'required', 'password'=>'required', 'apellidoP'=>'required',
       'apellidoM'=>'required', 'telefono'=>'required' , 'correoElectronico'=>'required', 'nombreDeUsuario'=>'required' ,
        'tipoDeUsuario'=>'required', 'cedulaProfesional'=>'required', 'cedulaMoE'=>'required']);
 
@@ -70,7 +70,7 @@ class UsuarioController extends Controller
         $Usuario->save();
         //return back()->with('status','Usuario registrado exitosamente');
         return view('\admin\registrar')->with('success','Usuario Registrado');
-    
+
     }
 
     public function store_ficha_id(Request $request)
@@ -92,11 +92,11 @@ class UsuarioController extends Controller
         'colonia' => 'required|max:30',
         'ciudad' => 'required|max:30',
         'estado' => 'required|max:20',
-        'tel1' => 'required|max:15|numeric',
-        'celular' => 'required|max:15|numeric',
-        'religion' => 'required||max:20',
-        'nombre2' => 'required||max:15',
-        'tel2' => 'required||max:15|numeric',
+        'tel1' => 'required|max:15',
+        'celular' => 'required|max:15',
+        'religion' => 'required|max:20',
+        'nombre2' => 'required|max:60',
+        'tel2' => 'required',
         'motivo' => 'required|max:50'
       ]);
 
@@ -139,9 +139,9 @@ class UsuarioController extends Controller
     public function show($curp)
     {
         $usuario=Usuario::find($curp);
-        return  view('admin.usuarios',compact('usuario'))->with('success','Usuario RegistradoS');    
+        return  view('admin.usuarios',compact('usuario'))->with('success','Usuario RegistradoS');
     }
-    
+
 
     /**
      * Show the form for editing the specified resource.
@@ -175,7 +175,7 @@ class UsuarioController extends Controller
     public function destroy($curp)
     {   //$usuario = Usuario::where('usuario',$curp)->delete();
         $usuario = Usuario::table('usuarios')->where('curp',$curp)->delete();
-        
+
         //$usuario->delete();
         return back()->with('success','Usuario eliminado exitosamente');
         //return redirect('')->with('success', 'Contact deleted!');
