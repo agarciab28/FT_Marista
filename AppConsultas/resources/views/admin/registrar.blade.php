@@ -72,6 +72,10 @@
               <input id="telefono" type="tel">
               <label for="telefono">Numero de Telefono</label>
             </div>
+            <div class="input-field col s12 m4">
+              <input id="nombreDeUsuario" type="tel">
+              <label for="nombreDeUsuario">Nombre de usuario</label>
+            </div>
             <div class="row">
 
             </div>
