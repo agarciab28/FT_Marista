@@ -8,11 +8,65 @@
 @section('title', 'Registrar Paciente')
 
 @section('content')
+  <div class="fixed-action-btn" onclick="backTop()">
+    <a class="btn-floating btn-large">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
     <div class="row">
       <div class="contenedor col s12 m8 push-m2">
         <h2>Historia Clínica</h4>
       </div>
     </div>
+
+    <div class="section container">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
+          <div class="collapsible-body">
+            <div class="row botones">
+              <button type="submit" class="btn class s4 menu" name="button">Ficha de Identificación</button>
+              <button type="submit" class="btn class s4 menu" name="button" disabled>Antecedentes Heredo Familiares</button>
+              <button type="submit" class="btn class s4 menu" name="button" disabled>Antecedentes Personales no Patológicos</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Antescedentes Personales Patológicos</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Antecedentes Gineco Obstetricos</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Padecimiento Actual</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Sintomas Generales</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Aparatos y Sistemas</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Diagnósticos Anteriores</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración Física</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración General</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración por Región</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Sistema Musculo Esqueletico</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Diagnóstico Fisioterapéutico</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Dermatomas</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Mapa de Dolor</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Arcos de Movimiento</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Par/Nervio</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Escala de Ashworth</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Reflejos Osteotendinosos</button>
+              <button type="button" class="btn class s4 menu" name="button" disabled>Tipos de Marcha</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    {{-- <div class="section container">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
+          <div class="collapsible-body">
+            <ul>
+              <li id="home" style="background-color:blue;"><a class="black-text" href="/medico"><i class="fas fa-home black-text" style="margin-right:0;"></i>Ficha de Identificacion</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div> --}}
+
+
 
     <div class="section container">
 
@@ -190,7 +244,7 @@
         </div> --}}
         <form class="" id="antescedentes_hf" action="index.html" method="post">
         <div class="row">
-          <h5 style="font-weight:bold;">Antescedentes Familiares</h5>
+          <h5 style="font-weight:bold;">Antecedentes Familiares</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -965,7 +1019,7 @@
       {{-- Antescedentes Personales no patologicos --}}
       <form class="" id="antescedentes_pnp" action="" method="">
         <div class="row">
-          <h5 style="font-weight:bold;">Antescedentes Personales no Patologicos</h5>
+          <h5 style="font-weight:bold;">Antecedentes Personales no Patologicos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -1352,7 +1406,7 @@
       {{-- Antescedentes Personales patologicos --}}
       <form class="" id="antescedentes_pp" action="" method="">
         <div class="row">
-          <h5 style="font-weight:bold;">Antescedentes Personales Patologicos</h5>
+          <h5 style="font-weight:bold;">Antecedentes Personales Patologicos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -1568,7 +1622,7 @@
       {{-- Antescedentes Gineco-obstétricos --}}
       <form class="" id="antescedentes_go" action="" method="">
         <div class="row">
-          <h5 style="font-weight:bold;">Antescedentes Gineco-obstétricos</h5>
+          <h5 style="font-weight:bold;">Antecedentes Gineco-obstétricos</h5>
           <table class="responsive-table striped">
             <thead>
               <tr>
@@ -3287,4 +3341,8 @@
 
 
   </div>
+@endsection
+
+@section('scripts')
+    <script src="{{{ asset('js/registro.js') }}}"></script>
 @endsection

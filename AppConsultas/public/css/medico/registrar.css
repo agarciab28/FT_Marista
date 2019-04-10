@@ -15,3 +15,15 @@ thead{
   background-color: #003865;
   color: white;
 }
+
+.menu{
+  margin-top: 1em;
+}
+
+.btn-floating{
+  background-color: #FFB500;
+}
+
+.btn-floating:hover{
+  background-color: #FFB500;
+}
