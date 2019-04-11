@@ -90,7 +90,7 @@ class UsuarioController extends Controller
         'apellido_p' => 'required|max:45',
         'apellido_m' => 'required|max:45',
         'edad' => 'required|numeric|min:1|max:130',
-        'sex' => 'required|in:M,V',
+        'sex' => 'required|in:M,F',
         'nacionalidad' => 'required|max:30',
         'est_civ' => 'required|in:S,C',
         'ocupacion' => 'required|max:40',
