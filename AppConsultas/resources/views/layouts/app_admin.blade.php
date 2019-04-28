@@ -37,7 +37,23 @@
         </div>
       </li>
     	<li id="home"><a class="white-text" href="/admin"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
-    	<li id="registrar"><a class="white-text" href="/admin/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Usuario</a></li>
+    <!--	<li id="registrar"><a class="white-text" href="/admin/registrar"><i class="fas fa-user-plus white-text" style="margin-right:0;"></i>Registrar Usuario</a></li>-->
+
+
+          <ul id="registrar" class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header white-text" accordion="false" style="margin-left:2em;"> Usuarios <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+              <div class="collapsible-body">
+                <ul class="dropdown_menu">
+                  <li><a href="{{ route('admin_registrar') }}" class="white-text">Registrar Usuario</a></li>
+                  <li><a href="" class="white-text">Alumnos</a></li>
+                  <li><a href="" class="white-text">Profesores</a></li>
+                  <li><a href="" class="white-text">Coordinadores</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
       <li id="usuarios"><a class="white-text" href="{{ route('listu') }}"><i class="fas fa-user white-text" style="margin-right:0;"></i>Usuarios</a></li>
       <li id="buscar"><a class="white-text" href="/admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
       <li id="estadisticas"><a class="white-text" href="/admin/estadisticas"><i class="fas fa-chart-pie white-text" style="margin-right:0px;"></i>Estadisticas</a></li>

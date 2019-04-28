@@ -21,7 +21,7 @@ Route::get('/admin', function(){
   return view('admin.home');
 });
 
-Route::get('/admin/registrar', function(){return view('admin.registrar');});
+Route::get('/admin/registrar', function(){return view('admin.registrar');})->name('admin_registrar');
 
 Route::get('/admin/usuarios', function(){
   return view('admin.usuarios');
