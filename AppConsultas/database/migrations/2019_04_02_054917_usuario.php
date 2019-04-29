@@ -14,7 +14,8 @@ class Usuario extends Migration
     public function up()
     {
         Schema::create('usuario', function (Blueprint $table) {
-            $table->string('curp',30)->primary();
+            $table->increments('id',30);
+            $table->string('curp',30);
             $table->string('nombre',70)->nullable();
             $table->text('password');
             $table->string('apellidoP',45)->nullable();

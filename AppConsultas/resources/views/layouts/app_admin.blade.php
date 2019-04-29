@@ -46,15 +46,12 @@
               <div class="collapsible-body">
                 <ul class="dropdown_menu">
                   <li><a href="{{ route('admin_registrar') }}" class="white-text">Registrar Usuario</a></li>
-                  <li><a href="" class="white-text">Alumnos</a></li>
-                  <li><a href="" class="white-text">Profesores</a></li>
-                  <li><a href="" class="white-text">Coordinadores</a></li>
+                  <li><a href="{{ route('listu') }}" class="white-text">Lista de usuarios</a></li>
                 </ul>
               </div>
             </li>
           </ul>
 
-      <li id="usuarios"><a class="white-text" href="{{ route('listu') }}"><i class="fas fa-user white-text" style="margin-right:0;"></i>Usuarios</a></li>
       <li id="buscar"><a class="white-text" href="/admin/buscar"><i class="fas fa-search white-text" style="margin-right:0px;"></i>Buscar Paciente</a></li>
       <li id="estadisticas"><a class="white-text" href="/admin/estadisticas"><i class="fas fa-chart-pie white-text" style="margin-right:0px;"></i>Estadisticas</a></li>
       <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="/">Cerrar Sesion</a></li>

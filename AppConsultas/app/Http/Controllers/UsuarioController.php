@@ -27,6 +27,25 @@ class UsuarioController extends Controller
 
     }
 
+    public function listusuarios_mod($curp)
+    {
+
+        $usuario=Usuario::orderBy('apellidoP','asc')
+        ->where('curp',$curp)
+        ->get();
+        return view('admin.modificar_usuario',compact('usuario'));
+
+    }
+
+    public function modificar_mod(Request $request){
+//dd(($request->except(['_token'])));
+    //  $upd = Usuario::find($request->get('curp_mod'));
+  $usuario = Usuario::find(1)->update($request->all());
+    //  $upd->save($upd);
+
+      return redirect()->route('listu');
+    }
+
     public function listpacientes()
     {
 

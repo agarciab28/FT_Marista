@@ -12,7 +12,7 @@
 
   @if(session()->get('success'))
     <div class="alert alert-success">
-      {{ session()->get('success') }}  
+      {{ session()->get('success') }}
     </div>
   @endif
 </div>
@@ -39,7 +39,7 @@
         <tr>
         <th>Apellido</th>
           <th>Nombre</th>
-          <th>Tipo de Usuario</th>          
+          <th>Tipo de Usuario</th>
           <th>CURP</th>
           <th>Acciones</th>
         </tr>
@@ -49,20 +49,20 @@
         @if($usuario->count())
           @foreach($usuario as $usuario)
             <tr>
-              
-              <td>{{$usuario->apellidoP}}</td>
+
+              <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
               <td>{{$usuario->nombre}}</td>
               <td>{{$usuario->tipoDeUsuario}}</td>
               <td>{{$usuario->curp}}</td>
-              <td> 
-                <a href="" class="waves-effect waves-light btn">Modificar</a> 
-                <a href="{{ route('reguser.destroy', $usuario->curp) }}" class="waves-effect waves-light btn">Eliminar</a> 
+              <td>
+                <a href="{{ route('modificar_usuario',[$usuario->curp]) }}" class="waves-effect waves-light btn">Modificar</a>
+                <a href="{{ route('reguser.destroy', $usuario->curp) }}" class="waves-effect waves-light btn">Eliminar</a>
               </td>
             </tr>
 
 
 
-          @endforeach 
+          @endforeach
           @else
             <tr>
               <td colspan="8">No hay registro !!</td>
@@ -71,5 +71,4 @@
       </tbody>
     </table>
   </div>
-   
 @endsection

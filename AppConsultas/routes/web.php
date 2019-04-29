@@ -39,6 +39,9 @@ Route::get('/admin/estadisticas', function(){
   return view('admin.estadisticas');
 });
 
+Route::get('/admin/modificar_usuario', function(){
+  return view('admin.modificar_usuario');
+});
 
 // Rutas Medico
 Route::get('/medico', function(){
@@ -75,5 +78,8 @@ Route::resource('reguser', 'UsuarioController');
 
 Route::get('listu', 'UsuarioController@listusuarios')->name('listu');
 
-
 Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');
+
+Route::get('modificar_usuario/{curp}', 'UsuarioController@listusuarios_mod')->name('modificar_usuario');
+
+Route::post('modifica_usuario_metodo', 'UsuarioController@modificar_mod')->name('modifica_usuario_metodo');
