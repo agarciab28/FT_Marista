@@ -274,7 +274,7 @@
             </div>
           </div>
         </div> --}}
-        <form class="" id="antescedentes_hf" action="index.html" method="post">
+        <form class="" id="antecedentes_hf" action="index.html" method="post">
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Familiares</h5>
           <table class="responsive-table striped">
@@ -1048,8 +1048,8 @@
 
 
 
-      {{-- Antescedentes Personales no patologicos --}}
-      <form class="" id="antescedentes_pnp" action="" method="">
+      {{-- Antecedentes Personales no patologicos --}}
+      <form class="" id="antecedentes_pnp" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales no Patologicos</h5>
           <table class="responsive-table striped">
@@ -1278,7 +1278,7 @@
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="antescedentes_hf" type="radio"/>
+                    <input class="with-gap" name="antecedentes_hf" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1435,8 +1435,8 @@
 
       </div>
 
-      {{-- Antescedentes Personales patologicos --}}
-      <form class="" id="antescedentes_pp" action="" method="">
+      {{-- Antecedentes Personales patologicos --}}
+      <form class="" id="antecedentes_pp" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales Patologicos</h5>
           <table class="responsive-table striped">
@@ -1651,8 +1651,8 @@
 
       </div>
 
-      {{-- Antescedentes Gineco-obstétricos --}}
-      <form class="" id="antescedentes_go" action="" method="">
+      {{-- Antecedentes Gineco-obstétricos --}}
+      <form class="" id="antecedentes_go" action="" method="">
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Gineco-obstétricos</h5>
           <table class="responsive-table striped">
@@ -3151,7 +3151,7 @@
   </div>
 
   {{-- Escala de ashwoth --}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <form class="" id="escala_ashworth" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Escala de ashworth</h5>
       <p class="range-field">
@@ -3189,7 +3189,7 @@
   </div>
 
   {{-- Reflejos Osteotendinosos --}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <form class="" id="reflejos_osteo" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
       <table class="responsive-table striped">
@@ -3270,7 +3270,7 @@
   </div>
 
   {{-- Tipo de marcha --}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <form class="" id="tipo_marcha" action="" method="">
     <div class="row">
       <h5 style="font-weight:bold;">Tipo de marcha</h5>
       <table class="responsive-table striped">
@@ -3376,5 +3376,4 @@
 @endsection
 
 @section('scripts')
-
 @endsection

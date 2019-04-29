@@ -42,27 +42,27 @@
               <a class="collapsible-header white-text" accordion="false" style="margin-left:2em;"> Registrar Paciente <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
               <div class="collapsible-body">
                 <ul class="dropdown_menu">
-                  <li><a href="/medico/registrar" class="white-text menu_registro" id="menu_ficha_id">Ficha de Identificación</a></li>
-                  <li><a href="" class="white-text menu_registro">Antecedentes Heredo Familiares</a></li>
-                  <li><a href="" class="white-text menu_registro">Antecedentes Personales N.P.</a></li>
-                  <li><a href="" class="white-text menu_registro">Antescedentes Personales P.</a></li>
-                  <li><a href="" class="white-text menu_registro">Antecedentes Gineco Obstetricos</a></li>
-                  <li><a href="" class="white-text menu_registro">Padecimiento Actual</a></li>
-                  <li><a href="" class="white-text menu_registro">Sintomas Generales</a></li>
-                  <li><a href="" class="white-text menu_registro">Aparatos y Sistemas</a></li>
-                  <li><a href="" class="white-text menu_registro">Diagnósticos Anteriores</a></li>
-                  <li><a href="" class="white-text menu_registro">Exploración Física</a></li>
-                  <li><a href="" class="white-text menu_registro">Exploración General</a></li>
-                  <li><a href="" class="white-text menu_registro">Exploración por Región</a></li>
-                  <li><a href="" class="white-text menu_registro">Sistema Musculo Esqueletico</a></li>
-                  <li><a href="" class="white-text menu_registro">Diagnóstico Fisioterapéutico</a></li>
-                  <li><a href="" class="white-text menu_registro">Dermatomas</a></li>
-                  <li><a href="" class="white-text menu_registro">Mapa de Dolor</a></li>
-                  <li><a href="" class="white-text menu_registro">Arcos de Movimiento</a></li>
-                  <li><a href="" class="white-text menu_registro">Par/Nervio</a></li>
-                  <li><a href="" class="white-text menu_registro">Escala de Ashworth</a></li>
-                  <li><a href="" class="white-text menu_registro">Reflejos Osteotendinosos</a></li>
-                  <li><a href="" class="white-text menu_registro">Tipos de Marcha</a></li>
+                  <li><a href="/medico/registrar" class="white-text menu_registro" id="menu_ficha_id" onclick="fichaIdentificacion()">Ficha de Identificación</a></li>
+                  <li><a class="white-text menu_registro" onclick="antecedentesHF()">Antecedentes Heredo Familiares</a></li>
+                  <li><a class="white-text menu_registro" onclick="antecedentesPNP()">Antecedentes Personales N.P.</a></li>
+                  <li><a class="white-text menu_registro" onclick="antecedentesPP()">Antescedentes Personales P.</a></li>
+                  <li><a class="white-text menu_registro" onclick="antecedentesGO()">Antecedentes Gineco Obstetricos</a></li>
+                  <li><a class="white-text menu_registro" onclick="padecimientoActual()">Padecimiento Actual</a></li>
+                  <li><a class="white-text menu_registro" onclick="sintomasGenerales()">Sintomas Generales</a></li>
+                  <li><a class="white-text menu_registro" onclick="aparatosSistemas()">Aparatos y Sistemas</a></li>
+                  <li><a class="white-text menu_registro" onclick="diagnosticosAnteriores()">Diagnósticos Anteriores</a></li>
+                  <li><a class="white-text menu_registro" onclick="exploracionFisica()">Exploración Física</a></li>
+                  <li><a class="white-text menu_registro" onclick="exploracionGeneral()">Exploración General</a></li>
+                  <li><a class="white-text menu_registro" onclick="exploracionRegion()">Exploración por Región</a></li>
+                  <li><a class="white-text menu_registro" onclick="sistemaMusculoEs()">Sistema Musculo Esqueletico</a></li>
+                  <li><a class="white-text menu_registro" onclick="diagnosticoFisio()">Diagnóstico Fisioterapéutico</a></li>
+                  <li><a class="white-text menu_registro" onclick="dermatomas()">Dermatomas</a></li>
+                  <li><a class="white-text menu_registro" onclick="mapaDolor()">Mapa de Dolor</a></li>
+                  <li><a class="white-text menu_registro" onclick="arcosMovimiento()">Arcos de Movimiento</a></li>
+                  <li><a class="white-text menu_registro" onclick="parNervio()">Par/Nervio</a></li>
+                  <li><a class="white-text menu_registro" onclick="escalaAshworth()">Escala de Ashworth</a></li>
+                  <li><a class="white-text menu_registro" onclick="reflejosOsteo()">Reflejos Osteotendinosos</a></li>
+                  <li><a class="white-text menu_registro" onclick="tiposMarcha()">Tipos de Marcha</a></li>
                 </ul>
               </div>
             </li>
