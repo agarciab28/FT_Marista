@@ -80,6 +80,6 @@ Route::get('listu', 'UsuarioController@listusuarios')->name('listu');
 
 Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');
 
-Route::get('modificar_usuario/{curp}', 'UsuarioController@listusuarios_mod')->name('modificar_usuario');
+Route::get('modificar_usuario/{id}', 'UsuarioController@listusuarios_mod')->name('modificar_usuario');
 
-Route::post('modifica_usuario_metodo', 'UsuarioController@modificar_mod')->name('modifica_usuario_metodo');
+Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->name('modifica_usuario_metodo');

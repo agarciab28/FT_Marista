@@ -19,16 +19,7 @@
   <div class="section container">
     <div class="row">
       <div class="input-field col s12 m6 push-m3">
-        <select>
-          <option value="all" selected>Todos</option>
-          <option value="coordinador">Coordinador</option>
-          <option value="coordinador">Rectoría</option>
-          <option value="coordinador">Medicos</option>
-          <option value="coordinador">Pasantes</option>
-          <option value="coordinador">Fisioterapeutas</option>
-          <option value="coordinador">Practicantes</option>
-        </select>
-        <label>Tipo de Usuario</label>
+        <h5>Usuarios registrados</h5>
       </div>
     </div>
   </div>
@@ -55,8 +46,8 @@
               <td>{{$usuario->tipoDeUsuario}}</td>
               <td>{{$usuario->curp}}</td>
               <td>
-                <a href="{{ route('modificar_usuario',[$usuario->curp]) }}" class="waves-effect waves-light btn">Modificar</a>
-                <a href="{{ route('reguser.destroy', $usuario->curp) }}" class="waves-effect waves-light btn">Eliminar</a>
+                <a href="{{ route('modificar_usuario',[$usuario->id]) }}" class="waves-effect waves-light btn">Modificar</a>
+                <a href="{{ route('reguser.destroy', $usuario->id) }}" class="waves-effect waves-light btn">Eliminar</a>
               </td>
             </tr>
 

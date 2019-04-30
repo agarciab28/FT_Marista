@@ -19,7 +19,9 @@
 
 
   <div class="section container">
-    <form class="col  s12 m12" id="form_mod_carrera" action="{{route('modifica_usuario_metodo')}}" method="post">
+    @if($usuario->count())
+      @foreach($usuario as $usuario)
+    <form class="col  s12 m12" id="form_mod_carrera" action="{{route('modifica_usuario_metodo',[$usuario->id])}}" method="post">
       {{ csrf_field() }}
       <div class="row">
         <div class="col m4 push-m4 s12">
@@ -27,8 +29,7 @@
         </div>
       </div>
       <div class="row">
-        @if($usuario->count())
-          @foreach($usuario as $usuario)
+
 
 
 
