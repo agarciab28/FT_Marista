@@ -210,57 +210,6 @@
 
     </form>
 
-      {{-- Antescedentes heredo familiares --}}
-      {{-- <form class="" id="antescedentes_hf" action="index.html" method="post">
-        <div class="row">
-          <h6 style="font-weight:bold;">Antescedentes Familiares</h6>
-          <div class="col s12 m6">
-            <div class="card">
-              <span class="card-title">Enfermedades Reumatologicas</span>
-              <div class="card-content">
-                <div class="contenedor">
-                  <label>
-                    <input class="with-gap" name="enf_reu" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-
-                  <label>
-                    <input class="with-gap" name="enf_reu" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </div>
-                <div class="contendedor">
-                  <label>
-                    <input type="checkbox" style="vertical-align: middle; margin: 0px;" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" style="vertical-align: middle; margin: 0px;" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" style="vertical-align: middle; margin: 0px;" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" style="vertical-align: middle; margin: 0px;" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" style="vertical-align: middle; margin: 0px;" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </div>
-                <div class="contenedor">
-                  <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">¿Cual Padecimiento?</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> --}}
         <form class="" id="antecedentes_hf" action="index.html" method="post">
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Familiares</h5>
@@ -1025,16 +974,6 @@
         </div>
       </form>
 
-
-
-
-
-
-
-
-
-
-
       {{-- Antecedentes Personales no patologicos --}}
       <form class="" id="antecedentes_pnp" action="" method="">
         <div class="row">
@@ -1418,10 +1357,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
-
       {{-- Antecedentes Personales patologicos --}}
       <form class="" id="antecedentes_pp" action="" method="">
         <div class="row">
@@ -1634,10 +1569,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
-
       {{-- Antecedentes Gineco-obstétricos --}}
       <form class="" id="antecedentes_go" action="" method="">
         <div class="row">
@@ -1805,10 +1736,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
-
       {{-- Padecimiento actual --}}
       <form class=""  id="padecimiento_actual" action="" method="">
         <div class="row" >
@@ -1850,9 +1777,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
 
       {{-- Sintomas Generales --}}
       <form class="" id="sintomas_generales" action="" method="">
@@ -1940,9 +1864,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
 
       {{-- Aparatos y sistemas --}}
       <form class="" id="apa_sis" action="" method="">
@@ -2156,10 +2077,6 @@
         </div>
       </form>
 
-      <div class="row">
-
-      </div>
-
       {{-- Diagnosticos anteriores --}}
     <form class="" id="diag_ant" action="" method="">
       <div class="row">
@@ -2186,10 +2103,6 @@
         <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
     </form>
-
-    <div class="row">
-
-    </div>
 
     {{-- Exploracion fisica --}}
   <form class="" id="explor_fisica" action="" method="">
@@ -2242,10 +2155,6 @@
     </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
     {{-- Exploracion general--}}
   <form class="" id="explor_general" action="" method="">
     <div class="row">
@@ -2280,10 +2189,6 @@
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
-
-  <div class="row">
-
-  </div>
 
   {{-- Exploracion por region--}}
   <form class="" id="explor_region" action="" method="">
@@ -2344,10 +2249,6 @@
     </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
   {{-- Sistemas Musculoesqueletico por regiones--}}
   <form class="" id="sis_muscu" action="" method="">
     <div class="row">
@@ -2406,10 +2307,6 @@
     </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
   {{-- Diagnostico Fisioterapeutico--}}
   <form class="" id="diagnostico_fisio" action="" method="">
     <div class="row">
@@ -2457,10 +2354,6 @@
     </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
   {{-- Dermatomas, miotomas y pares craneales--}}
   <form class="" id="dermatomas_etc" action="" method="">
     <div class="row">
@@ -2480,10 +2373,6 @@
 
     </div>
   </form>
-
-  <div class="row">
-
-  </div>
 
   {{-- Mapa de Dolor--}}
   <form class="" id="mapa_dolor" action="" method="">
@@ -3012,10 +2901,6 @@
       </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
   {{-- Par Nervio--}}
   <form class="" id="par_nervio" action="" method="">
     <div class="row">
@@ -3134,10 +3019,6 @@
     </div>
   </form>
 
-  <div class="row">
-
-  </div>
-
   {{-- Escala de ashwoth --}}
   <form class="" id="escala_ashworth" action="" method="">
     <div class="row">
@@ -3171,10 +3052,6 @@
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
-
-  <div class="row">
-
-  </div>
 
   {{-- Reflejos Osteotendinosos --}}
   <form class="" id="reflejos_osteo" action="" method="">
@@ -3252,10 +3129,6 @@
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
-
-  <div class="row">
-
-  </div>
 
   {{-- Tipo de marcha --}}
   <form class="" id="tipo_marcha" action="" method="">
