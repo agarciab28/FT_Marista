@@ -14,6 +14,7 @@ class FichaDeIdentificacion extends Migration
     public function up()
     {
         Schema::create('ficha_de_identificacion', function (Blueprint $table) {
+            Schema::disableForeignKeyConstraints();
             $table->string('curp',30)->primary();
             $table->string('nombre',70);
             $table->string('apellidoP',45);
@@ -39,7 +40,7 @@ class FichaDeIdentificacion extends Migration
             $table->string('created_at', 20);
 
 
-
+            Schema::enableForeignKeyConstraints();
 
 
         });
@@ -52,6 +53,7 @@ class FichaDeIdentificacion extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('ficha_de_identificacion');
     }
 }

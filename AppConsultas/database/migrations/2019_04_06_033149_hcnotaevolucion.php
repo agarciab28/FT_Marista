@@ -29,6 +29,7 @@ class Hcnotaevolucion extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('id_hcnotaevolucion');
     }
 }

@@ -29,6 +29,7 @@ class Usuario extends Migration
             $table->string('updated_at', 20);
             $table->string('created_at', 20);
         });
+      DB::statement('ALTER TABLE usuario ADD CONSTRAINT chk_medico CHECK (id <= 4);');
     }
 
     /**
@@ -38,6 +39,7 @@ class Usuario extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('usuario');
     }
 }
