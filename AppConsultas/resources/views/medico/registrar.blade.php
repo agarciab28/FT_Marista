@@ -14,58 +14,45 @@
     </a>
   </div>
 
+
     <div class="row">
       <div class="contenedor col s12 m8 push-m2">
         <h2>Historia Clínica</h4>
       </div>
     </div>
 
-    {{-- <div class="section container">
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
-          <div class="collapsible-body">
-            <div class="row botones">
-              <button type="submit" class="btn class s4 menu" name="button">Ficha de Identificación</button>
-              <button type="submit" class="btn class s4 menu" name="button" disabled>Antecedentes Heredo Familiares</button>
-              <button type="submit" class="btn class s4 menu" name="button" disabled>Antecedentes Personales no Patológicos</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Antescedentes Personales Patológicos</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Antecedentes Gineco Obstetricos</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Padecimiento Actual</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Sintomas Generales</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Aparatos y Sistemas</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Diagnósticos Anteriores</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración Física</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración General</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Exploración por Región</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Sistema Musculo Esqueletico</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Diagnóstico Fisioterapéutico</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Dermatomas</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Mapa de Dolor</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Arcos de Movimiento</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Par/Nervio</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Escala de Ashworth</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Reflejos Osteotendinosos</button>
-              <button type="button" class="btn class s4 menu" name="button" disabled>Tipos de Marcha</button>
-            </div>
+    <div class="row">
+      <ul class="collapsible col s12 m10 push-m1">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
+        <div class="collapsible-body">
+          <div class="row botones">
+            <button type="submit" class="btn class s4 menu" name="button" onclick="fichaIdentificacion()">Ficha de Identificación</button>
+            <button type="submit" class="btn class s4 menu" name="button" onclick="antecedentesHF()" disabled>Antecedentes Heredo Familiares</button>
+            <button type="submit" class="btn class s4 menu" name="button" onclick="antecedentesPNP()" disabled>Antecedentes Personales no Patológicos</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="antecedentesPP()" disabled>Antescedentes Personales Patológicos</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="antecedentesGO()" disabled>Antecedentes Gineco Obstetricos</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="padecimientoActual()" disabled>Padecimiento Actual</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="sintomasGenerales()" disabled>Sintomas Generales</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="aparatosSistemas()" disabled>Aparatos y Sistemas</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="diagnosticosAnteriores()" disabled>Diagnósticos Anteriores</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="exploracionFisica()" disabled>Exploración Física</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="exploracionGeneral()" disabled>Exploración General</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="exploracionRegion()" disabled>Exploración por Región</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="sistemaMusculoEs()" disabled>Sistema Musculo Esqueletico</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="diagnosticoFisio()" disabled>Diagnóstico Fisioterapéutico</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="dermatomas()" disabled>Dermatomas</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="mapaDolor()" disabled>Mapa de Dolor</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="arcosMovimiento()" disabled>Arcos de Movimiento</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="parNervio()" disabled>Par/Nervio</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="escalaAshworth()" disabled>Escala de Ashworth</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="reflejosOsteo()" disabled>Reflejos Osteotendinosos</button>
+            <button type="button" class="btn class s4 menu" name="button" onclick="tiposMarcha()" disabled>Tipos de Marcha</button>
           </div>
-        </li>
-      </ul>
-    </div> --}}
-
-    {{-- <div class="section container">
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
-          <div class="collapsible-body">
-            <ul>
-              <li id="home" style="background-color:blue;"><a class="black-text" href="/medico"><i class="fas fa-home black-text" style="margin-right:0;"></i>Ficha de Identificacion</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div> --}}
-
+        </div>
+      </li>
+    </ul>
+    </div>
 
 
     <div class="section container">
@@ -3376,4 +3363,5 @@
 @endsection
 
 @section('scripts')
+  <script src="{{{ asset('js/registro.js') }}}"></script>
 @endsection

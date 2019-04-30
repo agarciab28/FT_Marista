@@ -37,36 +37,7 @@
         </div>
       </li>
     	<li id="home"><a class="white-text" href="/medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
-      <ul id="registrar" class="collapsible collapsible-accordion">
-            <li id="menu_registro_collapse" class="active">
-              <a class="collapsible-header white-text" accordion="false" style="margin-left:2em;"> Registrar Paciente <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
-              <div class="collapsible-body">
-                <ul class="dropdown_menu">
-                  <li><a href="/medico/registrar" class="white-text menu_registro" id="menu_ficha_id" onclick="fichaIdentificacion()">Ficha de Identificación</a></li>
-                  <li><a class="white-text menu_registro" onclick="antecedentesHF()">Antecedentes Heredo Familiares</a></li>
-                  <li><a class="white-text menu_registro" onclick="antecedentesPNP()">Antecedentes Personales N.P.</a></li>
-                  <li><a class="white-text menu_registro" onclick="antecedentesPP()">Antescedentes Personales P.</a></li>
-                  <li><a class="white-text menu_registro" onclick="antecedentesGO()">Antecedentes Gineco Obstetricos</a></li>
-                  <li><a class="white-text menu_registro" onclick="padecimientoActual()">Padecimiento Actual</a></li>
-                  <li><a class="white-text menu_registro" onclick="sintomasGenerales()">Sintomas Generales</a></li>
-                  <li><a class="white-text menu_registro" onclick="aparatosSistemas()">Aparatos y Sistemas</a></li>
-                  <li><a class="white-text menu_registro" onclick="diagnosticosAnteriores()">Diagnósticos Anteriores</a></li>
-                  <li><a class="white-text menu_registro" onclick="exploracionFisica()">Exploración Física</a></li>
-                  <li><a class="white-text menu_registro" onclick="exploracionGeneral()">Exploración General</a></li>
-                  <li><a class="white-text menu_registro" onclick="exploracionRegion()">Exploración por Región</a></li>
-                  <li><a class="white-text menu_registro" onclick="sistemaMusculoEs()">Sistema Musculo Esqueletico</a></li>
-                  <li><a class="white-text menu_registro" onclick="diagnosticoFisio()">Diagnóstico Fisioterapéutico</a></li>
-                  <li><a class="white-text menu_registro" onclick="dermatomas()">Dermatomas</a></li>
-                  <li><a class="white-text menu_registro" onclick="mapaDolor()">Mapa de Dolor</a></li>
-                  <li><a class="white-text menu_registro" onclick="arcosMovimiento()">Arcos de Movimiento</a></li>
-                  <li><a class="white-text menu_registro" onclick="parNervio()">Par/Nervio</a></li>
-                  <li><a class="white-text menu_registro" onclick="escalaAshworth()">Escala de Ashworth</a></li>
-                  <li><a class="white-text menu_registro" onclick="reflejosOsteo()">Reflejos Osteotendinosos</a></li>
-                  <li><a class="white-text menu_registro" onclick="tiposMarcha()">Tipos de Marcha</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+      <li id="registrar"><a class="white-text" href="/medico/registrar"><i class="fas fa-user white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
     	<li id="buscar"><a class="white-text" href="/medico/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
       <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
     </ul>
@@ -78,6 +49,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="{{{ asset('js/init.js') }}}"></script>
-  <script src="{{{ asset('js/registro.js') }}}"></script>
   @yield('scripts')
 </html>
