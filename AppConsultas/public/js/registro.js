@@ -4,13 +4,12 @@ function backTop() {
 }
 
 $( document ).ready(function() {
-  $(".menu_registro").hide();
-  $("#menu_ficha_id").show();
+  // sintomasGenerales();
   fichaIdentificacion();
 });
 
 function habilitarBotones(){
-  $(".menu_registro").show();
+  $(".menu").removeAttr("disabled");
 }
 
 function fichaIdentificacion(){
@@ -158,6 +157,7 @@ function padecimientoActual(){
 }
 
 function sintomasGenerales(){
+  // alert('prueba');
   $("#ficha_id").hide();
   $("#antecedentes_hf").hide();
   $("#antecedentes_pnp").hide();
