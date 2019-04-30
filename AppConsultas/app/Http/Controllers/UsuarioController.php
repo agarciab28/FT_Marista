@@ -19,6 +19,8 @@ class UsuarioController extends Controller
 
         return view('\admin\registrar');
     }
+
+    //listado general de usuarios
     public function listusuarios()
     {
 
@@ -27,25 +29,38 @@ class UsuarioController extends Controller
 
     }
 
-    public function listusuarios_mod($curp)
+//datos del usuario que se requiera actualizar
+    public function listusuarios_mod($id)
     {
-
         $usuario=Usuario::orderBy('apellidoP','asc')
-        ->where('curp',$curp)
+        ->where('id',$id)
         ->get();
         return view('admin.modificar_usuario',compact('usuario'));
 
     }
 
-    public function modificar_mod(Request $request){
-//dd(($request->except(['_token'])));
-    //  $upd = Usuario::find($request->get('curp_mod'));
-  $usuario = Usuario::find(1)->update($request->all());
-    //  $upd->save($upd);
-
-      return redirect()->route('listu');
+//metodo para actualizar registros
+    public function modificar_mod(Request $request, $id){
+  $usuario = Usuario::find($id);
+  $usuario_n = [
+    'nombre' => $request->get('nombre'),
+    'apellidoP' => $request->get('apellidoP'),
+    'apellidoM' => $request->get('apellidoM'),
+    'correoElectronico' => $request->get('correoElectronico'),
+    'nombreDeUsuario' => $request->get('nombreDeUsuario'),
+    'password' => bcrypt($request->get('password')),
+    'cedulaProfesional' => $request->get('cedulaProfesional'),
+    'cedulaMoE' => $request->get('cedulaMoE'),
+    'telefono' => $request->get('telefono'),
+    'curp' => $request->get('curp')
+    ];
+  //dd($usuario_n);
+  //dd($request->except('_token'));
+  $usuario->update($usuario_n);
+    return redirect()->route('listu');
     }
 
+//listado de pacientes
     public function listpacientes()
     {
 
@@ -70,6 +85,8 @@ class UsuarioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+     //registro de usuarios
     public function store(Request $request)
     {
         //dd($request);
@@ -100,6 +117,7 @@ class UsuarioController extends Controller
 
     }
 
+//registro de pacientes, ficha de identidad
     public function store_ficha_id(Request $request)
     {
 
