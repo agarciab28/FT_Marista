@@ -1810,13 +1810,13 @@
       </div>
 
       {{-- Padecimiento actual --}}
-      <form class="" id="padecimiento_actual" action="" method="">
-        <div class="row">
+      <form class=""  id="padecimiento_actual" action="" method="">
+        <div class="row" >
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
             <h6 style="font-weight:bold; margin-bottom:30px;">Inicio</h6>
             <p class="range-field">
-              <input type="range" id="eva_inicio" min="0" max="10" />
+              <input type="range" id="eva_inicio" min="0" max="10">
             </p>
             <div class="input-field col s12">
               <textarea id="ta_pad_inicio" class="materialize-textarea"></textarea>
@@ -1836,7 +1836,7 @@
           <div class="actual">
             <h6 style="font-weight:bold; margin-bottom:30px;">Actual</h6>
             <p class="range-field">
-              <input type="range" id="eva_actual" min="0" max="10" />
+              <input type="range" id="eva_actual" min="0" max="10">
             </p>
             <div class="input-field col s12">
               <textarea id="ta_pad_actual" class="materialize-textarea"></textarea>
@@ -1847,6 +1847,7 @@
             </div>
             <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
           </div>
+        </div>
       </form>
 
       <div class="row">
@@ -3359,7 +3360,7 @@
   </form>
 
 
-  </div>
+
 @endsection
 
 @section('scripts')

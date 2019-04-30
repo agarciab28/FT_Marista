@@ -5,7 +5,7 @@ $( document ).ready(function() {
 });
 
 function fichaIdentificacion(){
-  alert('Hola Mundo');
+
   $("#antecedentes_hf").hide();
 }
 
