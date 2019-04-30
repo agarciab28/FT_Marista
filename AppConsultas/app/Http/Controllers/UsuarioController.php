@@ -199,9 +199,10 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($curp)
+    public function destroy($id)
     {   //$usuario = Usuario::where('usuario',$curp)->delete();
-        $usuario = Usuario::table('usuarios')->where('curp',$curp)->delete();
+        //$usuario = Usuario::table('usuarios')->where('curp',$curp)->delete();
+        $usuario = Usuario::find($id)->delete();
 
         //$usuario->delete();
         return back()->with('success','Usuario eliminado exitosamente');
