@@ -6,6 +6,7 @@ function backTop() {
 $( document ).ready(function() {
   // sintomasGenerales();
   fichaIdentificacion();
+  $('map').imageMapResize();
 });
 
 function habilitarBotones(){
