@@ -18,31 +18,33 @@
         </ul>
       </div><br />
     @endif
-    
+
     @if(Session::has('success'))
 			<div class="alert alert-info">
 				{{Session::get('success')}}
 			</div>
 			@endif
-  
+
     <form role="form" action="{{ route('reguser.store') }}" method="POST">
-    
-  
+
+
 
     <form role="form" action="{{ route('reguser.store') }}" method="POST">
     {{ csrf_field() }}
-    
+
       <div class="row">
         <div class="col s12">
           <div class="row">
             <div class="input-field col s12 m4">
               <select name="tipoDeUsuario">
                 <option value="" disabled selected>Elige una opción</option>
+                <option value="coordinador">Administrador</option>
                 <option value="rectoria">Rectoría</option>
                 <option value="coordinador">Coordinador</option>
                 <option value="medico">Médico</option>
                 <option value="pasante">Pasante</option>
                 <option value="fisioterapeuta">Fisioterapeuta</option>
+                <option value="practicante">Practicante</option>
               </select>
               <label>Tipo de Usuario</label>
             </div>
@@ -99,12 +101,12 @@
 
             <button class="col s4 push-s4 pull-s4 btn waves-effect waves-light" type="submit" name="action">Registrar</button>
 
-            
+
           </div>
         </div>
       </div>
     </form>
-    
+
   </div>
 
 @endsection
