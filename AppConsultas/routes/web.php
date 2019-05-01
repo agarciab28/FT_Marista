@@ -81,3 +81,5 @@ Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha
 Route::get('modificar_usuario/{id}', 'UsuarioController@listusuarios_mod')->name('modificar_usuario');
 
 Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->name('modifica_usuario_metodo');
+
+Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
