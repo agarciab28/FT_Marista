@@ -1743,7 +1743,7 @@
           <div class="inicio">
             <h6 style="font-weight:bold; margin-bottom:30px;">Inicio</h6>
             <p class="range-field">
-              <input type="range" id="eva_inicio" class="eva_inicio" min="0" max="10">
+              <input type="range" id="eva_inicio" name="eva_inicio"class="eva_inicio" min="0" max="10">
             </p>
             <div class="input-field col s12">
               <textarea id="ta_pad_inicio" name="ta_pad_inicio" class="materialize-textarea"></textarea>
