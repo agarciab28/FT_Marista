@@ -21,7 +21,7 @@
     					<a href="#" data-target="sidenav-1" class="left sidenav-trigger hide-on-medium-and-up"><i class="material-icons">menu</i></a>
               <a class="left black-text show-on-small-and-up">Titulo - Juanito Perez</a>
               <div class="section ">
-                <a href="#" class="waves-effect waves-light btn right show-on-medium-and-up hide-on-small-only">Cerrar Sesion</a>
+                <a href="/" class="waves-effect waves-light btn right show-on-medium-and-up hide-on-small-only">Cerrar Sesion</a>
               </div>
     				</div>
     			</div>
@@ -38,7 +38,7 @@
       </li>
     	<li id="home"><a class="white-text" href="/practicante"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
     	<li id="buscar"><a class="white-text" href="/practicante/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
-      <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="">Cerrar Sesion</a></li>
+      <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="/">Cerrar Sesion</a></li>
     </ul>
 
     <main>

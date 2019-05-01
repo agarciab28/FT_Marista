@@ -84,3 +84,5 @@ Route::get('modificar_usuario/{id}', 'UsuarioController@listusuarios_mod')->name
 Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->name('modifica_usuario_metodo');
 
 Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
+
+Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');

@@ -73,6 +73,14 @@ class UsuarioController extends Controller
         return view('admin.modificar_usuario',compact('usuario'));
 
     }
+
+    public function datos_ficha($curp)
+    {
+        $user=DB::table('ficha_de_identificacion')->where('curp',$curp)->get();
+        
+       // dd($user);
+        return view('admin.ver',compact('user'));
+    }
        
 //metodo para actualizar registros
     public function modificar_mod(Request $request, $id){
