@@ -85,4 +85,8 @@ Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->
 
 Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
 
+Route::get('/medico/buscar/citas', function(){
+  return view('medico.citas');
+});
+
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');

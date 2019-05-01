@@ -26,23 +26,22 @@
       <table id="example1" class="responsive-table striped" style="width:100%">
      <thead>
        <tr>
+           <th>Apellidos</th>
            <th>Nombre</th>
-           <th>Apellido</th>
            <th>CURP</th>
-           <th>Estado</th>
-           <!--<th>Acciones</th>-->
+           <th>Identificación</th>
+           <th>Citas</th>
        </tr>
      </thead>
      <tbody>
        @if($paciente->count())
          @foreach($paciente as $usuario)
            <tr>
-
-             <td>{{$usuario->apellidoP}}</td>
+             <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
              <td>{{$usuario->nombre}}</td>
-
              <td>{{$usuario->curp}}</td>
-              <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+             <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Identificacion</a></td>
+             <td> <a href="/medico/buscar/citas" class="waves-effect waves-light btn">Agregar cita</a></td>
            </tr>
 
 
