@@ -40,14 +40,15 @@
         @if($usuario->count())
           @foreach($usuario as $usuario)
             <tr>
-
+            <td>{{$usuario->id}} </td>   
               <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
               <td>{{$usuario->nombre}}</td>
               <td>{{$usuario->tipoDeUsuario}}</td>
               <td>{{$usuario->curp}}</td>
               <td>
+              
                 <a href="{{ route('modificar_usuario',[$usuario->id]) }}" class="waves-effect waves-light btn">Modificar</a>
-                <a href="{{ route('reguser.destroy', $usuario->id) }}" class="waves-effect waves-light btn">Eliminar</a>
+                <a href="{{ route('deleteuser',[$usuario->id]) }}" class="waves-effect waves-light btn">Eliminar</a>
               </td>
             </tr>
 

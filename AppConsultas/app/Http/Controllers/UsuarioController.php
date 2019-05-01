@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 use App\Usuario;
 use App\Models\ficha_id;
@@ -29,7 +29,7 @@ class UsuarioController extends Controller
 
     }
 
-//datos del usuario que se requiera actualizar
+//datos del usuario que se requiera actualizar       
     public function listusuarios_mod($id)
     {
         $usuario=Usuario::orderBy('apellidoP','asc')
@@ -38,7 +38,7 @@ class UsuarioController extends Controller
         return view('admin.modificar_usuario',compact('usuario'));
 
     }
-
+       
 //metodo para actualizar registros
     public function modificar_mod(Request $request, $id){
   $usuario = Usuario::find($id);
@@ -217,13 +217,21 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {   //$usuario = Usuario::where('usuario',$curp)->delete();
-        //$usuario = Usuario::table('usuarios')->where('curp',$curp)->delete();
-        $usuario = Usuario::find($id)->delete();
-
-        //$usuario->delete();
-        return back()->with('success','Usuario eliminado exitosamente');
-        //return redirect('')->with('success', 'Contact deleted!');
+    public function destroy(request $id)
+    {
     }
+    public function deleteuser( $id)
+    {  
+         $user=DB::table('usuario')->where('id',$id);
+       
+         $user->delete();
+       
+        if (!$user) {
+            return back()->with('success','Usuario eliminado exitosamente');
+        } else {
+            return back()->with('success','Usuario NO eliminado');
+        }
+    }
+
+    
 }
