@@ -37,6 +37,7 @@ class Hcapp extends Migration
             $table->text('deporte')->nullable();
             $table->string('curp',30);
             $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+
         });
     }
 
@@ -47,7 +48,8 @@ class Hcapp extends Migration
      */
     public function down()
     {
-        Schema::disableForeignKeyConstraints();
+        
         Schema::dropIfExists('hcapp');
+    
     }
 }
