@@ -62,9 +62,10 @@ Route::get('/practicante', function(){
   return view('practicante.home');
 });
 
-Route::get('/practicante/buscar', function(){
-  return view('practicante.buscar');
-});
+//Route::get('/practicante/buscar', function(){return view('practicante.buscar');});
+//Route::get('/practicante/buscar', 'UsuarioController@listpacientes');
+Route::get('/practicante/buscar', 'UsuarioController@listpacientespract');
+
 
 Route::get('/practicante/buscar/ver', function(){
   return view('practicante.ver');

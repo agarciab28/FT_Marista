@@ -29,6 +29,24 @@ class UsuarioController extends Controller
 
     }
 
+    //listado de pacientes
+    public function listpacientes()
+    {
+
+        $paciente=ficha_id::orderBy('apellidoP','asc')->get();
+        return view('medico.buscar',compact('paciente'));
+
+    }
+
+    //listado general de usuarios   listpacientesadmin
+    public function listpacientespract()
+    {
+
+        $paciente=ficha_id::orderBy('apellidoP','asc')->get();
+        return view('practicante.buscar',compact('paciente'));
+
+    }
+
     public function listusuarios(Request $request)
     {
   //dd($request->get('tipoDeUsuario'));
@@ -77,14 +95,7 @@ class UsuarioController extends Controller
     return redirect()->route('listu');
     }
 
-//listado de pacientes
-    public function listpacientes()
-    {
 
-        $paciente=ficha_id::orderBy('apellidoP','asc')->get();
-        return view('medico.buscar',compact('paciente'));
-
-    }
 
     /**
      * Show the form for creating a new resource.
