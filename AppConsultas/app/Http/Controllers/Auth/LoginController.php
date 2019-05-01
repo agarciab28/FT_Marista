@@ -31,12 +31,16 @@ class LoginController extends Controller
         return view('admin.home');
       }elseif ($tipo_u == "coordinador") {
         return view('admin.home');
+      }elseif ($tipo_u == "administrador") {
+        return view('admin.home');
       } elseif ($tipo_u == "medico") {
         return view('medico.home');
       } elseif ($tipo_u == "pasante") {
-        return view('practicante.home');
+        return view('medico.home');
       }elseif ($tipo_u == "fisioterapeuta") {
         return view('medico.home');
+      } elseif ($tipo_u == "practicante") {
+        return view('practicante.home');
       }
     }
     return back()
