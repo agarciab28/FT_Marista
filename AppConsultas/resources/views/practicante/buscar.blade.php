@@ -3,6 +3,9 @@
 @section('stylesheet')
   <link href="{{{ asset('css/style_dashboard.css') }}}" rel="stylesheet">
   <link href="{{{ asset('css/practicante/buscar.css') }}}" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.19/css/dataTables.material.min.css" rel="stylesheet">
 @endsection
 
 @section('title', 'Buscar Paciente')
@@ -29,49 +32,35 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
-     <tr>
-       <td>Alejandro</td>
-       <td>García</td>
-       <td>GABAasedfr12345678</td>
-       <td>Rehabilitacion</td>
-       <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
-     </tr>
+   
+   @if($paciente->count())
+           @foreach($paciente as $usuario)
+             <tr>
+
+               <td>{{$usuario->apellidoP}}  {{$usuario->apellidoM}}</td>
+               <td>{{$usuario->nombre}}</td>
+
+               <td>{{$usuario->curp}}</td>
+                <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+             </tr>
+
+
+
+           @endforeach
+           @else
+             <tr>
+               <td colspan="8">No hay registro !!</td>
+             </tr>
+           @endif
+
+
    </tbody>
  </table>
   </div>
+@endsection
+@section('scripts')
+  <script src="{{{ asset('js/datatables.js') }}}"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.material.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"></script>
 @endsection

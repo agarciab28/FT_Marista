@@ -55,8 +55,7 @@
       <tbody>
         @if($usuario->count())
           @foreach($usuario as $usuario)
-            <tr>
-            <td>{{$usuario->id}} </td>   
+            <tr> 
               <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
               <td>{{$usuario->nombre}}</td>
               <td>{{$usuario->tipoDeUsuario}}</td>
