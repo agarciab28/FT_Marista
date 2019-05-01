@@ -36,7 +36,6 @@ class Hcapnp extends Migration
      */
     public function down()
     {
-        Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('id_hcapnp');
+        Schema::dropIfExists('hcapnp');
     }
 }

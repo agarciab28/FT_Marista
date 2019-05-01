@@ -39,7 +39,7 @@ class HcexploracionPorRegion extends Migration
      */
     public function down()
     {
-        Schema::disableForeignKeyConstraints();
+
         Schema::dropIfExists('hcexploracionporregion');
     }
 }
