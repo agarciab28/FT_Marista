@@ -30,26 +30,6 @@ class ficha_id extends Model
       'familiaAC',
       'celAC',
       'motivoDeConsulta'
-      /*  'nombre',
-        'apellido_p',
-        'apellido_m',
-        'edad',
-        'sex',
-        'nacionalidad',
-        'est_civ',
-        'ocupacion',
-        'calle',
-        'numero_int',
-        'numero_ext',
-        'colonia',
-        'ciudad',
-        'estado',
-        'tel1',
-        'celular',
-        'religion',
-        'curp',
-        'nombre2',
-        'tel2',
-        'motivo'*/
+
     ];
 }

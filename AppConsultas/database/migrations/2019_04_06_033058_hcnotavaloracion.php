@@ -33,6 +33,7 @@ class Hcnotavaloracion extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('id_hcnotavaloracion');
+
+        Schema::dropIfExists('hcnotavaloracion');
     }
 }

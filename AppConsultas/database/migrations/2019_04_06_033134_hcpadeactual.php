@@ -30,6 +30,7 @@ class Hcpadeactual extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('hcpadecimientoactual');
     }
 }

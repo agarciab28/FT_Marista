@@ -21,10 +21,19 @@ class UsuarioController extends Controller
     }
 
     //listado general de usuarios
-    public function listusuarios()
+    public function listusuarios(Request $request)
     {
+  //dd($request->get('tipoDeUsuario'));
+        if ($request->get('tipoDeUsuario')==null) {
+          $usuario=Usuario::orderBy('apellidoP','asc')
+          ->get();
+        }else {
+          $usuario=Usuario::orderBy('apellidoP','asc')
+          ->filtrot($request->get('tipoDeUsuario'))
+          ->get();
+        }
 
-        $usuario=Usuario::orderBy('apellidoP','asc')->get();
+
         return view('admin.usuarios',compact('usuario'));
 
     }

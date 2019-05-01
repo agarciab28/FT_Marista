@@ -39,6 +39,7 @@ class HcexploracionPorRegion extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('hcexploracionporregion');
     }
 }

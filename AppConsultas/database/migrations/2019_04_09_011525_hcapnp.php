@@ -36,6 +36,6 @@ class Hcapnp extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('id_hcapnp');
+        Schema::dropIfExists('hcapnp');
     }
 }

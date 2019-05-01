@@ -15,11 +15,15 @@ class Usuario extends Model
         'password',
         'apellidoP',
         'apellidoM',
-        'telefono' ,  
+        'telefono' ,
         'correoElectronico',
         'nombreDeUsuario',
-        'tipoDeUsuario' , 
+        'tipoDeUsuario' ,
         'cedulaProfesional',
-        'cedulaMoE'  
+        'cedulaMoE'
     ];
+
+    public function scopeFiltrot($consulta, $tu){
+      return $consulta->where('tipoDeUsuario', $tu);
+    }
 }

@@ -45,6 +45,7 @@ class Hchf extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('hchf');
     }
 }

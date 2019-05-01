@@ -32,6 +32,7 @@ class Hcsintomasgenerales extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('hcsintomasgenerales');
     }
 }

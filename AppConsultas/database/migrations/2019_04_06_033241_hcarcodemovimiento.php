@@ -28,6 +28,7 @@ class Hcarcodemovimiento extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('hcarcodemovimiento');
     }
 }

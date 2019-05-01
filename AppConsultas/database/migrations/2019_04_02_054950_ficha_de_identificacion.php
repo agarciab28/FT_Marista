@@ -39,9 +39,6 @@ class FichaDeIdentificacion extends Migration
             $table->string('created_at', 20);
 
 
-
-
-
         });
     }
 
@@ -53,5 +50,6 @@ class FichaDeIdentificacion extends Migration
     public function down()
     {
         Schema::dropIfExists('ficha_de_identificacion');
+       
     }
 }

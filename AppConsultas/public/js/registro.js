@@ -6,6 +6,7 @@ function backTop() {
 $( document ).ready(function() {
   // sintomasGenerales();
   fichaIdentificacion();
+  $('map').imageMapResize();
 });
 
 function habilitarBotones(){
@@ -395,6 +396,7 @@ function mapaDolor(){
   $("#escala_ashworth").hide();
   $("#reflejos_osteo").hide();
   $("#tipo_marcha").hide();
+  $('map').imageMapResize();
 }
 
 function arcosMovimiento(){

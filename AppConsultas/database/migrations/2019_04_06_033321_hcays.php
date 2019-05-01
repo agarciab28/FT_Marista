@@ -37,6 +37,7 @@ class Hcays extends Migration
      */
     public function down()
     {
+ 
         Schema::dropIfExists('hcays');
     }
 }
