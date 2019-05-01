@@ -20,7 +20,15 @@ class UsuarioController extends Controller
         return view('\admin\registrar');
     }
 
-    //listado general de usuarios
+    //listado general de usuarios   listpacientesadmin
+    public function listpacientesadmin()
+    {
+
+        $paciente=ficha_id::orderBy('apellidoP','asc')->get();
+        return view('admin.buscar',compact('paciente'));
+
+    }
+
     public function listusuarios(Request $request)
     {
   //dd($request->get('tipoDeUsuario'));

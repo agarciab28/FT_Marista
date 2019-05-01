@@ -27,9 +27,7 @@ Route::get('/admin/usuarios', function(){
   return view('admin.usuarios');
 });
 
-Route::get('/admin/buscar', function(){
-  return view('admin.buscar');
-});
+Route::get('/admin/buscar', 'UsuarioController@listpacientesadmin');
 
 Route::get('/admin/buscar/ver', function(){
   return view('admin.ver');
