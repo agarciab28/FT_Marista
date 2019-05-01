@@ -19,11 +19,11 @@
       </div><br />
     @endif
 
-    @if(Session::has('success'))
-			<div class="alert alert-info">
-				{{Session::get('success')}}
-			</div>
-			@endif
+    @if(session()->get('success'))
+    <div class="alert alert-success">
+      {{ session()->get('success') }}
+    </div>
+  @endif
 
     <form role="form" action="{{ route('reguser.store') }}" method="POST">
 

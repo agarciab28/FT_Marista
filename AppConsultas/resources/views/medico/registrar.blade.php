@@ -13,7 +13,11 @@
       <i class="fas fa-arrow-up"></i>
     </a>
   </div>
-
+  @if(session()->get('success'))
+    <div class="alert alert-success">
+      {{ session()->get('success') }}
+    </div>
+  @endif
 
     <div class="row">
       <div class="contenedor col s12 m8 push-m2">
