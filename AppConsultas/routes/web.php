@@ -45,10 +45,12 @@ Route::get('/admin/modificar_usuario', function(){
 Route::get('/medico', function(){
   return view('medico.home');
 });
+//medico---------------------------------------------------------------------------------------------------
+//Route::get('/medico/registrar', function(){
+//  return view('medico.registrar');
+//})->name('med_reg');
 
-Route::get('/medico/registrar', function(){
-  return view('medico.registrar');
-});
+Route::get('/medico/registrar', 'UsuarioController@retvar')->name('med_reg');
 
 //Route::get('/medico/buscar', function(){return view('medico.buscar');});
 Route::get('/medico/buscar', 'UsuarioController@listpacientes');
@@ -85,6 +87,6 @@ Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->
 
 Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
 
-Route::get('/medico/buscar/citas', function(){
+Route::get('/medico/buscar/citas/{idpac}', function(){
   return view('medico.citas');
-});
+})->name('med_bc');

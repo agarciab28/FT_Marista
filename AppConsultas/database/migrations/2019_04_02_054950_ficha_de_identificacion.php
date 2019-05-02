@@ -14,7 +14,8 @@ class FichaDeIdentificacion extends Migration
     public function up()
     {
         Schema::create('ficha_de_identificacion', function (Blueprint $table) {
-            $table->string('curp',30)->primary();
+            $table->increments('id_ficha',10);
+            $table->string('curp',30)->unique();
             $table->string('nombre',70);
             $table->string('apellidoP',45);
             $table->string('apellidoM',45)->nullable();
@@ -50,6 +51,6 @@ class FichaDeIdentificacion extends Migration
     public function down()
     {
         Schema::dropIfExists('ficha_de_identificacion');
-       
+
     }
 }

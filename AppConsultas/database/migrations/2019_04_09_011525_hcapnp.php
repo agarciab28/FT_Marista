@@ -14,7 +14,7 @@ class Hcapnp extends Migration
     public function up()
     {
         Schema::create('hcapnp', function (Blueprint $table) {
-            $table->increments('id_hcapnp',10); 
+            $table->increments('id_hcapnp',10);
             $table->text('eninin')->nullable();
             $table->text('intervencionesq')->nullable();
             $table->text('traumatismos')->nullable();
@@ -24,8 +24,8 @@ class Hcapnp extends Migration
             $table->text('intoleranciamed')->nullable();
             $table->text('transfusiones')->nullable();
             $table->text('medicamentos')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
         });
     }
 

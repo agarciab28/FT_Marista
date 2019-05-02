@@ -64,7 +64,7 @@ class UsuarioController extends Controller
 
     }
 
-//datos del usuario que se requiera actualizar       
+//datos del usuario que se requiera actualizar
     public function listusuarios_mod($id)
     {
         $usuario=Usuario::orderBy('apellidoP','asc')
@@ -73,7 +73,7 @@ class UsuarioController extends Controller
         return view('admin.modificar_usuario',compact('usuario'));
 
     }
-       
+
 //metodo para actualizar registros
     public function modificar_mod(Request $request, $id){
   $usuario = Usuario::find($id);
@@ -145,10 +145,15 @@ class UsuarioController extends Controller
 
     }
 
+
+ public function retvar()
+{
+  $idficha=0;
+  return view('medico.registrar',compact('idficha'));
+}
 //registro de pacientes, ficha de identidad
     public function store_ficha_id(Request $request)
     {
-
       $this->validate(request(), [
         'curp'  => 'required|max:30',
         'nombre' => 'required|max:70',
@@ -195,11 +200,16 @@ class UsuarioController extends Controller
           'familiaAC' => $request->get('nombre2'),
           'celAC' => $request->get('tel2'),
           'motivoDeConsulta' => $request->get('motivo')
-
         ]);
        // dd($Usuario);
         $ficha->save();
-        return redirect()->back()->withSuccess('Registro completado');
+
+        $usuariocp=ficha_id::where('curp', $request->get('curp'))
+        ->get()->first();
+
+        $idficha = $usuariocp->id_ficha;
+
+        return view('medico.registrar',compact('idficha'));
 
     }
 
@@ -249,11 +259,11 @@ class UsuarioController extends Controller
     {
     }
     public function deleteuser( $id)
-    {  
+    {
          $user=DB::table('usuario')->where('id',$id);
-       
+
          $user->delete();
-       
+
         if (!$user) {
             return back()->with('success','Usuario eliminado exitosamente');
         } else {
@@ -261,5 +271,5 @@ class UsuarioController extends Controller
         }
     }
 
-    
+
 }
