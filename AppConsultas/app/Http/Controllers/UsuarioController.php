@@ -150,7 +150,7 @@ class UsuarioController extends Controller
       'apellidoM'=>'required', 'telefono'=>'required' , 'correoElectronico'=>'required', 'nombreDeUsuario'=>'required' ,
        'tipoDeUsuario'=>'required', 'cedulaProfesional'=>'required', 'cedulaMoE'=>'required']);
 
-
+try{
         $Usuario = new Usuario([
             'curp' => $request->get('curp'),
             'nombre' => $request->get('nombre'),
@@ -166,6 +166,13 @@ class UsuarioController extends Controller
         ]);
         //dd($Usuario);
         $Usuario->save();
+}catch(\Exception $e){
+    $parte1=$request->get('tipoDeUsuario');
+    $message="Limite de ".$parte1." alcanzado";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+    return view('\admin\registrar');
+
+}
         //return back()->with('status','Usuario registrado exitosamente');
         return view('\admin\registrar')->with('success','Usuario Registrado');
 
