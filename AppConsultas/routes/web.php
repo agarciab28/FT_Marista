@@ -89,10 +89,4 @@ Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser'
 
 Route::get('/medico/buscar/citas/{idpac}', function(){
   return view('medico.citas');
-<<<<<<< HEAD
 })->name('med_bc');
-=======
-});
-
-Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
->>>>>>> Frontend
