@@ -37,7 +37,7 @@
         </div>
       </li>
     	<li id="home"><a class="white-text" href="/medico"><i class="fas fa-home white-text" style="margin-right:0;"></i>Inicio</a></li>
-      <li id="registrar"><a class="white-text" href="{{ route('med_reg') }}"><i class="fas fa-user white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
+      <li id="registrar"><a class="white-text" href="{{ route('reg_fichaid') }}"><i class="fas fa-user white-text" style="margin-right:0;"></i>Registrar Paciente</a></li>
     	<li id="buscar"><a class="white-text" href="/medico/buscar"><i class="fas fa-search white-text" style="margin-right:0;"></i>Buscar Paciente</a></li>
       <li id="cerrar_sesion"><a class="show-on-small hide-on-med-and-up white-text" href="/">Cerrar Sesion</a></li>
     </ul>

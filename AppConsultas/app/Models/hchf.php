@@ -26,6 +26,6 @@ class hchf extends Model
         'transtornosh',
         'dislipidemias',
         'otros',
-        'curp'
+        'id_f'
     ];
 }

@@ -146,11 +146,7 @@ class UsuarioController extends Controller
     }
 
 
- public function retvar()
-{
-  $idficha=0;
-  return view('medico.registrar',compact('idficha'));
-}
+
 //registro de pacientes, ficha de identidad
     public function store_ficha_id(Request $request)
     {

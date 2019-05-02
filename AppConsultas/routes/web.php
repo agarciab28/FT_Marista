@@ -46,11 +46,15 @@ Route::get('/medico', function(){
   return view('medico.home');
 });
 //medico---------------------------------------------------------------------------------------------------
-//Route::get('/medico/registrar', function(){
-//  return view('medico.registrar');
-//})->name('med_reg');
+Route::get('/medico/ficha_id', function(){
+  return view('medico.ficha_id');
+})->name('reg_fichaid');
 
-Route::get('/medico/registrar', 'UsuarioController@retvar')->name('med_reg');
+Route::get('/medico/registrar/{idpac}', function($idpac){
+  return view('medico.registrar',compact('idpac'));
+})->name('med_reg');
+
+//Route::get('/medico/registrar', 'UsuarioController@retvar')->name('med_reg');
 
 //Route::get('/medico/buscar', function(){return view('medico.buscar');});
 Route::get('/medico/buscar', 'UsuarioController@listpacientes');
@@ -90,3 +94,9 @@ Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser'
 Route::get('/medico/buscar/citas/{idpac}', function(){
   return view('medico.citas');
 })->name('med_bc');
+
+
+
+///registro historialcontroller
+
+Route::post('/ant_hered_fam/{idpac}', 'historialcontroller@ant_hered_fam1')->name('hcahf');

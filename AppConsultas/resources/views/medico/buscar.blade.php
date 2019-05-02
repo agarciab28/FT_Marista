@@ -29,6 +29,7 @@
            <th>Apellidos</th>
            <th>Nombre</th>
            <th>CURP</th>
+           <th>Historial</th>
            <th>Identificación</th>
            <th>Citas</th>
        </tr>
@@ -40,6 +41,7 @@
              <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
              <td>{{$usuario->nombre}}</td>
              <td>{{$usuario->curp}}</td>
+             <td> <a href="{{ route('med_reg',[$usuario->id_ficha]) }}" class="waves-effect waves-light btn">Registrar</a></td>
              <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Identificacion</a></td>
              <td> <a href="{{ route('med_bc',[$usuario->id_ficha]) }}" class="waves-effect waves-light btn">Agregar cita</a></td>
            </tr>
