@@ -39,7 +39,7 @@
             <div class="input-field col s12 m4">
               <select name="tipoDeUsuario">
                 <option value="" disabled selected>Elige una opción</option>
-                <option value="coordinador">Administrador</option>
+                <option value="administrador">Administrador</option>
                 <option value="rectoria">Rectoría</option>
                 <option value="coordinador">Coordinador</option>
                 <option value="medico">Médico</option>
