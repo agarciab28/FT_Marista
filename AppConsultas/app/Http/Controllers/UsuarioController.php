@@ -74,6 +74,32 @@ class UsuarioController extends Controller
 
     }
 
+    public function datos_ficha($curp)
+    {
+        $user=DB::table('ficha_de_identificacion')->where('curp',$curp)->get();
+        
+       // dd($user);
+        return view('admin.ver',compact('user'));
+    }
+
+    //medico ficha id
+    public function datos_ficha_med($curp)
+    {
+        $user=DB::table('ficha_de_identificacion')->where('curp',$curp)->get();
+        
+       // dd($user);
+        return view('medico.ver',compact('user'));
+    }
+
+     //pra ficha id
+     public function datos_ficha_pra($curp)
+     {
+         $user=DB::table('ficha_de_identificacion')->where('curp',$curp)->get();
+         
+         //dd($user);
+         return view('practicante.ver',compact('user'));
+     }
+       
 //metodo para actualizar registros
     public function modificar_mod(Request $request, $id){
   $usuario = Usuario::find($id);
