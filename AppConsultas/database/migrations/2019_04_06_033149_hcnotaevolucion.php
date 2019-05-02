@@ -17,8 +17,8 @@ class Hcnotaevolucion extends Migration
             $table->increments('id_hcnotaevolucion',10);
             $table->date('fecha');
             $table->text('nota')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
         });
     }
 
@@ -29,7 +29,7 @@ class Hcnotaevolucion extends Migration
      */
     public function down()
     {
- 
+
         Schema::dropIfExists('hcnotaevolucion');
     }
 }

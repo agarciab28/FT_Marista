@@ -27,8 +27,8 @@ class HcexploracionPorRegion extends Migration
             $table->text('genitales')->nullable();
             $table->text('abdomen')->nullable();
             $table->text('otros')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
         });
         }
 

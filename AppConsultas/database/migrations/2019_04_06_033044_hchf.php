@@ -33,8 +33,8 @@ class Hchf extends Migration
             $table->text('transtornosh')->nullable();
             $table->text('dislipidemias')->nullable();
             $table->text('otros')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
         });
     }
 

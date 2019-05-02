@@ -25,8 +25,8 @@ class Hcays extends Migration
             $table->text('aparatonervioso')->nullable();
             $table->text('aparatosensorial')->nullable();
             $table->text('aparatoosteomuscu')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
         });
     }
 
@@ -37,7 +37,7 @@ class Hcays extends Migration
      */
     public function down()
     {
- 
+
         Schema::dropIfExists('hcays');
     }
 }

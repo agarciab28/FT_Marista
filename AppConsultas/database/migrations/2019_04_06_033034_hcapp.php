@@ -35,8 +35,8 @@ class Hcapp extends Migration
             $table->text('trabajodescanso')->nullable();
             $table->text('pasatiempo')->nullable();
             $table->text('deporte')->nullable();
-            $table->string('curp',30);
-            $table->foreign('curp')->references('curp')->on('ficha_de_identificacion');
+            $table->integer('id_f')->unsigned();
+            $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
 
         });
     }
@@ -48,8 +48,8 @@ class Hcapp extends Migration
      */
     public function down()
     {
-        
+
         Schema::dropIfExists('hcapp');
-    
+
     }
 }

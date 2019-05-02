@@ -21,14 +21,14 @@
 
     <div class="row">
       <div class="contenedor col s12 m8 push-m2">
-        <h2>Historia Clínica</h4>
+        <h2>Historia Clínica {{ $idficha }}</h4>
       </div>
     </div>
 
     <div class="row">
       <ul class="collapsible col s12 m10 push-m1">
       <li>
-        <div class="collapsible-header"><i class="material-icons">menu</i>Menú</div>
+        <div class="collapsible-header"><i class="material-icons">menu</i>Menú </div>
         <div class="collapsible-body">
           <div class="row botones">
             <button type="submit" class="btn class s4 menu" onclick="fichaIdentificacion()">Ficha de Identificación</button>
