@@ -31,27 +31,26 @@
         <div class="collapsible-header"><i class="material-icons">menu</i>Menú </div>
         <div class="collapsible-body">
           <div class="row botones">
-            <button type="submit" class="btn class s4 menu" onclick="fichaIdentificacion()">Ficha de Identificación</button>
-            <button type="submit" class="btn class s4 menu" onclick="antecedentesHF()" disabled>Antecedentes Heredo Familiares</button>
-            <button type="submit" class="btn class s4 menu" onclick="antecedentesPNP()" disabled>Antecedentes Personales no Patológicos</button>
-            <button type="button" class="btn class s4 menu" onclick="antecedentesPP()" disabled>Antescedentes Personales Patológicos</button>
-            <button type="button" class="btn class s4 menu" onclick="antecedentesGO()" disabled>Antecedentes Gineco Obstetricos</button>
-            <button type="button" class="btn class s4 menu" onclick="padecimientoActual()" disabled>Padecimiento Actual</button>
-            <button type="button" class="btn class s4 menu" onclick="sintomasGenerales()" disabled>Sintomas Generales</button>
-            <button type="button" class="btn class s4 menu" onclick="aparatosSistemas()" disabled>Aparatos y Sistemas</button>
-            <button type="button" class="btn class s4 menu" onclick="diagnosticosAnteriores()" disabled>Diagnósticos Anteriores</button>
-            <button type="button" class="btn class s4 menu" onclick="exploracionFisica()" disabled>Exploración Física</button>
-            <button type="button" class="btn class s4 menu" onclick="exploracionGeneral()" disabled>Exploración General</button>
-            <button type="button" class="btn class s4 menu" onclick="exploracionRegion()" disabled>Exploración por Región</button>
-            <button type="button" class="btn class s4 menu" onclick="sistemaMusculoEs()" disabled>Sistema Musculo Esqueletico</button>
-            <button type="button" class="btn class s4 menu" onclick="diagnosticoFisio()" disabled>Diagnóstico Fisioterapéutico</button>
-            <button type="button" class="btn class s4 menu" onclick="dermatomas()" disabled>Dermatomas</button>
-            <button type="button" class="btn class s4 menu" onclick="mapaDolor()" disabled>Mapa de Dolor</button>
-            <button type="button" class="btn class s4 menu" onclick="arcosMovimiento()" disabled>Arcos de Movimiento</button>
-            <button type="button" class="btn class s4 menu" onclick="parNervio()" disabled>Par/Nervio</button>
-            <button type="button" class="btn class s4 menu" onclick="escalaAshworth()" disabled>Escala de Ashworth</button>
-            <button type="button" class="btn class s4 menu" onclick="reflejosOsteo()" disabled>Reflejos Osteotendinosos</button>
-            <button type="button" class="btn class s4 menu" onclick="tiposMarcha()" disabled>Tipos de Marcha</button>
+            <button type="submit" class="btn class s4 menu" onclick="antecedentesHF()" >Antecedentes Heredo Familiares</button>
+            <button type="submit" class="btn class s4 menu" onclick="antecedentesPNP()" >Antecedentes Personales no Patológicos</button>
+            <button type="button" class="btn class s4 menu" onclick="antecedentesPP()" >Antescedentes Personales Patológicos</button>
+            <button type="button" class="btn class s4 menu" onclick="antecedentesGO()" >Antecedentes Gineco Obstetricos</button>
+            <button type="button" class="btn class s4 menu" onclick="padecimientoActual()" >Padecimiento Actual</button>
+            <button type="button" class="btn class s4 menu" onclick="sintomasGenerales()" >Sintomas Generales</button>
+            <button type="button" class="btn class s4 menu" onclick="aparatosSistemas()" >Aparatos y Sistemas</button>
+            <button type="button" class="btn class s4 menu" onclick="diagnosticosAnteriores()" >Diagnósticos Anteriores</button>
+            <button type="button" class="btn class s4 menu" onclick="exploracionFisica()" >Exploración Física</button>
+            <button type="button" class="btn class s4 menu" onclick="exploracionGeneral()" >Exploración General</button>
+            <button type="button" class="btn class s4 menu" onclick="exploracionRegion()" >Exploración por Región</button>
+            <button type="button" class="btn class s4 menu" onclick="sistemaMusculoEs()" >Sistema Musculo Esqueletico</button>
+            <button type="button" class="btn class s4 menu" onclick="diagnosticoFisio()" >Diagnóstico Fisioterapéutico</button>
+            <button type="button" class="btn class s4 menu" onclick="dermatomas()" >Dermatomas</button>
+            <button type="button" class="btn class s4 menu" onclick="mapaDolor()" >Mapa de Dolor</button>
+            <button type="button" class="btn class s4 menu" onclick="arcosMovimiento()" >Arcos de Movimiento</button>
+            <button type="button" class="btn class s4 menu" onclick="parNervio()" >Par/Nervio</button>
+            <button type="button" class="btn class s4 menu" onclick="escalaAshworth()" >Escala de Ashworth</button>
+            <button type="button" class="btn class s4 menu" onclick="reflejosOsteo()" >Reflejos Osteotendinosos</button>
+            <button type="button" class="btn class s4 menu" onclick="tiposMarcha()" >Tipos de Marcha</button>
           </div>
         </div>
       </li>
@@ -979,8 +978,11 @@
         </div>
       </form>
 
+
+
       {{-- Antecedentes Personales no patologicos --}}
-      <form class="" id="antecedentes_pnp" action="" method="">
+      <form class="" id="antecedentes_pnp" action="{{ route('anpepa',[ $idpac ]) }}" method="POST">
+        {{ csrf_field() }}
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales no Patologicos</h5>
           <table class="responsive-table striped">
@@ -1297,6 +1299,25 @@
                 </td>
               </tr>
               <tr>
+                <td>Inmunizaciones</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="inm" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="inm" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_alim" name="ta_inmun" class="materialize-textarea"></textarea>
+                    <label for="ta_alim">Cuales</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
                 <td>Trabajo/Descanso</td>
                 <td>
                   <label>
@@ -1362,8 +1383,11 @@
         </div>
       </form>
 
+
+
       {{-- Antecedentes Personales patologicos --}}
-      <form class="" id="antecedentes_pp" action="" method="">
+      <form class="" id="antecedentes_pp" action="{{ route('appp',[ $idpac ]) }}" method="POST">
+                {{ csrf_field() }}
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales Patologicos</h5>
           <table class="responsive-table striped">

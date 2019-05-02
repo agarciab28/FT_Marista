@@ -99,6 +99,8 @@ Route::get('/medico/buscar/citas/{idpac}', function(){
 
 ///registro historialcontroller
 Route::post('/ant_hered_fam/{idpac}', 'historialcontroller@ant_hered_fam1')->name('hcahf');
+Route::post('/ant_pp/{idpac}', 'historialcontroller@anpp')->name('anpepa');
+Route::post('/ant_ppp/{idpac}', 'historialcontroller@hcapnpp')->name('appp');
 
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
 Route::get('datos_ficha_med/{curp}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');

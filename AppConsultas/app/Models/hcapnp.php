@@ -17,6 +17,7 @@ class hcapnp extends Model
     'intoleranciamed',
     'transfusiones',
     'medicamentos',
-     'curp'
+    'ta_ets',
+     'id_f'
     ];
 }

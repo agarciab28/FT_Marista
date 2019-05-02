@@ -28,7 +28,7 @@ class hcapp extends Model
         'trabajodescanso',
         'pasatiempo',
         'deporte',
-        'curp'
+        'id_f'
 
     ];
 }

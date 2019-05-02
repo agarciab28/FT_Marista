@@ -9,9 +9,6 @@ $( document ).ready(function() {
   $('map').imageMapResize();
 });
 
-function habilitarBotones(){
-  $(".menu").removeAttr("disabled");
-}
 
 function fichaIdentificacion(){
   $("#ficha_id").show();

@@ -22,6 +22,8 @@ class Hcsintomasgenerales extends Migration
             $table->text('perdidadepeso')->nullable();
             $table->integer('id_f')->unsigned();
             $table->foreign('id_f')->references('id_ficha')->on('ficha_de_identificacion');
+            $table->string('updated_at', 20);
+            $table->string('created_at', 20);
         });
     }
 

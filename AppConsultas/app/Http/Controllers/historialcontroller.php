@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 use App\Models\hchf;
+use App\Models\hcapp;
+use App\Models\hcapnp;
 
 class historialcontroller extends Controller
 {
@@ -58,5 +60,57 @@ $ahf->save();
 
   return back();
 }
+
+public function anpp(Request $request, $idpac){
+$happ = new hcapp([
+  'tipoconstruccionnf' => $request->get('ta_construc'),
+  'suelonoregular' => $request->get('ta_suelo'),
+  'escalaresda' => $request->get('ta_escaleras'),
+  'ventilacionina' => $request->get('ta_vent'),
+  'hacinamiento' => $request->get('ta_hacin'),
+  'adaptacionesyaux'  => $request->get('ta_aya'),
+  'serviciosdeagua'  => $request->get('ta_sda'),
+  'serviciosdeluz'  => $request->get('ta_sdl'),
+  'serviciosd'  => $request->get('ta_sdd'),
+  'habitospersonalesb'  => $request->get('ta_hpb'),
+  'higienebucal'  => $request->get('ta_hb'),
+  'defecacion' => $request->get('ta_defec'),
+  'tabaquismo' => $request->get('ta_taba'),
+  'alcoholismo' => $request->get('ta_alco'),
+  'toxicomanias' => $request->get('ta_toxi'),
+  'alimentacion' => $request->get('ta_alim'),
+  'inmunizaciones' => $request->get('ta_inmun'),
+  'trabajodescanso' => $request->get('ta_trades'),
+  'pasatiempo' => $request->get('ta_pas'),
+  'deporte' => $request->get('ta_dep'),
+  'id_f' => $idpac
+  ]);
+$happ->save();
+
+  return back();
+}
+
+
+public function hcapnpp(Request $request, $idpac){
+
+  $hapnp = new hcapnp([
+  'eninin' => $request->get('ta_enf_inf'),
+  'intervencionesq' => $request->get('ta_inter'),
+  'traumatismos' => $request->get('ta_trauma'),
+  'infiltraciones' => $request->get('ta_infi'),
+  'hospitalizaciones' => $request->get('ta_hospi'),
+  'perdidadeconocimiento' => $request->get('ta_per_con'),
+  'intoleranciamed' => $request->get('ta_int_med'),
+  'transfusiones' => $request->get('ta_trans'),
+  'medicamentos' => $request->get('ta_meds'),
+  'ta_ets' => $request->get('ta_ets'),
+   'id_f' => $idpac
+    ]);
+
+  $hapnp->save();
+
+  return back();
+}
+
 
 }
