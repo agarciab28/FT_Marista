@@ -244,23 +244,23 @@
 
                 <td>
                   <label>
-                    <input type="checkbox" value="Por parte de madre" name="madre1" class="filled-in"/>
+                    <input type="checkbox" value="por parte de madre" name="madre1" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de padre"   name="padre1" class="filled-in"/>
+                    <input type="checkbox" value="por parte de padre"   name="padre1" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de abuelos" name="abuelos1" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de abuelos" name="abuelos1" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos1"  value="Por parte de hermanos" class="filled-in"/>
+                    <input type="checkbox" name="hermanos1"  value="por parte de hermanos" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros1"  value="Por parte de otros" class="filled-in"/>
+                    <input type="checkbox" name="otros1"  value="por parte de otros" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -286,23 +286,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" value="Por parte de madre" name="madre2" class="filled-in"/>
+                    <input type="checkbox" value="por parte de madre" name="madre2" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de padre" name="padre2" class="filled-in"/>
+                    <input type="checkbox" value="por parte de padre" name="padre2" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de abuelos" name="abuelos2" class="filled-in"/>
+                    <input type="checkbox" value="por parte de abuelos" name="abuelos2" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de hermanos" name="hermanos2" class="filled-in"/>
+                    <input type="checkbox" value="por parte de hermanos" name="hermanos2" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de otros" name="otros2" class="filled-in"/>
+                    <input type="checkbox" value="por parte de otros" name="otros2" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -328,23 +328,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" value="Por parte de madre" name="madre3" class="filled-in"/>
+                    <input type="checkbox" value="por parte de madre" name="madre3" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de padre" name="padre3" class="filled-in"/>
+                    <input type="checkbox" value="por parte de padre" name="padre3" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de abuelos" name="abuelos3" class="filled-in"/>
+                    <input type="checkbox" value="por parte de abuelos" name="abuelos3" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de hermanos" name="hermanos3" class="filled-in"/>
+                    <input type="checkbox" value="por parte de hermanos" name="hermanos3" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de otros" name="otros3" class="filled-in"/>
+                    <input type="checkbox" value="por parte de otros" name="otros3" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -369,23 +369,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" value="Por parte de madre" name="madre4" class="filled-in"/>
+                    <input type="checkbox" value="por parte de madre" name="madre4" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de padre" name="padre4" class="filled-in"/>
+                    <input type="checkbox" value="por parte de padre" name="padre4" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de abuelos" name="abuelos4" class="filled-in"/>
+                    <input type="checkbox" value="por parte de abuelos" name="abuelos4" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de hermanos" name="hermanos4" class="filled-in"/>
+                    <input type="checkbox" value="por parte de hermanos" name="hermanos4" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" value="Por parte de otros" name="otros4" class="filled-in"/>
+                    <input type="checkbox" value="por parte de otros" name="otros4" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -410,23 +410,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox"  value="Por parte de madre" name="madre5" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de madre" name="madre5" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de padre" name="padre5" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de padre" name="padre5" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de abuelos" name="abuelos5" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de abuelos" name="abuelos5" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de hermanos" name="hermanos5" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de hermanos" name="hermanos5" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de otros" name="otros5" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de otros" name="otros5" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -451,23 +451,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox"  value="Por parte de madre" name="madre6" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de madre" name="madre6" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de padre" name="padre6" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de padre" name="padre6" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de abuelos" name="abuelos6" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de abuelos" name="abuelos6" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de hermanos" name="hermanos6" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de hermanos" name="hermanos6" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox"  value="Por parte de otros" name="otros6" class="filled-in"/>
+                    <input type="checkbox"  value="por parte de otros" name="otros6" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -492,23 +492,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre7" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre7" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre7" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre7" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos7" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos7" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos7" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos7" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros7" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros7" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -533,23 +533,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre8" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre8" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre8" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre8" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos8" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos8" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos8" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos8" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros8" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros8" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -574,23 +574,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre9" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre9" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre9" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre9" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos9" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos9" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos9" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos9" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros9" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros9" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -615,23 +615,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre10" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre10" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre10" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre10" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos10" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos10" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos10" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos10" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros10" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros10" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -656,23 +656,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre11" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre11" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre11" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre11" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos11" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos11" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos11" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos11" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros11" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros11" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -697,23 +697,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre12" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre12" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre12" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre12" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos12" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos12" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos12" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos12" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros12" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros12" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -738,23 +738,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre13" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre13" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre13" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre13" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos13" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos13" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos13" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos13" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros13" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros13" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -779,23 +779,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre14" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre14" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre14" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre14" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos14" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos14" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos14" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos14" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros14" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros14" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -820,23 +820,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre15" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre15" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre15" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre15" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos15" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos15" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos15" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos15" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros15" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros15" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -861,23 +861,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre16" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre16" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre16" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre16" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos16" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos16" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos16" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos16" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros16" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros16" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -902,23 +902,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre17" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre17" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre17" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre17" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos17" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos17" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos17" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos17" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros17" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros17" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
@@ -943,23 +943,23 @@
                 </td>
                 <td>
                   <label>
-                    <input type="checkbox" name="madre18" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de madre" name="madre18" class="filled-in"/>
                     <span>Madre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="padre18" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de padre" name="padre18" class="filled-in"/>
                     <span>Padre</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="abuelos18" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de abuelos" name="abuelos18" class="filled-in"/>
                     <span>Abuelos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="hermanos18" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de hermanos" name="hermanos18" class="filled-in"/>
                     <span>Hermanos</span>
                   </label>
                   <label>
-                    <input type="checkbox" name="otros18" class="filled-in"/>
+                    <input type="checkbox"   value="por parte de otros" name="otros18" class="filled-in"/>
                     <span>Otros</span>
                   </label>
                 </td>
