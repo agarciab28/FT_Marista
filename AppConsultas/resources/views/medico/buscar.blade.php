@@ -40,7 +40,7 @@
              <td>{{$usuario->apellidoP}} {{$usuario->apellidoM}}</td>
              <td>{{$usuario->nombre}}</td>
              <td>{{$usuario->curp}}</td>
-             <td> <a href="/medico/buscar/ver" class="waves-effect waves-light btn">Identificacion</a></td>
+             <td> <a href="{{ route('datos_ficha_med',[$usuario->curp]) }}" class="waves-effect waves-light btn">Identificacion</a></td>
              <td> <a href="/medico/buscar/citas" class="waves-effect waves-light btn">Agregar cita</a></td>
            </tr>
 

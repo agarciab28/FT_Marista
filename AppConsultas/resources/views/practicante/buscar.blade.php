@@ -41,7 +41,7 @@
                <td>{{$usuario->nombre}}</td>
 
                <td>{{$usuario->curp}}</td>
-                <td> <a href="/practicante/buscar/ver" class="waves-effect waves-light btn">Ver Identificacion</a></td>
+                <td> <a href="{{ route('datos_ficha_pra',[$usuario->curp]) }}" class="waves-effect waves-light btn">Ver Identificacion</a></td>
              </tr>
 
 
