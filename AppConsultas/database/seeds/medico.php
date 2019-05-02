@@ -12,20 +12,22 @@ class medico extends Seeder
     public function run()
     {
         DB::statement('set foreign_key_checks = 0;');
-        DB::table('usuario')->truncate();
+        DB::table('usuario');
         DB::statement('set foreign_key_checks = 1;');
   
         $usuario= new usuario();
         $usuario->id='3';
         $usuario->curp='zxxxyxyxyxyxyxyxxz';
         $usuario->nombre='Robert';
-        $usuario->password=hash_hmac('bcrypt','secret');
+        $usuario->password=bcrypt('secret');
         $usuario->apellidoP='Castro';
         $usuario->apellidoM='Ramirez';
         $usuario->telefono='44881631';
         $usuario->correoElectronico='example@example.com';
         $usuario->nombreDeUsuario='sentry';
         $usuario->tipoDeUsuario='medico';
+        $usuario->cedulaProfesional='examplecedula';
+        $usuario->cedulaMoE='exampleEspec';
         $usuario->save();
     }
 }
