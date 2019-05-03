@@ -102,7 +102,8 @@ class UsuarioController extends Controller
 
 //metodo para actualizar registros
     public function modificar_mod(Request $request, $id){
-  $usuario = Usuario::find($id);
+  try{
+        $usuario = Usuario::find($id);
   $usuario_n = [
     'nombre' => $request->get('nombre'),
     'apellidoP' => $request->get('apellidoP'),
@@ -118,6 +119,14 @@ class UsuarioController extends Controller
   //dd($usuario_n);
   //dd($request->except('_token'));
   $usuario->update($usuario_n);
+}catch(\Exception $e){
+    $message="Algo salio mal al actualizar";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+    return redirect()->route('listu');
+
+}
+$message="Actualizacion de datos exitosa";
+echo "<script type='text/javascript'>alert('$message');</script>";
     return redirect()->route('listu');
     }
 
@@ -192,6 +201,7 @@ else{
 //registro de pacientes, ficha de identidad
     public function store_ficha_id(Request $request)
     {
+        try{
       $this->validate(request(), [
         'curp'  => 'required|max:30',
         'nombre' => 'required|max:70',
@@ -241,12 +251,18 @@ else{
         ]);
        // dd($Usuario);
         $ficha->save();
-
+        }catch(\Exception $e){
+            $message="No se pudo registrar la ficha";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            return back();
+        
+        }
       //  $usuariocp=ficha_id::where('curp', $request->get('curp'))
       //  ->get()->first();
 
       //  $idficha = $usuariocp->id_ficha;
-
+      $message="Registro exitoso";
+      echo "<script type='text/javascript'>alert('$message');</script>";
         return back();
 
     }
@@ -298,15 +314,16 @@ else{
     }
     public function deleteuser( $id)
     {
+        try{
          $user=DB::table('usuario')->where('id',$id);
 
          $user->delete();
-
-        if (!$user) {
-            return back()->with('success','Usuario eliminado exitosamente');
-        } else {
-            return back()->with('success','Usuario NO eliminado');
+        }catch(\Exception $e){
+            $message="No se pudo eliminar";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            return redirect()->route('listu');
         }
+        return redirect()->route('listu');
     }
 
 
