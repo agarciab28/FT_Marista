@@ -5,7 +5,7 @@ function backTop() {
 
 $( document ).ready(function() {
   // sintomasGenerales();
-  fichaIdentificacion();
+antecedentesHF();
   $('map').imageMapResize();
 });
 
