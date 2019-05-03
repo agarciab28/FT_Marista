@@ -167,8 +167,17 @@ try{
         //dd($Usuario);
         $Usuario->save();
 }catch(\Exception $e){
+    $array = DB::table('usuario')
+    ->select(DB::raw('count(*)'))
+    ->where('curp', $request->get('curp'))->get();
+if($array){
+$message="Esa curp ya fue registrada";
+}
+else{
     $parte1=$request->get('tipoDeUsuario');
     $message="Limite de ".$parte1." alcanzado";
+}
+   
     echo "<script type='text/javascript'>alert('$message');</script>";
     return view('\admin\registrar');
 
