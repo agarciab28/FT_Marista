@@ -43,120 +43,60 @@ class Usuario extends Migration
       DB::connection()->getPdo()->exec("
         -- Create the procedure maestro
         
-        CREATE PROCEDURE check_tipom (nombreDeUsuario VARCHAR(45))
+        CREATE PROCEDURE check_tipom (nom VARCHAR(50))
         BEGIN
         DECLARE var INT DEFAULT 0;
-       select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
+       select count(*) INTO var  from usuario where tipoDeUsuario=nom;
+       IF (nom= 'medico') then
             IF  (var > 4) THEN
                 SIGNAL SQLSTATE '45000' SET message_text = 'Limite de maestros alcanzado';
             END IF;
-        END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure fisioterapeuta
-
-CREATE PROCEDURE check_tipof (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF (var > 4) THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de  fisioterapeutas alcanzado';
-    END IF;
-END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure pasante
-
-CREATE PROCEDURE check_tipop (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF NOT (var >6) THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de  pasantes alcanzado';
-    END IF;
-END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure practicante
-
-CREATE PROCEDURE check_tipopr (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF NOT (var > 10) THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de practicantes alcanzado';
-    END IF;
-END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure rectoria
-
-CREATE PROCEDURE check_tipor (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF NOT (var > 1) THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de rectores alcanzado';
-    END IF;
-END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure admin
-
-CREATE PROCEDURE check_tipoa (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF  (var > 1) THEN
-    SELECT var as '';
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de administradores alcanzado';
-    END IF;
-    SELECT var as '';
-END;
-");
-DB::connection()->getPdo()->exec("
--- Create the procedure cordinadores
-
-CREATE PROCEDURE check_tipoc (nombreDeUsuario VARCHAR(45))
-BEGIN
-DECLARE var INT DEFAULT 0;
-select count(*) INTO var  from usuario where tipoDeUsuario=nombreDeUsuario;
-    IF NOT (var > 1) THEN
-        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de coordinadores alcanzado';
-    END IF;
-END;
-");
-
-         DB::connection()->getPdo()->exec("
-        -- Create the INSERT trigger
-        CREATE TRIGGER check_tipo_m BEFORE INSERT ON usuario
-        FOR EACH ROW 
-        BEGIN
-        IF  NEW.nombreDeUsuario='medico' then
-            CALL check_tipom(NEW.nombreDeUsuario);
-            END IF;
-        IF  NEW.nombreDeUsuario='fisioterapeuta' then
-            CALL check_tipof(NEW.nombreDeUsuario);
         END IF;
-        IF  NEW.nombreDeUsuario='pasante' then
-            CALL check_tipop(NEW.nombreDeUsuario);
+        IF (nom = 'fisioterapeuta') then
+        IF  (var > 4) THEN
+            SIGNAL SQLSTATE '45000' SET message_text = 'Limite de fisioterapeutas alcanzado';
         END IF;
-        IF  NEW.nombreDeUsuario='practicante' then
-        CALL check_tipopr(NEW.nombreDeUsuario);
-        END IF;
-        IF  NEW.nombreDeUsuario='administrador' then
-        CALL check_tipoa(NEW.nombreDeUsuario);
-        END IF;
-        IF  NEW.nombreDeUsuario='coordinador' then
-        CALL check_tipoc(NEW.nombreDeUsuario);
-        END IF;
-        IF  NEW.nombreDeUsuario='rectoria' then
-        CALL check_tipor(NEW.nombreDeUsuario);
-        END IF;
+    END IF;      
+    IF (nom = 'pasante') then
+    IF  (var > 6) THEN
+        SIGNAL SQLSTATE '45000' SET message_text = 'Limite de pasantes alcanzado';
+    END IF;
+END IF;  
+IF (nom = 'practicante') then
+IF  (var > 10) THEN
+    SIGNAL SQLSTATE '45000' SET message_text = 'Limite de practicantes alcanzado';
+END IF;
+END IF;  
+IF (nom = 'administrador') then
+IF  (var > 1) THEN
+    SIGNAL SQLSTATE '45000' SET message_text = 'Limite de administradores alcanzado';
+END IF;
+END IF; 
+IF (nom = 'rectoria') then
+IF  (var > 1) THEN
+    SIGNAL SQLSTATE '45000' SET message_text = 'Limite de rectores alcanzado';
+END IF;
+END IF; 
+IF (nom = 'coordinador') then
+IF  (var > 1) THEN
+    SIGNAL SQLSTATE '45000' SET message_text = 'Limite de coordinadores alcanzado';
+END IF;
+END IF; 
         END;
         
-        ");
+");
+
     
+DB::connection()->getPdo()->exec("
+-- Create the INSERT trigger
+CREATE TRIGGER check_tipo_m BEFORE INSERT ON `clinica`.`usuario`
+FOR EACH ROW 
+BEGIN
+  CALL check_tipom(NEW.tipoDeUsuario);
+END;
+
+");
+  
 }
 
     /**
