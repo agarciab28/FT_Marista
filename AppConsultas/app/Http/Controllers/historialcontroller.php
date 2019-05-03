@@ -17,6 +17,9 @@ use App\Models\hcexploracion_general;
 use App\Models\hcexploracion_por_region;
 use App\Models\hcsme;
 use App\Models\hcarcodemovimiento;
+use App\Models\hcdiag;
+use App\Models\hcparnervio;
+use App\Models\hctipo_de_marcha;
 class historialcontroller extends Controller
 {
     //
@@ -318,4 +321,51 @@ $y->save();
 return back();
 }
 
+public function diagfm(Request $request, $idpac){
+$x1 = $request->get('obj1').";".$request->get('obj2').";".$request->get('obj3').";".$request->get('obj4');
+
+  $y = new hcdiag([
+    'diagnostico' => $request->get('diag_fisio'),
+    'pronostico' => $request->get('pronostico'),
+    'objetivos'=> $x1,
+    'planfisioterapeutico' => $request->get('ta_plan_fisio'),
+    'dermatomasmpc' => $request->get('ta_dermatomas'),
+    'mapadeldolor',
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+
+public function parnm(Request $request, $idpac){
+$x1 = $request->get('ta_olfatorio').";".$request->get('ta_optico').";".$request->get('ta_mot_ocular_com').";".$request->get('ta_patetico').";".$request->get('ta_trige').";".$request->get('ta_mot_ocular_ext').";".$request->get('ta_facial').";".$request->get('ta_auditivo').";".$request->get('ta_gloso').";".$request->get('ta_vago').";".$request->get('ta_espinal').";".$request->get('ta_hipogloso');
+$x2 = $request->get('ta_maseterino').";".$request->get('ta_bicipital').";".$request->get('ta_estilo').";".$request->get('ta_tricipital').";".$request->get('ta_rotul').";".$request->get('ta_aquileo');
+  $y = new hcparnervio([
+    'parte' => $x1,
+    'escaladeashworth' => $request->get('escalaAsh'),
+    'reflejososteo'  => $x2,
+    'tipodemarcha',
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+
+public function tpmm(Request $request, $idpac){
+
+$y = new hctipo_de_marcha([
+    'hemipareticaHemiplejica' => $request->get('hemi'),
+    'cerebelosaAtáxica' => $request->get('cerebelosa'),
+    'paraparetica' => $request->get('paraparetica'),
+    'hipocineticaParkinsoniana' => $request->get('hipo'),
+    'vestibular' => $request->get('vesti'),
+    'marchaCoreas' => $request->get('correas'),
+    'marchaSensorial' => $request->get('ataxia'),
+    'marchaMiopatias' => $request->get('miopatias'),
+    'marchaHisterica' => $request->get('histerica'),
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
 }

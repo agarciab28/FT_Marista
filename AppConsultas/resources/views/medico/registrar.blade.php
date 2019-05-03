@@ -44,12 +44,9 @@
             <button type="button" class="btn class s4 menu" onclick="exploracionRegion()" >Exploración por Región</button>
             <button type="button" class="btn class s4 menu" onclick="sistemaMusculoEs()" >Sistema Musculo Esqueletico</button>
             <button type="button" class="btn class s4 menu" onclick="diagnosticoFisio()" >Diagnóstico Fisioterapéutico</button>
-            <button type="button" class="btn class s4 menu" onclick="dermatomas()" >Dermatomas</button>
             <button type="button" class="btn class s4 menu" onclick="mapaDolor()" >Mapa de Dolor</button>
             <button type="button" class="btn class s4 menu" onclick="arcosMovimiento()" >Arcos de Movimiento</button>
             <button type="button" class="btn class s4 menu" onclick="parNervio()" >Par/Nervio</button>
-            <button type="button" class="btn class s4 menu" onclick="escalaAshworth()" >Escala de Ashworth</button>
-            <button type="button" class="btn class s4 menu" onclick="reflejosOsteo()" >Reflejos Osteotendinosos</button>
             <button type="button" class="btn class s4 menu" onclick="tiposMarcha()" >Tipos de Marcha</button>
           </div>
         </div>
@@ -2253,7 +2250,8 @@
   </form>
 
   {{-- Diagnostico Fisioterapeutico--}}
-  <form class="" id="diagnostico_fisio" action="" method="">
+  <form class="" id="diagnostico_fisio" action="{{ route('diagf',[ $idpac ]) }} " method="POST">
+        {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Diagnostico Fisiterapéutico</h5>
       <div class="input-field col s12">
@@ -2294,30 +2292,31 @@
       <div class="row">
 
       </div>
+      <div class="row">
+        <h5 style="font-weight:bold;">Dermatomas, miotomas y pares craneales</h5>
+        <div class="contenedor row">
+          <img class="col s8 push-s2 responsive-img" src="{{ asset('img/musculos1.png') }}" alt="">
+        </div>
+        <div class="input-field col s12">
+          <textarea id="ta_dermatomas" name="ta_dermatomas" class="materialize-textarea"></textarea>
+          <label for="ta_dermatomas">Escribe aquí</label>
+        </div>
+
+        <div class="row">
+
+        </div>
+
+
+      </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
     </div>
   </form>
 
   {{-- Dermatomas, miotomas y pares craneales--}}
-  <form class="" id="dermatomas_etc" action="" method="">
-    <div class="row">
-      <h5 style="font-weight:bold;">Dermatomas, miotomas y pares craneales</h5>
-      <div class="contenedor row">
-        <img class="col s8 push-s2 responsive-img" src="{{ asset('img/musculos1.png') }}" alt="">
-      </div>
-      <div class="input-field col s12">
-        <textarea id="ta_dermatomas" name="ta_dermatomas" class="materialize-textarea"></textarea>
-        <label for="ta_dermatomas">Escribe aquí</label>
-      </div>
 
-      <div class="row">
 
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
-    </div>
-  </form>
 
   {{-- Mapa de Dolor--}}
   <form class="" id="mapa_dolor" action="" method="">
@@ -2848,7 +2847,8 @@
   </form>
 
   {{-- Par Nervio--}}
-  <form class="" id="par_nervio" action="" method="">
+  <form class="" id="par_nervio" action="{{ route('parn',[ $idpac ]) }}" method="POST">
+      {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Par Nervio</h5>
       <table class="responsive-table striped">
@@ -2960,124 +2960,125 @@
       </table>
       <div class="row">
 
-      </div>
+      </div>    <div class="row">
+            <h5 style="font-weight:bold;">Escala de ashworth</h5>
+            <p class="range-field">
+              <input type="range" id="escalaAsh" name="escalaAsh" min="0" max="4" />
+            </p>
+            <table class="responsive-table striped">
+              <thead>
+                <tr>
+                  <th>0</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tono musscular normal</td>
+                  <td>Hipertonía leve</td>
+                  <td>Hipertonía moderada</td>
+                  <td>Hipertonía intensa</td>
+                  <td>Hipertonía extrema</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+
+            </div>
+
+          </div>    <div class="row">
+                <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
+                <table class="responsive-table striped">
+                  <thead>
+                    <tr>
+                      <th>Metámera</th>
+                      <th>Nervio</th>
+                      <th>Reflejo</th>
+                      <th>Información</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Par V</td>
+                      <td>Trigémino</td>
+                      <td>Maseterino</td>
+                      <td>
+                        <textarea id="ta_maseterino" name="ta_maseterino" class="materialize-textarea"></textarea>
+                        <label for="ta_maseterino">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C5 y C6</td>
+                      <td>Musculocutáneo</td>
+                      <td>Bicipital</td>
+                      <td>
+                        <textarea id="ta_bicipital" name="ta_bicipital" class="materialize-textarea"></textarea>
+                        <label for="ta_bicipital">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C5 y C6</td>
+                      <td>Radial</td>
+                      <td>Estilorradical</td>
+                      <td>
+                        <textarea id="ta_estilo" name="ta_estilo" class="materialize-textarea"></textarea>
+                        <label for="ta_estilo">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C6, C7 y C8</td>
+                      <td>Radial</td>
+                      <td>Tricipital</td>
+                      <td>
+                        <textarea id="ta_tricipital" name="ta_tricipital" class="materialize-textarea"></textarea>
+                        <label for="ta_tricipital">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>L2, L3 y L4</td>
+                      <td>Crural</td>
+                      <td>Rotuliano</td>
+                      <td>
+                        <textarea id="ta_rotul" name="ta_rotul" class="materialize-textarea"></textarea>
+                        <label for="ta_rotul">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>L5, S1 y S2</td>
+                      <td>Tibial</td>
+                      <td>Aquíleo</td>
+                      <td>
+                        <textarea id="ta_aquileo" name="ta_aquileo" class="materialize-textarea"></textarea>
+                        <label for="ta_aquileo">Escribe aquí</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="row">
+
+                </div>
+
+              </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </form>
 
   {{-- Escala de ashwoth --}}
   <form class="" id="escala_ashworth" action="" method="">
-    <div class="row">
-      <h5 style="font-weight:bold;">Escala de ashworth</h5>
-      <p class="range-field">
-        <input type="range" id="escalaAsh" name="escalaAsh" min="0" max="4" />
-      </p>
-      <table class="responsive-table striped">
-        <thead>
-          <tr>
-            <th>0</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tono musscular normal</td>
-            <td>Hipertonía leve</td>
-            <td>Hipertonía moderada</td>
-            <td>Hipertonía intensa</td>
-            <td>Hipertonía extrema</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="row">
 
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
-    </div>
   </form>
 
   {{-- Reflejos Osteotendinosos --}}
   <form class="" id="reflejos_osteo" action="" method="">
-    <div class="row">
-      <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
-      <table class="responsive-table striped">
-        <thead>
-          <tr>
-            <th>Metámera</th>
-            <th>Nervio</th>
-            <th>Reflejo</th>
-            <th>Información</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Par V</td>
-            <td>Trigémino</td>
-            <td>Maseterino</td>
-            <td>
-              <textarea id="ta_maseterino" name="ta_maseterino" class="materialize-textarea"></textarea>
-              <label for="ta_maseterino">Escribe aquí</label>
-            </td>
-          </tr>
-          <tr>
-            <td>C5 y C6</td>
-            <td>Musculocutáneo</td>
-            <td>Bicipital</td>
-            <td>
-              <textarea id="ta_bicipital" name="ta_bicipital" class="materialize-textarea"></textarea>
-              <label for="ta_bicipital">Escribe aquí</label>
-            </td>
-          </tr>
-          <tr>
-            <td>C5 y C6</td>
-            <td>Radial</td>
-            <td>Estilorradical</td>
-            <td>
-              <textarea id="ta_estilo" name="ta_estilo" class="materialize-textarea"></textarea>
-              <label for="ta_estilo">Escribe aquí</label>
-            </td>
-          </tr>
-          <tr>
-            <td>C6, C7 y C8</td>
-            <td>Radial</td>
-            <td>Tricipital</td>
-            <td>
-              <textarea id="ta_tricipital" name="ta_tricipital" class="materialize-textarea"></textarea>
-              <label for="ta_tricipital">Escribe aquí</label>
-            </td>
-          </tr>
-          <tr>
-            <td>L2, L3 y L4</td>
-            <td>Crural</td>
-            <td>Rotuliano</td>
-            <td>
-              <textarea id="ta_rotul" name="ta_rotul" class="materialize-textarea"></textarea>
-              <label for="ta_rotul">Escribe aquí</label>
-            </td>
-          </tr>
-          <tr>
-            <td>L5, S1 y S2</td>
-            <td>Tibial</td>
-            <td>Aquíleo</td>
-            <td>
-              <textarea id="ta_aquileo" name="ta_aquileo" class="materialize-textarea"></textarea>
-              <label for="ta_aquileo">Escribe aquí</label>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="row">
 
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
-    </div>
   </form>
 
   {{-- Tipo de marcha --}}
-  <form class="" id="tipo_marcha" action="" method="">
+  <form class="" id="tipo_marcha" action="{{ route('tpm',[ $idpac ]) }}" method="POST">
+              {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Tipo de marcha</h5>
       <table class="responsive-table striped">
@@ -3092,7 +3093,7 @@
             <td>Hemiparética/Hemipléjica</td>
             <td>
               <label>
-                <input type="checkbox" name="hemi" class="filled-in"/>
+                <input type="checkbox" value="Si" name="hemi" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3101,7 +3102,7 @@
             <td>Cerebelosa/Atáxica</td>
             <td>
               <label>
-                <input type="checkbox" name="cerebelosa" class="filled-in"/>
+                <input type="checkbox" value="Si" name="cerebelosa" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3110,7 +3111,7 @@
             <td>Paraparética</td>
             <td>
               <label>
-                <input type="checkbox" name="paraparetica" class="filled-in"/>
+                <input type="checkbox" value="Si"  name="paraparetica" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3119,7 +3120,7 @@
             <td>Hipocinética/Parkinsoniana</td>
             <td>
               <label>
-                <input type="checkbox" name="hipo" class="filled-in"/>
+                <input type="checkbox" value="Si" name="hipo" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3128,7 +3129,7 @@
             <td>Vestibular</td>
             <td>
               <label>
-                <input type="checkbox" name="vesti" class="filled-in"/>
+                <input type="checkbox" value="Si" name="vesti" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3137,7 +3138,7 @@
             <td>Marcha de las correas</td>
             <td>
               <label>
-                <input type="checkbox" name="correas" class="filled-in"/>
+                <input type="checkbox" value="Si" name="correas" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3146,7 +3147,7 @@
             <td>Marcha de la ataxia sensorial</td>
             <td>
               <label>
-                <input type="checkbox" name="ataxia" class="filled-in"/>
+                <input type="checkbox" value="Si" name="ataxia" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3155,7 +3156,7 @@
             <td>Marcha de las miopatías</td>
             <td>
               <label>
-                <input type="checkbox" name="miopatias" class="filled-in"/>
+                <input type="checkbox" value="Si" name="miopatias" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3164,7 +3165,7 @@
             <td>Marcha histerica</td>
             <td>
               <label>
-                <input type="checkbox" name="histerica" class="filled-in"/>
+                <input type="checkbox" value="Si" name="histerica" class="filled-in"/>
                 <span>Si</span>
               </label>
             </td>
@@ -3178,18 +3179,6 @@
     </div>
   </form>
 
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
 
 <map name="image-map">
     <area alt="1" title="1" name="mpd-1" id="mpd-1" value="0" href="" coords="485,120,483,80,493,33,520,32,548,30,595,48,601,102,580,60,535,63,498,70,492,88,493,108" shape="poly">

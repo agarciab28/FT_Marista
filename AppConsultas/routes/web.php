@@ -114,6 +114,9 @@ Route::post('/expg/{idpac}', 'historialcontroller@expgm')->name('expg');
 Route::post('/expr/{idpac}', 'historialcontroller@exprm')->name('expr');
 Route::post('/smpr/{idpac}', 'historialcontroller@smprm')->name('smpr');
 Route::post('/arcm/{idpac}', 'historialcontroller@arcmm')->name('arcm');
+Route::post('/diagf/{idpac}', 'historialcontroller@diagfm')->name('diagf');
+Route::post('/parn/{idpac}', 'historialcontroller@parnm')->name('parn');
+Route::post('/tpm/{idpac}', 'historialcontroller@tpmm')->name('tpm');
 
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
 Route::get('datos_ficha_med/{id}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');
