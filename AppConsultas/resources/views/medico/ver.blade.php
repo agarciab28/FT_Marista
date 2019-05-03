@@ -102,7 +102,7 @@
 
          <tr>
            <td>13/03/2019</td>
-           <td> <a href="{{ route('med_ver_det') }}" class="waves-effect waves-light btn">Ver Detalles</a></td>
+           <td> <a href="{{ route('med_ver_det',[$usuario->id_ficha]) }}" class="waves-effect waves-light btn">Ver Detalles</a></td>
          </tr>
        </tbody>
       </table>

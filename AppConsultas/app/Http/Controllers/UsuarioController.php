@@ -6,7 +6,19 @@ use App\Models\ficha_id;
 use App\Usuario;
 use DB;
 use Illuminate\Http\Request;
-
+use App\Models\hchf;
+use App\Models\hcapp;
+use App\Models\hcapnp;
+use App\Models\hcago;
+use App\Models\hcpadeactual;
+use App\Models\hcsintoasgenerales;
+use App\Models\hcays;
+use App\Models\hcda;
+use App\Models\hcexploracion_fisica;
+use App\Models\hcexploracion_general;
+use App\Models\hcexploracion_por_region;
+use App\Models\hcsme;
+use App\Models\hcarcodemovimiento;
 class UsuarioController extends Controller
 {
     /**
@@ -82,9 +94,9 @@ class UsuarioController extends Controller
     }
 
     //medico ficha id
-    public function datos_ficha_med($curp)
+    public function datos_ficha_med($id)
     {
-        $user = DB::table('ficha_de_identificacion')->where('curp', $curp)->get();
+        $user = DB::table('ficha_de_identificacion')->where('id_ficha', $id)->get();
 
         // dd($user);
         return view('medico.ver', compact('user'));
@@ -183,7 +195,7 @@ else{
     $parte1=$request->get('tipoDeUsuario');
     $message="Limite de ".$parte1." alcanzado";
 }
-   
+
     echo "<script type='text/javascript'>alert('$message');</script>";
     return view('\admin\registrar');
 
@@ -250,7 +262,7 @@ else{
             $message="No se pudo registrar la ficha";
             echo "<script type='text/javascript'>alert('$message');</script>";
             return back();
-        
+
         }
       //  $usuariocp=ficha_id::where('curp', $request->get('curp'))
       //  ->get()->first();
@@ -318,6 +330,31 @@ else{
             return redirect()->route('listu');
         }
         return redirect()->route('listu');
+    }
+
+    public function med_ver_detm($id){
+
+
+      $paciente1 = hchf::where('id_f', $id)->get()->first();
+      $paciente2 = hcapp::where('id_f', $id)->get()->first();
+      $paciente3 = hcapnp::where('id_f', $id)->get()->first();
+      $paciente4 = hcago::where('id_f', $id)->get()->first();
+      $paciente5 = hcpadeactual::where('id_f', $id)->get()->first();
+      $paciente6 = hcsintoasgenerales::where('id_f', $id)->get()->first();
+      $paciente7 = hcda::where('id_f', $id)->get()->first();
+      $paciente8 = hcexploracion_fisica::where('id_f', $id)->get()->first();
+      $paciente9 = hcsintoasgenerales::where('id_f', $id)->get()->first();
+      $paciente10 = hcexploracion_general::where('id_f', $id)->get()->first();
+      $paciente11 = hcexploracion_por_region::where('id_f', $id)->get()->first();
+      $paciente12 = hcsme::where('id_f', $id)->get()->first();
+      $paciente13 = hcarcodemovimiento::where('id_f', $id)->get()->first();
+
+//if (isset($paciente4)) {
+//  $splitName = explode(';', $paciente4->menarca, 2);
+//  dd($splitName[0]);
+//}
+
+        return view('medico.ver_detalles',compact(['paciente1','paciente2','paciente3','paciente4']));
     }
 
 }

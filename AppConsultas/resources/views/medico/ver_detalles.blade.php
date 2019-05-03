@@ -67,760 +67,103 @@
             <thead>
               <tr>
                 <th>Padecimiento</th>
-                <th>Si o No</th>
-                <th>¿Quien?</th>
-                <th>¿Cual Padecimiento?</th>
+                <th>Detalle</th>
               </tr>
             </thead>
             <tbody>
+                @if (isset($paciente1))
               <tr>
                 <td>Enfermedades reumatologicas</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="enf_reu" type="radio"/>
-                    <span>Sí</span>
-                  </label>
 
-                  <label>
-                    <input class="with-gap" name="enf_reu" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-
-                <td>
-                  <label>
-                    <input type="checkbox" value="por parte de madre" name="madre1" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de padre"   name="padre1" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de abuelos" name="abuelos1" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="hermanos1"  value="por parte de hermanos" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" name="otros1"  value="por parte de otros" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_enf_reu" name="ta_enf_reu" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_reu">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->enfermedadesreumatologicas }} </td>
               </tr>
 
               <tr>
                 <td>Enfermedades del sistema nervioso</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="enf_sn" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="enf_sn" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox" value="por parte de madre" name="madre2" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de padre" name="padre2" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de abuelos" name="abuelos2" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de hermanos" name="hermanos2" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de otros" name="otros2" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_enf_sisnerv" name="ta_enf_sisnerv" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_sisnerv">Escribe aquí</label>
-                  </div>
-                </td>
-              </tr>
+                <td>{{ $paciente1->enfermadessn }} </tr>
 
               <tr>
                 <td>Sindromes</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="sin" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sin" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox" value="por parte de madre" name="madre3" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de padre" name="padre3" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de abuelos" name="abuelos3" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de hermanos" name="hermanos3" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de otros" name="otros3" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sindromes" name="ta_sindromes" class="materialize-textarea"></textarea>
-                    <label for="ta_sindromes">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>{{ $paciente1->sindromes }} </td>
               </tr>
               <tr>
                 <td>Malformaciones</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="mal" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="mal" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox" value="por parte de madre" name="madre4" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de padre" name="padre4" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de abuelos" name="abuelos4" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de hermanos" name="hermanos4" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox" value="por parte de otros" name="otros4" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_malfor" name="ta_malfor" class="materialize-textarea"></textarea>
-                    <label for="ta_malfor">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>{{ $paciente1->malformaciones }} </td>
               </tr>
               <tr>
-                <td>Congenitas</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="con" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="con" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"  value="por parte de madre" name="madre5" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de padre" name="padre5" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de abuelos" name="abuelos5" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de hermanos" name="hermanos5" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de otros" name="otros5" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_congenitas" name="ta_congenitas" class="materialize-textarea"></textarea>
-                    <label for="ta_congenitas">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>Congénitas</td>
+                <td>{{ $paciente1->congenitas }} </td>
+
               </tr>
               <tr>
                 <td>Diabetes</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="dia" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="dia" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"  value="por parte de madre" name="madre6" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de padre" name="padre6" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de abuelos" name="abuelos6" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de hermanos" name="hermanos6" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"  value="por parte de otros" name="otros6" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_diabetes" name="ta_diabetes" class="materialize-textarea"></textarea>
-                    <label for="ta_diabetes">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>{{ $paciente1->diabetes }} </td>
+
               </tr>
               <tr>
                 <td>Hipertension Arterial Sistemica</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="has" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="has" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre7" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre7" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos7" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos7" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros7" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hiper_art" name="ta_hiper_art" class="materialize-textarea"></textarea>
-                    <label for="ta_hiper_art">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>{{ $paciente1->hipertensionas }} </td>
+
               </tr>
               <tr>
                 <td>Cancer</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="can" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="can" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre8" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre8" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos8" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos8" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros8" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_cancer" name="ta_cancer" class="materialize-textarea"></textarea>
-                    <label for="ta_cancer">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->cancer }}</td>
+
               </tr>
               <tr>
                 <td>Cardiopatias</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="cardio" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="cardio" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre9" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre9" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos9" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos9" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros9" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_cardio" name="ta_cardio" class="materialize-textarea"></textarea>
-                    <label for="ta_cardio">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->cardiopatias }}</td>
+
               </tr>
               <tr>
                 <td>Vasculares</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="vascu" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="vascu" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre10" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre10" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos10" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos10" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros10" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_vascu" name="ta_vascu" class="materialize-textarea"></textarea>
-                    <label for="ta_vascu">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->vasculares }}</td>
+
               </tr>
               <tr>
                 <td>Pulmonares</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="pulmon" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="pulmon" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre11" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre11" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos11" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos11" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros11" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_pulmon" name="ta_pulmon" class="materialize-textarea"></textarea>
-                    <label for="ta_pulmon">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->pulmonares }}</td>
+
               </tr>
               <tr>
                 <td>Heptopatías</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="hepto" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hepto" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre12" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre12" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos12" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos12" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros12" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hepto" name="ta_hepto" class="materialize-textarea"></textarea>
-                    <label for="ta_hepto">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->heptopatias }}</td>
+
               </tr>
               <tr>
                 <td>Nefropatías</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="nefro" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="nefro" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre13" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre13" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos13" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos13" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros13" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_nefro" name="ta_nefro" class="materialize-textarea"></textarea>
-                    <label for="ta_nefro">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->nefropatias }}</td>
+
               </tr>
               <tr>
                 <td>Digestivos</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="diges" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="diges" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre14" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre14" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos14" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos14" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros14" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_diges" name="ta_diges" class="materialize-textarea"></textarea>
-                    <label for="ta_diges">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->digestivos }}</td>
+
               </tr>
               <tr>
                 <td>Endocrinopatías</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="endo" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="endo" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre15" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre15" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos15" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos15" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros15" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_endo" name="ta_endo" class="materialize-textarea"></textarea>
-                    <label for="ta_endo">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->endrocrinopatias }}</td>
+
               </tr>
               <tr>
                 <td>Transtornos Hematológicos</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="hemato" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hemato" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre16" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre16" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos16" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos16" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros16" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_trans_hemato" name="ta_trans_hemato" class="materialize-textarea"></textarea>
-                    <label for="ta_trans_hemato">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->transtornosh }}</td>
+
               </tr>
               <tr>
                 <td>Dislipidemias</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="disli" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="disli" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre17" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre17" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos17" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos17" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros17" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_disli" name="ta_disli" class="materialize-textarea"></textarea>
-                    <label for="ta_disli">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>{{ $paciente1->dislipidemias }}</td>
+
               </tr>
               <tr>
                 <td>Otros</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="otro" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="otro" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input type="checkbox"   value="por parte de madre" name="madre18" class="filled-in"/>
-                    <span>Madre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de padre" name="padre18" class="filled-in"/>
-                    <span>Padre</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de abuelos" name="abuelos18" class="filled-in"/>
-                    <span>Abuelos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de hermanos" name="hermanos18" class="filled-in"/>
-                    <span>Hermanos</span>
-                  </label>
-                  <label>
-                    <input type="checkbox"   value="por parte de otros" name="otros18" class="filled-in"/>
-                    <span>Otros</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_otros" name="ta_otros" class="materialize-textarea"></textarea>
-                    <label for="ta_otros">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{ $paciente1->otros }}</td>
+
               </tr>
+              @endif
             </tbody>
           </table>
-          <div class="row">
 
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </div>
 
@@ -834,397 +177,137 @@
             <thead>
               <tr>
                 <th>Problema</th>
-                <th>Si o No</th>
-                <th>¿Cuál?</th>
+                <th>Cual(es)</th>
               </tr>
             </thead>
             <tbody>
+              @if (isset($paciente2))
+
+
               <tr>
                 <td>Tipo de construcción no favorable</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="tcf" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="tcf" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_construc" name="ta_construc" class="materialize-textarea"></textarea>
-                    <label for="ta_construc">Escribe aquí</label>
-                  </div>
+{{ $paciente2->tipoconstruccionnf }}
                 </td>
               </tr>
               <tr>
                 <td>Suelo no regular</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="snr" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="snr" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_suelo" name="ta_suelo" class="materialize-textarea"></textarea>
-                    <label for="ta_suelo">Escribe aquí</label>
-                  </div>
+{{ $paciente2->suelonoregular }}
                 </td>
               </tr>
               <tr>
                 <td>Escaleras que dificultan actividades <br> de la vida diaria</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="escal" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="escal" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_escaleras" name="ta_escaleras" class="materialize-textarea"></textarea>
-                    <label for="ta_escaleras">Escribe aquí</label>
-                  </div>
+{{ $paciente2->escalaresda }}
                 </td>
               </tr>
               <tr>
                 <td>Ventilación inadecuada</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="ventil" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ventil" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_vent" name="ta_vent" class="materialize-textarea"></textarea>
-                    <label for="ta_vent">Escribe aquí</label>
-                  </div>
+{{ $paciente2->ventilacionina }}
                 </td>
               </tr>
               <tr>
                 <td>Hacinamiento</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="hacin" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hacin" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hacin" name="ta_hacin" class="materialize-textarea"></textarea>
-                    <label for="ta_hacin">Escribe aquí</label>
-                  </div>
+{{ $paciente2->hacinamiento }}
                 </td>
               </tr>
               <tr>
                 <td>Adaptaciones y auxiliares para sus <br> actividaes de la vida diaria</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="aya" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="aya" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_aya" name="ta_aya" class="materialize-textarea"></textarea>
-                    <label for="ta_aya">Escribe aquí</label>
-                  </div>
+{{ $paciente2->adaptacionesyaux }}
                 </td>
               </tr>
               <tr>
                 <td>Servicios de agua</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="sda" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sda" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sda" name="ta_sda" class="materialize-textarea"></textarea>
-                    <label for="ta_sda">Escribe aquí</label>
-                  </div>
+{{ $paciente2->serviciosdeagua }}
                 </td>
               </tr>
               <tr>
                 <td>Servicios de luz</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="sdl" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sdl" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sdl" name="ta_sdl" class="materialize-textarea"></textarea>
-                    <label for="ta_sdl">Escribe aquí</label>
-                  </div>
+{{ $paciente2->serviciosdeluz }}
                 </td>
               </tr>
               <tr>
                 <td>Servicios de drenaje inadecuados</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="sdd" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sdd" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sdd" name="ta_sdd" class="materialize-textarea"></textarea>
-                    <label for="ta_sdd">Escribe aquí</label>
-                  </div>
+{{ $paciente2->serviciosd }}
                 </td>
               </tr>
               <tr>
                 <td>Hábitos personales de baño</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="hpb" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hpb" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hpb" name="ta_hpb" class="materialize-textarea"></textarea>
-                    <label for="ta_hpb">¿Cuantas veces a la semana?</label>
-                  </div>
+{{ $paciente2->habitospersonalesb }}
                 </td>
               </tr>
               <tr>
                 <td>Higiene bucal</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="hb" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hb" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hb" name="ta_hb" class="materialize-textarea"></textarea>
-                    <label for="ta_hb">¿Cuántas veces al día?</label>
-                  </div>
+{{ $paciente2->higienebucal }}
                 </td>
               </tr>
               <tr>
                 <td>Defecación</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="def" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="antecedentes_hf" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_defec" name="ta_defec" class="materialize-textarea"></textarea>
-                    <label for="ta_defec">¿Cuántas veces al día?</label>
-                  </div>
+{{ $paciente2->defecacion }}
                 </td>
               </tr>
               <tr>
                 <td>Tabaquismo</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="taba" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="taba" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_taba" name="ta_taba" class="materialize-textarea"></textarea>
-                    <label for="ta_taba">¿Cuántos cigarros al día?</label>
-                  </div>
+{{ $paciente2->tabaquismo }}
                 </td>
               </tr>
               <tr>
                 <td>Alcoholismo</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="alco" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="alco" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_alco" name="ta_alco" class="materialize-textarea"></textarea>
-                    <label for="ta_alco">Frecuencia/Tipo/Tiempo</label>
-                  </div>
+{{ $paciente2->alcoholismo }}
                 </td>
               </tr>
               <tr>
                 <td>Toxicomanías</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="toxi" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="toxi" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_toxi" name="ta_toxi" class="materialize-textarea"></textarea>
-                    <label for="ta_toxi">Frecuencia/Tipo/Tiempo</label>
-                  </div>
+{{ $paciente2->toxicomanias }}
                 </td>
               </tr>
               <tr>
                 <td>Alimentación</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="alim" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="alim" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_alim" name="ta_alim" class="materialize-textarea"></textarea>
-                    <label for="ta_alim">Frecuencia/Tipo</label>
-                  </div>
+{{ $paciente2->alimentacion }}
                 </td>
               </tr>
               <tr>
                 <td>Inmunizaciones</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="inm" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="inm" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_inmun" name="ta_inmun" class="materialize-textarea"></textarea>
-                    <label for="ta_inmun">Cuales</label>
-                  </div>
+{{ $paciente2->inmunizaciones }}
                 </td>
               </tr>
               <tr>
                 <td>Trabajo/Descanso</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="trades" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="trades" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_trades" name="ta_trades" class="materialize-textarea"></textarea>
-                    <label for="ta_trades">Tiempo/Sentado/Parado</label>
-                  </div>
+{{ $paciente2->trabajodescanso }}
                 </td>
               </tr>
               <tr>
                 <td>Pasatiempo</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="pas" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="pas" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_pas" name="ta_pas" class="materialize-textarea"></textarea>
-                    <label for="ta_pas">Tipo</label>
-                  </div>
+{{ $paciente2->pasatiempo }}
                 </td>
               </tr>
               <tr>
                 <td>Deporte</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="dep" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="dep" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_dep" name="ta_dep" class="materialize-textarea"></textarea>
-                    <label for="ta_dep">Escribe aquí</label>
-                  </div>
+{{ $paciente2->deporte }}
                 </td>
               </tr>
+              @endif
             </tbody>
           </table>
-          <div class="row">
 
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </div>
 
@@ -1238,207 +321,84 @@
             <thead>
               <tr>
                 <th>Problema</th>
-                <th>Si o No</th>
                 <th>¿Cuál?</th>
               </tr>
             </thead>
             <tbody>
+              @if (isset($paciente3))
               <tr>
                 <td>Enfermedades infecciosas de la infancia</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="enf_inf" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="enf_inf" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_enf_inf" name="ta_enf_inf" class="materialize-textarea"></textarea>
-                    <label for="ta_enf_inf">Escribe aquí</label>
-                  </div>
+{{ $paciente3->eninin }}
                 </td>
               </tr>
               <tr>
                 <td>Intervenciones quirúrjicas</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="inter" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="inter" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_inter" name="ta_inter" class="materialize-textarea"></textarea>
-                    <label for="ta_inter">Escribe aquí</label>
-                  </div>
+{{ $paciente3->intervencionesq }}
+
                 </td>
               </tr>
               <tr>
                 <td>Traumatismos(Esguinces, <br> fracturas, luxaciones, desgarres)</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="trauma" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="trauma" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_trauma" name="ta_trauma" class="materialize-textarea"></textarea>
-                    <label for="ta_trauma">Escribe aquí</label>
-                  </div>
+{{ $paciente3->traumatismos }}
+
                 </td>
               </tr>
               <tr>
                 <td>Infiltraciones</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="infi" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="infi" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_infi" name="ta_infi" class="materialize-textarea"></textarea>
-                    <label for="ta_infi">Escribe aquí</label>
-                  </div>
+{{ $paciente3->infiltraciones }}
+
                 </td>
               </tr>
               <tr>
                 <td>Hospitalizaciones</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="hospi" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="hospi" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_hospi" name="ta_hospi" class="materialize-textarea"></textarea>
-                    <label for="ta_hospi">Escribe aquí</label>
-                  </div>
+{{ $paciente3->hospitalizaciones }}
+
                 </td>
               </tr>
               <tr>
                 <td>Perdida del conocimiento</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="per_con" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="per_con" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_per_con" name="ta_per_con" class="materialize-textarea"></textarea>
-                    <label for="ta_per_con">Escribe aquí</label>
-                  </div>
+{{ $paciente3->perdidadeconocimiento }}
+
                 </td>
               </tr>
               <tr>
                 <td>Intolerancia a medicamentos</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="int_med" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="int_med" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_int_med" name="ta_int_med" class="materialize-textarea"></textarea>
-                    <label for="ta_int_med">Escribe aquí</label>
-                  </div>
+{{ $paciente3->intoleranciamed }}
+
                 </td>
               </tr>
               <tr>
                 <td>Transfuciones</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="trans" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="trans" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_trans" name="ta_trans" class="materialize-textarea"></textarea>
-                    <label for="ta_trans">Escribe aquí</label>
-                  </div>
+{{ $paciente3->transfusiones }}
+
                 </td>
               </tr>
               <tr>
                 <td>Medicamentos</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="meds" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="meds" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_meds" name="ta_meds" class="materialize-textarea"></textarea>
-                    <label for="ta_meds">Escribe aquí</label>
-                  </div>
+{{ $paciente3->medicamentos }}
+
                 </td>
               </tr>
               <tr>
                 <td>Enfermedades de transmisión sexual</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="ets" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ets" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ets" name="ta_ets" class="materialize-textarea"></textarea>
-                    <label for="ta_ets">Escribe aquí</label>
-                  </div>
+{{ $paciente3->ta_ets }}
+
                 </td>
               </tr>
+              @endif
             </tbody>
           </table>
-          <div class="row">
 
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+
         </div>
       </div>
 
@@ -1449,215 +409,92 @@
           <table class="responsive-table striped">
             <thead>
               <tr>
-                <th>Problema</th>
-                <th>Si o No</th>
+                <th>Problema </th>
                 <th>¿Cuántos?</th>
                 <th>Fecha</th>
               </tr>
             </thead>
             <tbody>
+              @if (isset($paciente4))
               <tr>
                 <td>Menarca</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="menarca" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="menarca" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->menarca, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_menarca" name="ta_menarca" class="materialize-textarea"></textarea>
-                    <label for="ta_menarca">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha1" name="fecha1" type="date" class="datepicker">
-                  </div>
+{{ $pac=(explode(';', $paciente4->menarca, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Ritmo Menstrual</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="ritmo" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ritmo" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->ritmomenstrual, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ritmo" name="ta_ritmo" class="materialize-textarea"></textarea>
-                    <label for="ta_ritmo">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha2" name="fecha2" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->ritmomenstrual, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Partos</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="partos" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="partos" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->partos, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_partos" name="ta_partos" class="materialize-textarea"></textarea>
-                    <label for="ta_partos">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha3" name="fecha3" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->partos, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Abortos</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="abortos" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="abortos" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->abortos, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_abortos" name="ta_abortos" class="materialize-textarea"></textarea>
-                    <label for="ta_abortos">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha4" name="fecha4" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->abortos, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Cesáreas</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="cesareas" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="cesareas" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->cesareas, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_cesareas" name="ta_cesareas" class="materialize-textarea"></textarea>
-                    <label for="ta_cesareas">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha5" name="fecha5" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->cesareas, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Métodos anticonceptivos</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->metodoanticoncept, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_met_anti" name="ta_met_anti" class="materialize-textarea"></textarea>
-                    <label for="ta_met_anti">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha6" name="fecha6" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->metodoanticoncept, 2))[1] }}
                 </td>
               </tr>
 
               <tr>
                 <td>F.U.M</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->fum, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_fum" name="ta_fum" class="materialize-textarea"></textarea>
-                    <label for="ta_fum">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha7" name="fecha7" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->fum, 2))[1] }}
                 </td>
               </tr>
 
               <tr>
                 <td>I.V.S.A</td>
                 <td>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="met_anti" type="radio"/>
-                    <span>No</span>
-                  </label>
+{{ $pac=(explode(';', $paciente4->ivsa, 2))[0] }}
                 </td>
                 <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ivsa" name="ta_ivsa" class="materialize-textarea"></textarea>
-                    <label for="ta_ivsa">Escribe aquí</label>
-                  </div>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <input id="fecha8" name="fecha8" class="datepicker" type="date">
-                  </div>
+{{ $pac=(explode(';', $paciente4->ivsa, 2))[1] }}
                 </td>
               </tr>
 
-
+              @endif
             </tbody>
           </table>
-          <div class="row">
 
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </div>
 

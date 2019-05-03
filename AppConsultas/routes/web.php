@@ -94,9 +94,9 @@ Route::get('/medico/buscar/citas/{idpac}', function () {
     return view('medico.citas');
 })->name('med_bc');
 
-Route::get('/medico/ver_detalles', function(){
-  return view('medico.ver_detalles');
-})->name('med_ver_det');
+//Route::get('/medico/ver_detalles/', function(){
+//  return view('medico.ver_detalles');
+//})->name('med_ver_det');
 
 
 
@@ -116,5 +116,6 @@ Route::post('/smpr/{idpac}', 'historialcontroller@smprm')->name('smpr');
 Route::post('/arcm/{idpac}', 'historialcontroller@arcmm')->name('arcm');
 
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
-Route::get('datos_ficha_med/{curp}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');
+Route::get('datos_ficha_med/{id}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');
 Route::get('datos_ficha_pra/{curp}', 'UsuarioController@datos_ficha_pra')->name('datos_ficha_pra');
+Route::get('med_ver_det/{id}', 'UsuarioController@med_ver_detm')->name('med_ver_det');
