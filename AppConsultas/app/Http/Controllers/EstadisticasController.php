@@ -5,8 +5,8 @@ use DB;
 class historialcontroller extends Controller
 {
     public function sendstats(){
-        $edades=DB::Table('ficha_de_identificacion')->select('edad')->get();
-        $generos=DB::Table('ficha_de_identificacion')->select('sexo')->get();
+        $edades=DB::Table('ficha_de_identificacion')->select('edad')->get()->toArray();;
+        $generos=DB::Table('ficha_de_identificacion')->select('sexo')->get()->toArray();;
         $count1 = DB::table('hcsintomasgenerales')->count('astenia');
         $count2 = DB::table('hcsintomasgenerales')->count('adinamia');
         $count3 = DB::table('hcsintomasgenerales')->count('anorexia');
@@ -24,7 +24,7 @@ class historialcontroller extends Controller
         $count88 = DB::table('hcays')->count('aparatosensorial');
         $count88 = DB::table('hcays')->count('aparatoosteomuscu');
         $ays=array(1 => $count11, $count22, $count33, $count44, $count55,$count66,$count77,$count88);
-        return view('admin.estadisticas',compact(['edades,generos,sintomas,ays']));
+        return response()->json($edades,$generos,$sintomas,$ays);
      }
 
 }
