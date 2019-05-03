@@ -36,7 +36,7 @@ Route::get('/admin/buscar/ver', function(){
 Route::get('/admin/estadisticas', function(){
   return view('admin.estadisticas');
 });
-
+Route::get('/estadisticas','EstadisticasController@sendstats')->name('admin_estats');
 Route::get('/admin/modificar_usuario', function(){
   return view('admin.modificar_usuario');
 });
