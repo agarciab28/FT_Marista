@@ -29,7 +29,7 @@ class Usuario extends Migration
             $table->string('updated_at', 20);
             $table->string('created_at', 20);
         });
-      
+
         DB::connection()->getPdo()->exec("
       DROP PROCEDURE IF EXISTS check_tipom;
       DROP PROCEDURE IF EXISTS check_tipof;
@@ -42,7 +42,7 @@ class Usuario extends Migration
 
       DB::connection()->getPdo()->exec("
         -- Create the procedure maestro
-        
+
         CREATE PROCEDURE check_tipom (nom VARCHAR(50))
         BEGIN
         DECLARE var INT DEFAULT 0;
@@ -56,47 +56,47 @@ class Usuario extends Migration
         IF  (var > 4) THEN
             SIGNAL SQLSTATE '45000' SET message_text = 'Limite de fisioterapeutas alcanzado';
         END IF;
-    END IF;      
+    END IF;
     IF (nom = 'pasante') then
     IF  (var > 6) THEN
         SIGNAL SQLSTATE '45000' SET message_text = 'Limite de pasantes alcanzado';
     END IF;
-END IF;  
+END IF;
 IF (nom = 'practicante') then
 IF  (var > 10) THEN
     SIGNAL SQLSTATE '45000' SET message_text = 'Limite de practicantes alcanzado';
 END IF;
-END IF;  
+END IF;
 IF (nom = 'administrador') then
 IF  (var > 1) THEN
     SIGNAL SQLSTATE '45000' SET message_text = 'Limite de administradores alcanzado';
 END IF;
-END IF; 
+END IF;
 IF (nom = 'rectoria') then
 IF  (var > 1) THEN
     SIGNAL SQLSTATE '45000' SET message_text = 'Limite de rectores alcanzado';
 END IF;
-END IF; 
+END IF;
 IF (nom = 'coordinador') then
 IF  (var > 1) THEN
     SIGNAL SQLSTATE '45000' SET message_text = 'Limite de coordinadores alcanzado';
 END IF;
-END IF; 
+END IF;
         END;
-        
+
 ");
 
-    
+
 DB::connection()->getPdo()->exec("
 -- Create the INSERT trigger
-CREATE TRIGGER check_tipo_m BEFORE INSERT ON `clinica`.`usuario`
-FOR EACH ROW 
+CREATE TRIGGER check_tipo_m BEFORE INSERT ON `gps_marista`.`usuario`
+FOR EACH ROW
 BEGIN
   CALL check_tipom(NEW.tipoDeUsuario);
 END;
 
 ");
-  
+
 }
 
     /**
@@ -107,6 +107,6 @@ END;
     public function down()
     {
         Schema::dropIfExists('usuario');
-  
+
     }
 }

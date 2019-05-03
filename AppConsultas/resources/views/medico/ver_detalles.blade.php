@@ -44,12 +44,10 @@
             <button type="button" class="btn class s4 menu" onclick="exploracionRegion()" >Exploración por Región</button>
             <button type="button" class="btn class s4 menu" onclick="sistemaMusculoEs()" >Sistema Musculo Esqueletico</button>
             <button type="button" class="btn class s4 menu" onclick="diagnosticoFisio()" >Diagnóstico Fisioterapéutico</button>
-            <button type="button" class="btn class s4 menu" onclick="dermatomas()" >Dermatomas</button>
             <button type="button" class="btn class s4 menu" onclick="mapaDolor()" >Mapa de Dolor</button>
             <button type="button" class="btn class s4 menu" onclick="arcosMovimiento()" >Arcos de Movimiento</button>
             <button type="button" class="btn class s4 menu" onclick="parNervio()" >Par/Nervio</button>
-            <button type="button" class="btn class s4 menu" onclick="escalaAshworth()" >Escala de Ashworth</button>
-            <button type="button" class="btn class s4 menu" onclick="reflejosOsteo()" >Reflejos Osteotendinosos</button>
+
             <button type="button" class="btn class s4 menu" onclick="tiposMarcha()" >Tipos de Marcha</button>
           </div>
         </div>
@@ -1465,7 +1463,7 @@
   </div>
 
   {{-- Par Nervio--}}
-  <div class="" id="par_nervio"      >
+  <div class="" id="par_nervio" >
     <div class="row">
       <h5 style="font-weight:bold;">Par Nervio</h5>
       <table class="responsive-table striped">
@@ -1577,11 +1575,111 @@
       </table>
       <div class="row">
 
-      </div>
+      </div>    <div class="row">
+            <h5 style="font-weight:bold;">Escala de ashworth</h5>
+            <p class="range-field">
+              <input type="range" id="escalaAsh" name="escalaAsh" min="0" max="4" />
+            </p>
+            <table class="responsive-table striped">
+              <thead>
+                <tr>
+                  <th>0</th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tono musscular normal</td>
+                  <td>Hipertonía leve</td>
+                  <td>Hipertonía moderada</td>
+                  <td>Hipertonía intensa</td>
+                  <td>Hipertonía extrema</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+
+            </div>
+
+          </div>    <div class="row">
+                <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
+                <table class="responsive-table striped">
+                  <thead>
+                    <tr>
+                      <th>Metámera</th>
+                      <th>Nervio</th>
+                      <th>Reflejo</th>
+                      <th>Información</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Par V</td>
+                      <td>Trigémino</td>
+                      <td>Maseterino</td>
+                      <td>
+                        <textarea id="ta_maseterino" name="ta_maseterino" class="materialize-textarea"></textarea>
+                        <label for="ta_maseterino">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C5 y C6</td>
+                      <td>Musculocutáneo</td>
+                      <td>Bicipital</td>
+                      <td>
+                        <textarea id="ta_bicipital" name="ta_bicipital" class="materialize-textarea"></textarea>
+                        <label for="ta_bicipital">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C5 y C6</td>
+                      <td>Radial</td>
+                      <td>Estilorradical</td>
+                      <td>
+                        <textarea id="ta_estilo" name="ta_estilo" class="materialize-textarea"></textarea>
+                        <label for="ta_estilo">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>C6, C7 y C8</td>
+                      <td>Radial</td>
+                      <td>Tricipital</td>
+                      <td>
+                        <textarea id="ta_tricipital" name="ta_tricipital" class="materialize-textarea"></textarea>
+                        <label for="ta_tricipital">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>L2, L3 y L4</td>
+                      <td>Crural</td>
+                      <td>Rotuliano</td>
+                      <td>
+                        <textarea id="ta_rotul" name="ta_rotul" class="materialize-textarea"></textarea>
+                        <label for="ta_rotul">Escribe aquí</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>L5, S1 y S2</td>
+                      <td>Tibial</td>
+                      <td>Aquíleo</td>
+                      <td>
+                        <textarea id="ta_aquileo" name="ta_aquileo" class="materialize-textarea"></textarea>
+                        <label for="ta_aquileo">Escribe aquí</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="row">
+
+                </div>
+
+              </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
   </div>
-
   {{-- Escala de ashwoth --}}
   <div class="" id="escala_ashworth"      >
     <div class="row">
