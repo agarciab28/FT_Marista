@@ -15,7 +15,7 @@ class Hcsintomasgenerales extends Migration
     {
         Schema::create('hcsintomasgenerales', function (Blueprint $table) {
             $table->increments('id_hcsintomasgenerales',10);
-            $table->text('astonia')->nullable();
+            $table->text('astenia')->nullable();
             $table->text('adinamia')->nullable();
             $table->text('anorexia')->nullable();
             $table->text('fiebre')->nullable();

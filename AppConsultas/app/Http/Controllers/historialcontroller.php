@@ -16,6 +16,7 @@ use App\Models\hcexploracion_fisica;
 use App\Models\hcexploracion_general;
 use App\Models\hcexploracion_por_region;
 use App\Models\hcsme;
+use App\Models\hcarcodemovimiento;
 class historialcontroller extends Controller
 {
     //
@@ -122,14 +123,14 @@ public function hcapnpp(Request $request, $idpac){
 
 public function hcagoo(Request $request, $idpac){
 
-$y1 = $request->get('ta_menarca').' '.$request->get('fecha1');
-$y2 = $request->get('ta_ritmo').' '.$request->get('fecha2');
-$y3 = $request->get('ta_partos').' '.$request->get('fecha3');
-$y4 = $request->get('ta_abortos').' '.$request->get('fecha4');
-$y5 = $request->get('ta_cesareas').' '.$request->get('fecha5');
-$y6 = $request->get('ta_met_anti').' '.$request->get('fecha6');
-$y7 = $request->get('ta_fum').' '.$request->get('fecha7');
-$y8 = $request->get('ta_ivsa').' '.$request->get('fecha8');
+$y1 = $request->get('ta_menarca').';'.$request->get('fecha1');
+$y2 = $request->get('ta_ritmo').';'.$request->get('fecha2');
+$y3 = $request->get('ta_partos').';'.$request->get('fecha3');
+$y4 = $request->get('ta_abortos').';'.$request->get('fecha4');
+$y5 = $request->get('ta_cesareas').';'.$request->get('fecha5');
+$y6 = $request->get('ta_met_anti').';'.$request->get('fecha6');
+$y7 = $request->get('ta_fum').';'.$request->get('fecha7');
+$y8 = $request->get('ta_ivsa').';'.$request->get('fecha8');
 
   $x = new hcago([
     'menarca' => $y1,
@@ -282,9 +283,9 @@ return back();
 }
 
 public function smprm(Request $request, $idpac){
-$x1 = "Coloumna => Cervical: ".$request->get('cervical')." Dorsolumbar: ".$request->get('dorso')." Sacroiliaca: ".$request->get('sacro');
-$x2 = "Miembro superior => Hombros: ".$request->get('hombros')." Codo: ".$request->get('codo')." Muñeca: ".$request->get('muñeca')." Mano: ".$request->get('mano');
-$x3 = "Miembro inferior => Cadera: ".$request->get('cadera')." Rodilla: ".$request->get('rodilla')." Tobillo: ".$request->get('tobillo')." Pie: ".$request->get('pie');
+$x1 = $request->get('cervical').";".$request->get('dorso').";".$request->get('sacro');
+$x2 = $request->get('hombros').";".$request->get('codo').";".$request->get('muñeca').";".$request->get('mano');
+$x3 = $request->get('cadera').";".$request->get('rodilla').";".$request->get('tobillo').";".$request->get('pie');
   $y = new hcsme([
     'columna' => $x1,
     'miembrosuperior' => $x2,
@@ -294,4 +295,27 @@ $x3 = "Miembro inferior => Cadera: ".$request->get('cadera')." Rodilla: ".$reque
 $y->save();
 return back();
 }
+
+public function arcmm(Request $request, $idpac){
+$x1=$request->get('columcerv_flex').",".$request->get('columcerv_exten').",".$request->get('columcerv_rotintern').",".$request->get('columcerv_rotextern').",".$request->get('columcerv_abdu').",".$request->get('columcerv_adu').",".$request->get('columcerv_desvrad').",".$request->get('columcerv_desvcubi').
+";".$request->get('columdors_flex').",".$request->get('columdors_exten').",".$request->get('columdors_rotintern').",".$request->get('columdors_rotextern').",".$request->get('columdors_abdu').",".$request->get('columdors_adu').",".$request->get('columdors_desvrad').",".$request->get('columdors_desvcubi').
+";".$request->get('columlumb_flex').",".$request->get('columlumb_exten').",".$request->get('columlumb_rotintern').",".$request->get('columlumb_rotextern').",".$request->get('columlumb_abdu').",".$request->get('columlumb_adu').",".$request->get('columlumb_desvrad').",".$request->get('columlumb_desvcubi').
+";".$request->get('hombro_flex').",".$request->get('hombro_exten').",".$request->get('hombro_rotintern').",".$request->get('hombro_rotextern').",".$request->get('hombro_abdu').",".$request->get('hombro_adu').",".$request->get('hombro_desvrad').",".$request->get('hombro_desvcubi').
+";".$request->get('codo_flex').",".$request->get('codo_exten').",".$request->get('codo_rotintern').",".$request->get('codo_rotextern').",".$request->get('codo_abdu').",".$request->get('codo_adu').",".$request->get('codo_desvrad').",".$request->get('codo_desvcubi').
+";".$request->get('muñeca_flex').",".$request->get('muñeca_exten').",".$request->get('muñeca_rotintern').",".$request->get('muñeca_rotextern').",".$request->get('muñeca_abdu').",".$request->get('muñeca_adu').",".$request->get('muñeca_desvrad').",".$request->get('muñeca_desvcubi').
+";".$request->get('mano_flex').",".$request->get('mano_exten').",".$request->get('mano_rotintern').",".$request->get('mano_rotextern').",".$request->get('mano_abdu').",".$request->get('mano_adu').",".$request->get('mano_desvrad').",".$request->get('mano_desvcubi').
+";".$request->get('cadera_flex').",".$request->get('cadera_exten').",".$request->get('cadera_rotintern').",".$request->get('cadera_rotextern').",".$request->get('cadera_abdu').",".$request->get('cadera_adu').",".$request->get('cadera_desvrad').",".$request->get('cadera_desvcubi').
+";".$request->get('rodilla_flex').",".$request->get('rodilla_exten').",".$request->get('rodilla_rotintern').",".$request->get('rodilla_rotextern').",".$request->get('rodilla_abdu').",".$request->get('rodilla_adu').",".$request->get('rodilla_desvrad').",".$request->get('rodilla_desvcubi').
+";".$request->get('tobillo_flex').",".$request->get('tobillo_exten').",".$request->get('tobillo_rotintern').",".$request->get('tobillo_rotextern').",".$request->get('tobillo_abdu').",".$request->get('tobillo_adu').",".$request->get('tobillo_desvrad').",".$request->get('tobillo_desvcubi').
+";".$request->get('pie_flex').",".$request->get('pie_exten').",".$request->get('pie_rotintern').",".$request->get('pie_rotextern').",".$request->get('pie_abdu').",".$request->get('pie_adu').",".$request->get('pie_desvrad').",".$request->get('pie_desvcubi');
+
+ $y = new hcarcodemovimiento([
+   'datos' => $x1,
+    'id_f' => $idpac
+  ]);
+
+$y->save();
+return back();
+}
+
 }

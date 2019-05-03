@@ -100,25 +100,33 @@ class UsuarioController extends Controller
     }
 
 //metodo para actualizar registros
-    public function modificar_mod(Request $request, $id)
-    {
+    public function modificar_mod(Request $request, $id){
+  try{
         $usuario = Usuario::find($id);
-        $usuario_n = [
-            'nombre' => $request->get('nombre'),
-            'apellidoP' => $request->get('apellidoP'),
-            'apellidoM' => $request->get('apellidoM'),
-            'correoElectronico' => $request->get('correoElectronico'),
-            'nombreDeUsuario' => $request->get('nombreDeUsuario'),
-            'password' => bcrypt($request->get('password')),
-            'cedulaProfesional' => $request->get('cedulaProfesional'),
-            'cedulaMoE' => $request->get('cedulaMoE'),
-            'telefono' => $request->get('telefono'),
-            'curp' => $request->get('curp'),
-        ];
-        //dd($usuario_n);
-        //dd($request->except('_token'));
-        $usuario->update($usuario_n);
-        return redirect()->route('listu');
+  $usuario_n = [
+    'nombre' => $request->get('nombre'),
+    'apellidoP' => $request->get('apellidoP'),
+    'apellidoM' => $request->get('apellidoM'),
+    'correoElectronico' => $request->get('correoElectronico'),
+    'nombreDeUsuario' => $request->get('nombreDeUsuario'),
+    'password' => bcrypt($request->get('password')),
+    'cedulaProfesional' => $request->get('cedulaProfesional'),
+    'cedulaMoE' => $request->get('cedulaMoE'),
+    'telefono' => $request->get('telefono'),
+    'curp' => $request->get('curp')
+    ];
+  //dd($usuario_n);
+  //dd($request->except('_token'));
+  $usuario->update($usuario_n);
+}catch(\Exception $e){
+    $message="Algo salio mal al actualizar";
+    echo "<script type='text/javascript'>alert('$message');</script>";
+    return redirect()->route('listu');
+
+}
+$message="Actualizacion de datos exitosa";
+echo "<script type='text/javascript'>alert('$message');</script>";
+    return redirect()->route('listu');
     }
 
     /**
@@ -148,27 +156,36 @@ class UsuarioController extends Controller
             'apellidoM' => 'required', 'telefono' => 'required', 'correoElectronico' => 'required', 'nombreDeUsuario' => 'required',
             'tipoDeUsuario' => 'required', 'cedulaProfesional' => 'required', 'cedulaMoE' => 'required']);
 
-        try {
-            $Usuario = new Usuario([
-                'curp' => $request->get('curp'),
-                'nombre' => $request->get('nombre'),
-                'password' => bcrypt($request->get('password')),
-                'apellidoP' => $request->get('apellidoP'),
-                'apellidoM' => $request->get('apellidoM'),
-                'telefono' => $request->get('telefono'),
-                'correoElectronico' => $request->get('correoElectronico'),
-                'nombreDeUsuario' => $request->get('nombreDeUsuario'),
-                'tipoDeUsuario' => $request->get('tipoDeUsuario'),
-                'cedulaProfesional' => $request->get('cedulaProfesional'),
-                'cedulaMoE' => $request->get('cedulaMoE'),
-            ]);
-            //dd($Usuario);
-            $Usuario->save();
-        } catch (\Exception $e) {
-            $parte1 = $request->get('tipoDeUsuario');
-            $message = "Limite de " . $parte1 . " alcanzado";
-            echo "<script type='text/javascript'>alert('$message');</script>";
-            return view('\admin\registrar');
+try{
+        $Usuario = new Usuario([
+            'curp' => $request->get('curp'),
+            'nombre' => $request->get('nombre'),
+            'password' => bcrypt($request->get('password')),
+            'apellidoP' => $request->get('apellidoP'),
+            'apellidoM' => $request->get('apellidoM'),
+            'telefono' => $request->get('telefono'),
+            'correoElectronico' => $request->get('correoElectronico'),
+            'nombreDeUsuario' => $request->get('nombreDeUsuario'),
+            'tipoDeUsuario' => $request->get('tipoDeUsuario'),
+            'cedulaProfesional' => $request->get('cedulaProfesional'),
+            'cedulaMoE' => $request->get('cedulaMoE')
+        ]);
+        //dd($Usuario);
+        $Usuario->save();
+}catch(\Exception $e){
+    $array = DB::table('usuario')
+    ->select(DB::raw('count(*)'))
+    ->where('curp', $request->get('curp'))->get();
+if($array){
+$message="Esa curp ya fue registrada";
+}
+else{
+    $parte1=$request->get('tipoDeUsuario');
+    $message="Limite de ".$parte1." alcanzado";
+}
+   
+    echo "<script type='text/javascript'>alert('$message');</script>";
+    return view('\admin\registrar');
 
         }
         //return back()->with('status','Usuario registrado exitosamente');
@@ -179,29 +196,30 @@ class UsuarioController extends Controller
 //registro de pacientes, ficha de identidad
     public function store_ficha_id(Request $request)
     {
-        $this->validate(request(), [
-            'curp' => 'required|max:30',
-            'nombre' => 'required|max:70',
-            'apellido_p' => 'required|max:45',
-            'apellido_m' => 'required|max:45',
-            'edad' => 'required|numeric|min:1|max:130',
-            'sex' => 'required|in:M,F',
-            'nacionalidad' => 'required|max:30',
-            'est_civ' => 'required|in:S,C',
-            'ocupacion' => 'required|max:40',
-            'calle' => 'required|max:30',
-            'numero_int' => 'required|numeric',
-            'numero_ext' => 'required|numeric',
-            'colonia' => 'required|max:30',
-            'ciudad' => 'required|max:30',
-            'estado' => 'required|max:20',
-            'tel1' => 'required|max:15',
-            'celular' => 'required|max:15',
-            'religion' => 'required|max:20',
-            'nombre2' => 'required|max:60',
-            'tel2' => 'required',
-            'motivo' => 'required|max:50',
-        ]);
+        try{
+      $this->validate(request(), [
+        'curp'  => 'required|max:30',
+        'nombre' => 'required|max:70',
+        'apellido_p' => 'required|max:45',
+        'apellido_m' => 'required|max:45',
+        'edad' => 'required|numeric|min:1|max:130',
+        'sex' => 'required|in:M,F',
+        'nacionalidad' => 'required|max:30',
+        'est_civ' => 'required|in:S,C',
+        'ocupacion' => 'required|max:40',
+        'calle' => 'required|max:30',
+        'numero_int' => 'required|numeric',
+        'numero_ext' => 'required|numeric',
+        'colonia' => 'required|max:30',
+        'ciudad' => 'required|max:30',
+        'estado' => 'required|max:20',
+        'tel1' => 'required|max:15',
+        'celular' => 'required|max:15',
+        'religion' => 'required|max:20',
+        'nombre2' => 'required|max:60',
+        'tel2' => 'required',
+        'motivo' => 'required|max:50'
+      ]);
 
         $ficha = new ficha_id([
             'curp' => $request->get('curp'),
@@ -228,12 +246,18 @@ class UsuarioController extends Controller
         ]);
         // dd($Usuario);
         $ficha->save();
+        }catch(\Exception $e){
+            $message="No se pudo registrar la ficha";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            return back();
+        
+        }
+      //  $usuariocp=ficha_id::where('curp', $request->get('curp'))
+      //  ->get()->first();
 
-        //  $usuariocp=ficha_id::where('curp', $request->get('curp'))
-        //  ->get()->first();
-
-        //  $idficha = $usuariocp->id_ficha;
-
+      //  $idficha = $usuariocp->id_ficha;
+      $message="Registro exitoso";
+      echo "<script type='text/javascript'>alert('$message');</script>";
         return back();
 
     }
@@ -284,15 +308,16 @@ class UsuarioController extends Controller
     }
     public function deleteuser($id)
     {
-        $user = DB::table('usuario')->where('id', $id);
+        try{
+         $user=DB::table('usuario')->where('id',$id);
 
-        $user->delete();
-
-        if (!$user) {
-            return back()->with('success', 'Usuario eliminado exitosamente');
-        } else {
-            return back()->with('success', 'Usuario NO eliminado');
+         $user->delete();
+        }catch(\Exception $e){
+            $message="No se pudo eliminar";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+            return redirect()->route('listu');
         }
+        return redirect()->route('listu');
     }
 
 }

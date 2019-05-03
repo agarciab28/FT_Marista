@@ -36,9 +36,9 @@ Route::get('/admin/buscar/ver', function () {
 Route::get('/admin/estadisticas', function () {
     return view('admin.estadisticas');
 });
-
-Route::get('/admin/modificar_usuario', function () {
-    return view('admin.modificar_usuario');
+Route::get('/estadisticas','EstadisticasController@sendstats')->name('admin_estats');
+Route::get('/admin/modificar_usuario', function(){
+  return view('admin.modificar_usuario');
 });
 
 // Rutas Medico
@@ -94,6 +94,12 @@ Route::get('/medico/buscar/citas/{idpac}', function () {
     return view('medico.citas');
 })->name('med_bc');
 
+Route::get('/medico/ver_detalles', function(){
+  return view('medico.ver_detalles');
+})->name('med_ver_det');
+
+
+
 ///registro historialcontroller
 Route::post('/ant_hered_fam/{idpac}', 'historialcontroller@ant_hered_fam1')->name('hcahf');
 Route::post('/ant_pp/{idpac}', 'historialcontroller@anpp')->name('anpepa');
@@ -107,6 +113,7 @@ Route::post('/expf/{idpac}', 'historialcontroller@expfm')->name('expf');
 Route::post('/expg/{idpac}', 'historialcontroller@expgm')->name('expg');
 Route::post('/expr/{idpac}', 'historialcontroller@exprm')->name('expr');
 Route::post('/smpr/{idpac}', 'historialcontroller@smprm')->name('smpr');
+Route::post('/arcm/{idpac}', 'historialcontroller@arcmm')->name('arcm');
 
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
 Route::get('datos_ficha_med/{curp}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');
