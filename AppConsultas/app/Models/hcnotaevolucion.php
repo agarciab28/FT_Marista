@@ -10,6 +10,6 @@ class hcnotaevolucion extends Model
     protected $fillable = [
         'fecha',
         'nota',
-        'curp'
+        'id_f'
     ];
 }

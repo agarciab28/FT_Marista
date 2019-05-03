@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\ficha_id;
 use App\Usuario;
 use DB;
+use App\Models\hcnotaevolucion;
+use App\Models\hcnotavaloracion;
 use Illuminate\Http\Request;
 use App\Models\hchf;
 use App\Models\hcapp;
@@ -331,6 +333,60 @@ else{
         }
         return redirect()->route('listu');
     }
+
+
+    public function reg_val(Request $request, $idpac){
+        //dd($idpac);
+        $wea1 = $request->get('fecha');
+        $wea2 = $request->get('eva');
+        $wea3 = $request->get('pruebasf');
+        $wea4 = $request->get('actividadf');
+        $wea5 = $request->get('fuerza');
+        $wea6 = $request->get('rom');
+    
+        $ahf = new hcnotavaloracion([
+            'fecha' => $wea1,
+            'eva' => $wea2,
+            'pruebasf' => $wea3,
+            'actividadf' => $wea4,
+            'fuerza' => $wea5,
+            'rom' => $wea6,
+            'id_f' => $idpac
+        ]);
+        
+        $ahf->save();
+          return back();
+        }
+        public function reg_evo(Request $request, $idpac){
+            //dd($idpac);
+            $wea1 = $request->get('fecha');
+            $wea2 = $request->get('nota');
+        
+            $ahf = new hcnotaevolucion([
+                'fecha' => $wea1,
+                'nota' => $wea2,
+                'id_f' => $idpac
+            ]);
+            $ahf->save();
+              return back();
+            }
+            public function lis_not_val($idpac)
+            {
+                $usuario = hcnotavaloracion::orderBy('fecha', 'asc')
+                    ->where('id_f', $idpac)
+                    ->get();
+                   // dd($usuario, $idpac);
+                return back( compact('usuario'));
+        
+            }
+            public function lis_not_evo($idpac)
+            {
+                $usuario = hcnotaevolucion::orderBy('fecha', 'asc')
+                    ->where('id_f', $idpac)
+                    ->get();
+                   // dd($usuario, $idpac);
+                return back(compact( 'usuario'));
+            }
 
     public function med_ver_detm($id){
 
