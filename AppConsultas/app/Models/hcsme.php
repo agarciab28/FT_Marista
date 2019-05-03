@@ -11,6 +11,6 @@ class hcsme extends Model
         'columna',
         'miembrosuperior',
         'miembroinferior',
-        'curp'
+        'id_f'
     ];
 }

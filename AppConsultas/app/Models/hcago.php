@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class hcago extends Model
 {
-    protected $table='hcago';
+    protected $table='hcago'; 
     protected $fillable = [
              'menarca',
              'ritmomenstrual',
@@ -16,7 +16,7 @@ class hcago extends Model
              'metodoanticoncept',
              'fum',
              'ivsa',
-             'curp'
+             'id_f'
 
     ];
 }

@@ -3,7 +3,7 @@
 namespace App\models;
 use Illuminate\Database\Eloquent\Model;
 
-class hcexxploracion_fisica extends Model
+class hcexploracion_fisica extends Model
 {
     protected $table='hcexploracionfisica';
     protected $fillable = [
@@ -17,6 +17,6 @@ class hcexxploracion_fisica extends Model
         'pesoanterior',
         'pesoideal',
         'imc',
-        'curp'
+        'id_f'
     ];
 }

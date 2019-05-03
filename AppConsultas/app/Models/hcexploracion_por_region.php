@@ -3,7 +3,7 @@
 namespace App\models;
 use Illuminate\Database\Eloquent\Model;
 
-class hcexxploracion_por_region extends Model
+class hcexploracion_por_region extends Model
 {
     protected $table='hcexploracionporregion';
     protected $fillable = [
@@ -19,6 +19,6 @@ class hcexxploracion_por_region extends Model
         'genitales',
         'abdomen',
         'otros',
-        'curp'
+        'id_f'
     ];
 }

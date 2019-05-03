@@ -18,6 +18,6 @@ class hcays extends Model
         'aparatonervioso',
         'aparatosensorial',
         'aparatoosteomuscu',
-        'curp'
+        'id_f'
     ];
 }

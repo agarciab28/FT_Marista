@@ -11,6 +11,6 @@ class hcpadeactual extends Model
         'inicio',
         'evolucion',
         'actual',
-        'curp'
+        'id_f'
     ];
 }

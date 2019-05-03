@@ -13,6 +13,6 @@ class hcdiag extends Model
     'planfisioterapeutico',
     'dermatomasmpc',
     'mapadeldolor',
-    'curp'
+    'id_f'
     ];
 }

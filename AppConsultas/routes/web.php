@@ -101,6 +101,15 @@ Route::get('/medico/buscar/citas/{idpac}', function(){
 Route::post('/ant_hered_fam/{idpac}', 'historialcontroller@ant_hered_fam1')->name('hcahf');
 Route::post('/ant_pp/{idpac}', 'historialcontroller@anpp')->name('anpepa');
 Route::post('/ant_ppp/{idpac}', 'historialcontroller@hcapnpp')->name('appp');
+Route::post('/ant_gop/{idpac}', 'historialcontroller@hcagoo')->name('agop');
+Route::post('/padactual/{idpac}', 'historialcontroller@padact')->name('padac');
+Route::post('/sintg/{idpac}', 'historialcontroller@sintgg')->name('sintg');
+Route::post('/apa_sis/{idpac}', 'historialcontroller@hapa_sis')->name('apa_sis');
+Route::post('/diaga/{idpac}', 'historialcontroller@diagam')->name('diaga');
+Route::post('/expf/{idpac}', 'historialcontroller@expfm')->name('expf');
+Route::post('/expg/{idpac}', 'historialcontroller@expgm')->name('expg');
+Route::post('/expr/{idpac}', 'historialcontroller@exprm')->name('expr');
+Route::post('/smpr/{idpac}', 'historialcontroller@smprm')->name('smpr');
 
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
 Route::get('datos_ficha_med/{curp}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');

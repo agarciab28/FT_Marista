@@ -13,6 +13,6 @@ class hcsintoasgenerales extends Model
         'anorexia',
         'fiebre',
         'perdidadepeso',
-        'curp'
+        'id_f'
     ];
 }

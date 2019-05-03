@@ -7,7 +7,15 @@ use DB;
 use App\Models\hchf;
 use App\Models\hcapp;
 use App\Models\hcapnp;
-
+use App\Models\hcago;
+use App\Models\hcpadeactual;
+use App\Models\hcsintoasgenerales;
+use App\Models\hcays;
+use App\Models\hcda;
+use App\Models\hcexploracion_fisica;
+use App\Models\hcexploracion_general;
+use App\Models\hcexploracion_por_region;
+use App\Models\hcsme;
 class historialcontroller extends Controller
 {
     //
@@ -112,5 +120,178 @@ public function hcapnpp(Request $request, $idpac){
   return back();
 }
 
+public function hcagoo(Request $request, $idpac){
 
+$y1 = $request->get('ta_menarca').' '.$request->get('fecha1');
+$y2 = $request->get('ta_ritmo').' '.$request->get('fecha2');
+$y3 = $request->get('ta_partos').' '.$request->get('fecha3');
+$y4 = $request->get('ta_abortos').' '.$request->get('fecha4');
+$y5 = $request->get('ta_cesareas').' '.$request->get('fecha5');
+$y6 = $request->get('ta_met_anti').' '.$request->get('fecha6');
+$y7 = $request->get('ta_fum').' '.$request->get('fecha7');
+$y8 = $request->get('ta_ivsa').' '.$request->get('fecha8');
+
+  $x = new hcago([
+    'menarca' => $y1,
+    'ritmomenstrual' => $y2,
+    'partos' => $y3,
+    'abortos' => $y4,
+    'cesareas' => $y5,
+    'metodoanticoncept' => $y6,
+    'fum' => $y7,
+    'ivsa' => $y8,
+    'id_f' => $idpac
+  ]);
+$x->save();
+  return back();
+}
+
+public function padact(Request $request, $idpac){
+  $x1 = $request->get('ta_pad_inicio').' '.$request->get('eva_inicio');
+  $x2 = $request->get('ta_pad_evol').' '.$request->get('eva_evolucion');
+  $x3 =   $request->get('ta_pad_actual').' '.$request->get('eva_actual');
+
+  $y = new hcpadeactual([
+    'inicio' => $x1,
+    'evolucion' => $x2,
+    'actual' => $x3,
+    'id_f' => $idpac
+  ]);
+
+$y->save();
+
+return back();
+}
+public function sintgg(Request $request, $idpac){
+  $x1 = 'Astonia '.$request->get('astenia');
+  $x2 = 'Adinamia '.$request->get('adinamia');
+  $x3 = 'Anorexia '.$request->get('anorexia');
+  $x4 = 'Fiebre '.$request->get('fiebre');
+  $x5 = 'Perdida de peso '.$request->get('perd_peso');
+
+
+  $y = new hcsintoasgenerales([
+    'astonia' => $x1,
+    'adinamia' => $x2,
+    'anorexia' => $x3,
+    'fiebre' => $x4,
+    'perdidadepeso' => $x5,
+    'id_f' => $idpac
+  ]);
+$y->save();
+
+return back();
+}
+
+public function hapa_sis(Request $request, $idpac){
+  $x1 = 'Aparato Digestivo: '.$request->get('ap_diges').' Cual: '.$request->get('ta_ap_diges');
+  $x2 = 'Aparato Cardiovacular: '.$request->get('ap_cardio').' Cual: '.$request->get('ta_ap_cardio');
+  $x3 = 'Aparato Respiratorio: '.$request->get('ap_respi').' Cual: '.$request->get('ta_ap_respi');
+  $x4 = 'Aparato Urinario: '.$request->get('ap_urin').' Cual: '.$request->get('ta_ap_urin');
+  $x5 = 'Aparato Genital: '.$request->get('ap_genital').' Cual: '.$request->get('ta_ap_genital');
+  $x6 = 'Aparato Hematológico: '.$request->get('ap_hemato').' Cual: '.$request->get('ta_ap_hemato');
+  $x7 = 'Sistema endocrino: '.$request->get('sis_endo').' Cual: '.$request->get('ta_sis_endo');
+  $x8 = 'Sistema Nervioso: '.$request->get('sis_nerv').' Cual: '.$request->get('ta_sis_nerv');
+  $x9 = 'Sistema Sensorial: '.$request->get('sis_senso').' Cual: '.$request->get('ta_sis_senso');
+  $x10 = 'Sistema Osteomuscular: '.$request->get('sis_osteo').' Cual: '.$request->get('ta_sis_osteo');
+
+  $y = new hcays([
+    'aparatodigestivo' => $x1,
+    'aparatocardiovas' => $x2,
+    'aparatorespiratorio' => $x3,
+    'aparatourinario' => $x4,
+    'aparatogenital' => $x5,
+    'aparatohematologico' => $x6,
+    'aparatoendocrino' => $x7,
+    'aparatonervioso' => $x8,
+    'aparatosensorial' => $x9,
+    'aparatoosteomuscu' => $x10,
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+
+public function diagam(Request $request, $idpac){
+  $y = new hcda([
+    'diagant' => $request->get('ta_diag_ant'),
+    'estudiog' => $request->get('ta_est_gab'),
+    'tratamientosant' => $request->get('ta_trat_ant'),
+    'inquietudsub' => $request->get('ta_inquietud'),
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+
+public function expfm(Request $request, $idpac){
+  $y = new hcexploracion_fisica([
+    'ta' => $request->get('t_a'),
+    'fc' => $request->get('fc'),
+    'fr' => $request->get('fr'),
+    'temp' => $request->get('temp'),
+    'talla' => $request->get('talla'),
+    's02' => $request->get('s02'),
+    'pesoactual' => $request->get('peso_actual'),
+    'pesoanterior' => $request->get('peso_anterior'),
+    'pesoideal' => $request->get('peso_ideal'),
+    'imc' => $request->get('imc'),
+    'id_f' => $idpac
+  ]);
+
+$y->save();
+return back();
+}
+
+
+public function expgm(Request $request, $idpac){
+
+  $y = new hcexploracion_general([
+    'estadodecon' => $request->get('est_conci'),
+    'actitud' => $request->get('acti'),
+    'movimientosanormales' => $request->get('mov_anormales'),
+    'postura' => $request->get('postura'),
+    'marcha' => $request->get('marcha'),
+    'estadogdn' => $request->get('est_nutri'),
+    'fuerzamuscular' => $request->get('fuer_m'),
+    'pruebasfuncionales' => $request->get('prub_fun'),
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+public function exprm(Request $request, $idpac){
+
+  $y = new hcexploracion_por_region([
+    'pielyanexo' => $request->get('piel'),
+    'cabeza' => $request->get('cabeza'),
+    'ojos' => $request->get('ojos'),
+    'oidos' => $request->get('oidos'),
+    'narizyseno' => $request->get('nariz_senos'),
+    'boca' => $request->get('boca'),
+    'torax' => $request->get('torax'),
+    'vasossanguineos' => $request->get('vasos_sang'),
+    'mamas' => $request->get('mamas'),
+    'genitales' => $request->get('genitales'),
+    'abdomen' => $request->get('abdomen'),
+    'otros' => $request->get('otros'),
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
+
+public function smprm(Request $request, $idpac){
+$x1 = "Coloumna => Cervical: ".$request->get('cervical')." Dorsolumbar: ".$request->get('dorso')." Sacroiliaca: ".$request->get('sacro');
+$x2 = "Miembro superior => Hombros: ".$request->get('hombros')." Codo: ".$request->get('codo')." Muñeca: ".$request->get('muñeca')." Mano: ".$request->get('mano');
+$x3 = "Miembro inferior => Cadera: ".$request->get('cadera')." Rodilla: ".$request->get('rodilla')." Tobillo: ".$request->get('tobillo')." Pie: ".$request->get('pie');
+  $y = new hcsme([
+    'columna' => $x1,
+    'miembrosuperior' => $x2,
+    'miembroinferior' => $x3,
+    'id_f' => $idpac
+  ]);
+$y->save();
+return back();
+}
 }

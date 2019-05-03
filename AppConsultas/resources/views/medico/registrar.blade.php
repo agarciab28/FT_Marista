@@ -1312,8 +1312,8 @@
                 </td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="ta_alim" name="ta_inmun" class="materialize-textarea"></textarea>
-                    <label for="ta_alim">Cuales</label>
+                    <textarea id="ta_inmun" name="ta_inmun" class="materialize-textarea"></textarea>
+                    <label for="ta_inmun">Cuales</label>
                   </div>
                 </td>
               </tr>
@@ -1599,7 +1599,8 @@
       </form>
 
       {{-- Antecedentes Gineco-obstétricos --}}
-      <form class="" id="antecedentes_go" action="" method="">
+      <form class="" id="antecedentes_go" action="{{ route('agop',[ $idpac ]) }}" method="POST">
+        {{ csrf_field() }}
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Gineco-obstétricos</h5>
           <table class="responsive-table striped">
@@ -1756,6 +1757,58 @@
                   </div>
                 </td>
               </tr>
+
+              <tr>
+                <td>F.U.M</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_fum" name="ta_fum" class="materialize-textarea"></textarea>
+                    <label for="ta_fum">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="fecha7" name="fecha7" class="datepicker" type="date">
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>I.V.S.A</td>
+                <td>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>Sí</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="met_anti" type="radio"/>
+                    <span>No</span>
+                  </label>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="ta_ivsa" name="ta_ivsa" class="materialize-textarea"></textarea>
+                    <label for="ta_ivsa">Escribe aquí</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="fecha8" name="fecha8" class="datepicker" type="date">
+                  </div>
+                </td>
+              </tr>
+
+
             </tbody>
           </table>
           <div class="row">
@@ -1766,7 +1819,8 @@
       </form>
 
       {{-- Padecimiento actual --}}
-      <form class=""  id="padecimiento_actual" action="" method="">
+      <form class=""  id="padecimiento_actual" action="{{ route('padac',[ $idpac ]) }}" method="POST">
+          {{ csrf_field() }}
         <div class="row" >
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
@@ -1808,7 +1862,8 @@
 
 
       {{-- Sintomas Generales --}}
-      <form class="" id="sintomas_generales" action="" method="">
+      <form class="" id="sintomas_generales" action="{{ route('sintg',[ $idpac ]) }}" method="POST">
+                {{ csrf_field() }}
         <div class="row">
           <h5 style="font-weight:bold;">Sintomas Generales</h5>
           <table>
@@ -1823,11 +1878,11 @@
                 <td>Astenia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="astenia" type="radio"/>
+                    <input class="with-gap" name="astenia" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="astenia" type="radio"/>
+                    <input class="with-gap" name="astenia" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1836,11 +1891,11 @@
                 <td>Adinamia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="adinamia" type="radio"/>
+                    <input class="with-gap" name="adinamia" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="adinamia" type="radio"/>
+                    <input class="with-gap" name="adinamia" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1849,11 +1904,11 @@
                 <td>Anorexia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="anorexia" type="radio"/>
+                    <input class="with-gap" name="anorexia" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="anorexia" type="radio"/>
+                    <input class="with-gap" name="anorexia" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1862,11 +1917,11 @@
                 <td>Fiebre</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="fiebre" type="radio"/>
+                    <input class="with-gap" name="fiebre" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="fiebre" type="radio"/>
+                    <input class="with-gap" name="fiebre" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1875,11 +1930,11 @@
                 <td>Perdida de peso</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="perd_peso" type="radio"/>
+                    <input class="with-gap" name="perd_peso" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="perd_peso" type="radio"/>
+                    <input class="with-gap" name="perd_peso" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1895,7 +1950,8 @@
 
 
       {{-- Aparatos y sistemas --}}
-      <form class="" id="apa_sis" action="" method="">
+      <form class="" id="apa_sis" action="{{ route('apa_sis',[ $idpac ]) }}" method="POST">
+                        {{ csrf_field() }}
         <div class="row">
           <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
           <table>
@@ -1911,11 +1967,11 @@
                 <td>Aparato Digestivo</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_diges" type="radio"/>
+                    <input class="with-gap" name="ap_diges" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_diges" type="radio"/>
+                    <input class="with-gap" name="ap_diges" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1930,11 +1986,11 @@
                 <td>Aparato Cardiovacular</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_cardio" type="radio"/>
+                    <input class="with-gap" name="ap_cardio" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_cardio" type="radio"/>
+                    <input class="with-gap" name="ap_cardio" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1949,11 +2005,11 @@
                 <td>Aparato Respiratorio</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_respi" type="radio"/>
+                    <input class="with-gap" name="ap_respi" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_respi" type="radio"/>
+                    <input class="with-gap" name="ap_respi" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1968,11 +2024,11 @@
                 <td>Aparato Urinario</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_urin" type="radio"/>
+                    <input class="with-gap" name="ap_urin" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_urin" type="radio"/>
+                    <input class="with-gap" name="ap_urin" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -1987,11 +2043,11 @@
                 <td>Aparato Genital</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_genital" type="radio"/>
+                    <input class="with-gap" name="ap_genital" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_genital" type="radio"/>
+                    <input class="with-gap" name="ap_genital" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2006,11 +2062,11 @@
                 <td>Aparato Hematológico</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="ap_hemato" type="radio"/>
+                    <input class="with-gap" name="ap_hemato" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="ap_hemato" type="radio"/>
+                    <input class="with-gap" name="ap_hemato" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2025,11 +2081,11 @@
                 <td>Sistema endocrino</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="sis_endo" type="radio"/>
+                    <input class="with-gap" name="sis_endo" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="sis_endo" type="radio"/>
+                    <input class="with-gap" name="sis_endo" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2044,11 +2100,11 @@
                 <td>Sistema Nervioso</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="sis_nerv" type="radio"/>
+                    <input class="with-gap" name="sis_nerv" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="sis_nerv" type="radio"/>
+                    <input class="with-gap" name="sis_nerv" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2063,11 +2119,11 @@
                 <td>Sistema Sensorial</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="sis_senso" type="radio"/>
+                    <input class="with-gap" name="sis_senso" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="sis_senso" type="radio"/>
+                    <input class="with-gap" name="sis_senso" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2082,11 +2138,11 @@
                 <td>Sistema Osteomuscular</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="sis_osteo" type="radio"/>
+                    <input class="with-gap" name="sis_osteo" value="Si" type="radio"/>
                     <span>Sí</span>
                   </label>
                   <label>
-                    <input class="with-gap" name="sis_osteo" type="radio"/>
+                    <input class="with-gap" name="sis_osteo" value="No" type="radio"/>
                     <span>No</span>
                   </label>
                 </td>
@@ -2107,7 +2163,8 @@
       </form>
 
       {{-- Diagnosticos anteriores --}}
-    <form class="" id="diag_ant" action="" method="">
+    <form class="" id="diag_ant" action="{{ route('diaga',[ $idpac ]) }}" method="POST">
+      {{ csrf_field() }}
       <div class="row">
         <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
         <div class="input-field col s12">
@@ -2134,47 +2191,48 @@
     </form>
 
     {{-- Exploracion fisica --}}
-  <form class="" id="explor_fisica" action="" method="">
+  <form class="" id="explor_fisica" action="{{ route('expf',[ $idpac ]) }}" method="POST">
+    {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Exploración Física</h5>
       <div class="input-field col s12 m3">
-        <input type="text" id="ta" name="id" value="">
-        <label for="ta">T.A.</label>
+        <input type="number" id="t_a" name="t_a" value="">
+        <label for="t_a">T.A.</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="fc" name="fc" value="">
+        <input type="number" id="fc" name="fc" value="">
         <label for="fc">F.C.</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="fr" name="fr" value="">
+        <input type="number" id="fr" name="fr" value="">
         <label for="fc">F.R.</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="temp" name="temp" value="">
+        <input type="number" id="temp" name="temp" value="">
         <label for="temp">Temperatura</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="talla" name="talla" value="">
+        <input type="number" id="talla" name="talla" value="">
         <label for="temp">Talla</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="s02" name="s02" value="">
+        <input type="number" id="s02" name="s02" value="">
         <label for="s02">S02</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="peso_actual" name="peso_actual" value="">
+        <input type="number" id="peso_actual" name="peso_actual" value="">
         <label for="peso_actual">Peso Actual</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="peso_anterior" name="peso_anterior" value="">
+        <input type="number" id="peso_anterior" name="peso_anterior" value="">
         <label for="peso_anterior">Peso Anterior</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="peso_ideal" name="peso_ideal" value="">
+        <input type="number" id="peso_ideal" name="peso_ideal" value="">
         <label for="peso_ideal">Peso Ideal</label>
       </div>
       <div class="input-field col s12 m3">
-        <input type="text" id="imc" name="imc" value="">
+        <input type="number" id="imc" name="imc" value="">
         <label for="imc">IMC</label>
       </div>
       <div class="row">
@@ -2185,7 +2243,8 @@
   </form>
 
     {{-- Exploracion general--}}
-  <form class="" id="explor_general" action="" method="">
+  <form class="" id="explor_general" action="{{ route('expg',[ $idpac ]) }}" method="POST">
+    {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Exploración General</h5>
       <div class="input-field col s12 m6">
@@ -2212,6 +2271,14 @@
         <input type="text" id="est_nutri" name="est_nutri" value="">
         <label for="est_nutri">Estado general de nutrición</label>
       </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="fuer_m" name="fuer_m" value="">
+        <label for="fuer_m">Fuerza muscular</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="prub_fun" name="prub_fun" value="">
+        <label for="prub_fun">Pruebas funcionales</label>
+      </div>
       <div class="row">
 
       </div>
@@ -2220,7 +2287,8 @@
   </form>
 
   {{-- Exploracion por region--}}
-  <form class="" id="explor_region" action="" method="">
+  <form class="" id="explor_region" action="{{ route('expr',[ $idpac ]) }}" method="POST">
+    {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Exploración por Región</h5>
       <div class="input-field col s12">
@@ -2279,7 +2347,8 @@
   </form>
 
   {{-- Sistemas Musculoesqueletico por regiones--}}
-  <form class="" id="sis_muscu" action="" method="">
+  <form class="" id="sis_muscu" action="{{ route('smpr',[ $idpac ]) }}" method="POST">
+    {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Sistema Musculoesquelético por Regiones</h5>
       <h6 style="font-weight:bold;">Columna</h6>

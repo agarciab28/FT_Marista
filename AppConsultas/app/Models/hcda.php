@@ -11,6 +11,6 @@ class hcda extends Model
         'estudiog',
         'tratamientosant',
         'inquietudsub',
-        'curp'
+        'id_f'
     ];
 }

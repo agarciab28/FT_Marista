@@ -3,7 +3,7 @@
 namespace App\models;
 use Illuminate\Database\Eloquent\Model;
 
-class hcexxploracion_general extends Model
+class hcexploracion_general extends Model
 {
     protected $table='hcexploraciongeneral';
     protected $fillable = [
@@ -15,6 +15,6 @@ class hcexxploracion_general extends Model
             'estadogdn',
             'fuerzamuscular',
             'pruebasfuncionales',
-            'curp'
+            'id_f'
     ];
 }

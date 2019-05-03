@@ -12,7 +12,7 @@ class Hcago extends Migration
      * @return void
      */
     public function up()
-    {
+    { 
         Schema::create('hcago', function (Blueprint $table) {
             $table->increments('id_hcago',10);
             $table->text('menarca')->nullable();
