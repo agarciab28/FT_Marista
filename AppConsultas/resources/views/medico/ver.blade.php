@@ -94,7 +94,7 @@
         <table class="striped responsive-table ">
           <thead>
          <tr>
-             <th>Fecha</th>
+             <th>Fecha de Registro</th>
              <th>Acciones</th>
          </tr>
        </thead>
