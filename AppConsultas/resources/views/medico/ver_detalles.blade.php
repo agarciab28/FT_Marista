@@ -965,6 +965,7 @@
     <div class="row">
       <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
       <table class="responsive-table striped">
+                @if (isset($paciente13))
         <thead>
           <tr>
             <th>Parte del cuerpo</th>
@@ -983,42 +984,42 @@
             <th>Columna cervical</th>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_flex" name="columcerv_flex" value="">
+                <input type="text" id="columcerv_flex" name="columcerv_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_exten" name="columcerv_exten" value="">
+                <input type="text" id="columcerv_exten" name="columcerv_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_rotintern" name="columcerv_rotintern" value="">
+                <input type="text" id="columcerv_rotintern" name="columcerv_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_rotextern" name="columcerv_rotextern" value="">
+                <input type="text" id="columcerv_rotextern" name="columcerv_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_abdu" name="columcerv_abdu" value="">
+                <input type="text" id="columcerv_abdu" name="columcerv_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_adu" name="columcerv_adu" value="">
+                <input type="text" id="columcerv_adu" name="columcerv_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_desvrad" name="columcerv_desvrad" value="">
+                <input type="text" id="columcerv_desvrad" name="columcerv_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columcerv_desvcubi" name="columcerv_desvcubi" value="">
+                <input type="text" id="columcerv_desvcubi" name="columcerv_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[0]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1026,42 +1027,42 @@
             <th>Columna dorsal</th>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_flex" name="columdors_flex" value="">
+                <input type="text" id="columdors_flex" name="columdors_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_exten" name="columdors_exten" value="">
+                <input type="text" id="columdors_exten" name="columdors_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_rotintern" name="columdors_rotintern" value="">
+                <input type="text" id="columdors_rotintern" name="columdors_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_rotextern" name="columdors_rotextern" value="">
+                <input type="text" id="columdors_rotextern" name="columdors_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_abdu" name="columdors_abdu" value="">
+                <input type="text" id="columdors_abdu" name="columdors_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_adu" name="columdors_adu" value="">
+                <input type="text" id="columdors_adu" name="columdors_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_desvrad" name="columdors_desvrad" value="">
+                <input type="text" id="columdors_desvrad" name="columdors_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columdors_desvcubi" name="columdors_desvcubi" value="">
+                <input type="text" id="columdors_desvcubi" name="columdors_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[1]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1069,42 +1070,42 @@
             <th>Columna lumbar</th>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_flex" name="columlumb_flex" value="">
+                <input type="text" id="columlumb_flex" name="columlumb_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_exten" name="columlumb_exten" value="">
+                <input type="text" id="columlumb_exten" name="columlumb_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_rotintern" name="columlumb_rotintern" value="">
+                <input type="text" id="columlumb_rotintern" name="columlumb_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_rotextern" name="columlumb_rotextern" value="">
+                <input type="text" id="columlumb_rotextern" name="columlumb_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_abdu" name="columlumb_abdu" value="">
+                <input type="text" id="columlumb_abdu" name="columlumb_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_adu" name="columlumb_adu" value="">
+                <input type="text" id="columlumb_adu" name="columlumb_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_desvrad" name="columlumb_desvrad" value="">
+                <input type="text" id="columlumb_desvrad" name="columlumb_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="columlumb_desvcubi" name="columlumb_desvcubi" value="">
+                <input type="text" id="columlumb_desvcubi" name="columlumb_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[2]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1112,42 +1113,42 @@
             <th>Hombro</th>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_flex" name="hombro_flex" value="">
+                <input type="text" id="hombro_flex" name="hombro_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_exten" name="hombro_exten" value="">
+                <input type="text" id="hombro_exten" name="hombro_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_rotintern" name="hombro_rotintern" value="">
+                <input type="text" id="hombro_rotintern" name="hombro_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_rotextern" name="hombro_rotextern" value="">
+                <input type="text" id="hombro_rotextern" name="hombro_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_abdu" name="hombro_abdu" value="">
+                <input type="text" id="hombro_abdu" name="hombro_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_adu" name="hombro_adu" value="">
+                <input type="text" id="hombro_adu" name="hombro_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_desvrad" name="hombro_desvrad" value="">
+                <input type="text" id="hombro_desvrad" name="hombro_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="hombro_desvcubi" name="hombro_desvcubi" value="">
+                <input type="text" id="hombro_desvcubi" name="hombro_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[3]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1155,42 +1156,42 @@
             <th>Codo</th>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_flex" name="codo_flex" value="">
+                <input type="text" id="codo_flex" name="codo_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_exten" name="codo_exten" value="">
+                <input type="text" id="codo_exten" name="codo_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_rotintern" name="codo_rotintern" value="">
+                <input type="text" id="codo_rotintern" name="codo_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_rotextern" name="codo_rotextern" value="">
+                <input type="text" id="codo_rotextern" name="codo_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_abdu" name="codo_abdu" value="">
+                <input type="text" id="codo_abdu" name="codo_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_adu" name="codo_adu" value="">
+                <input type="text" id="codo_adu" name="codo_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_desvrad" name="codo_desvrad" value="">
+                <input type="text" id="codo_desvrad" name="codo_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="codo_desvcubi" name="codo_desvcubi" value="">
+                <input type="text" id="codo_desvcubi" name="codo_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[4]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1198,42 +1199,42 @@
             <th>Muñeca</th>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_flex" name="muñeca_flex" value="">
+                <input type="text" id="muñeca_flex" name="muñeca_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_exten" name="muñeca_exten" value="">
+                <input type="text" id="muñeca_exten" name="muñeca_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_rotintern" name="muñeca_rotintern" value="">
+                <input type="text" id="muñeca_rotintern" name="muñeca_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_rotextern" name="muñeca_rotextern" value="">
+                <input type="text" id="muñeca_rotextern" name="muñeca_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_abdu" name="muñeca_abdu" value="">
+                <input type="text" id="muñeca_abdu" name="muñeca_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_adu" name="muñeca_adu" value="">
+                <input type="text" id="muñeca_adu" name="muñeca_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_desvrad" name="muñeca_desvrad" value="">
+                <input type="text" id="muñeca_desvrad" name="muñeca_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="muñeca_desvcubi" name="muñeca_desvcubi" value="">
+                <input type="text" id="muñeca_desvcubi" name="muñeca_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[5]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1241,42 +1242,42 @@
             <th>Mano</th>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_flex" name="mano_flex" value="">
+                <input type="text" id="mano_flex" name="mano_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_exten" name="mano_exten" value="">
+                <input type="text" id="mano_exten" name="mano_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_rotintern" name="mano_rotintern" value="">
+                <input type="text" id="mano_rotintern" name="mano_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_rotextern" name="mano_rotextern" value="">
+                <input type="text" id="mano_rotextern" name="mano_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_abdu" name="mano_abdu" value="">
+                <input type="text" id="mano_abdu" name="mano_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_adu" name="mano_adu" value="">
+                <input type="text" id="mano_adu" name="mano_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_desvrad" name="mano_desvrad" value="">
+                <input type="text" id="mano_desvrad" name="mano_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="mano_desvcubi" name="mano_desvcubi" value="">
+                <input type="text" id="mano_desvcubi" name="mano_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[6]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1284,42 +1285,42 @@
             <th>Cadera</th>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_flex" name="cadera_flex" value="">
+                <input type="text" id="cadera_flex" name="cadera_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_exten" name="cadera_exten" value="">
+                <input type="text" id="cadera_exten" name="cadera_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_rotintern" name="cadera_rotintern" value="">
+                <input type="text" id="cadera_rotintern" name="cadera_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_rotextern" name="cadera_rotextern" value="">
+                <input type="text" id="cadera_rotextern" name="cadera_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_abdu" name="cadera_abdu" value="">
+                <input type="text" id="cadera_abdu" name="cadera_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_adu" name="cadera_adu" value="">
+                <input type="text" id="cadera_adu" name="cadera_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_desvrad" name="cadera_desvrad" value="">
+                <input type="text" id="cadera_desvrad" name="cadera_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="cadera_desvcubi" name="cadera_desvcubi" value="">
+                <input type="text" id="cadera_desvcubi" name="cadera_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[7]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1327,42 +1328,42 @@
             <th>Rodilla</th>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_flex" name="rodilla_flex" value="">
+                <input type="text" id="rodilla_flex" name="rodilla_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_exten" name="rodilla_exten" value="">
+                <input type="text" id="rodilla_exten" name="rodilla_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_rotintern" name="rodilla_rotintern" value="">
+                <input type="text" id="rodilla_rotintern" name="rodilla_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_rotextern" name="rodilla_rotextern" value="">
+                <input type="text" id="rodilla_rotextern" name="rodilla_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_abdu" name="rodilla_abdu" value="">
+                <input type="text" id="rodilla_abdu" name="rodilla_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_adu" name="rodilla_adu" value="">
+                <input type="text" id="rodilla_adu" name="rodilla_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_desvrad" name="rodilla_desvrad" value="">
+                <input type="text" id="rodilla_desvrad" name="rodilla_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="rodilla_desvcubi" name="rodilla_desvcubi" value="">
+                <input type="text" id="rodilla_desvcubi" name="rodilla_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[8]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1370,42 +1371,42 @@
             <th>Tobillo</th>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_flex" name="tobillo_flex" value="">
+                <input type="text" id="tobillo_flex" name="tobillo_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_exten" name="tobillo_exten" value="">
+                <input type="text" id="tobillo_exten" name="tobillo_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_rotintern" name="tobillo_rotintern" value="">
+                <input type="text" id="tobillo_rotintern" name="tobillo_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_rotextern" name="tobillo_rotextern" value="">
+                <input type="text" id="tobillo_rotextern" name="tobillo_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_abdu" name="tobillo_abdu" value="">
+                <input type="text" id="tobillo_abdu" name="tobillo_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_adu" name="tobillo_adu" value="">
+                <input type="text" id="tobillo_adu" name="tobillo_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_desvrad" name="tobillo_desvrad" value="">
+                <input type="text" id="tobillo_desvrad" name="tobillo_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="tobillo_desvcubi" name="tobillo_desvcubi" value="">
+                <input type="text" id="tobillo_desvcubi" name="tobillo_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[9]),8)[7] }}">
               </div>
             </td>
           </tr>
@@ -1413,46 +1414,48 @@
             <th>Pie</th>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_flex" name="pie_flex" value="">
+                <input type="text" id="pie_flex" name="pie_flex" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[0] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_exten" name="pie_exten" value="">
+                <input type="text" id="pie_exten" name="pie_exten" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[1] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_rotintern" name="pie_rotintern" value="">
+                <input type="text" id="pie_rotintern" name="pie_rotintern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[2] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_rotextern" name="pie_rotextern" value="">
+                <input type="text" id="pie_rotextern" name="pie_rotextern" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[3] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_abdu" name="pie_abdu" value="">
+                <input type="text" id="pie_abdu" name="pie_abdu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[4] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_adu" name="pie_adu" value="">
+                <input type="text" id="pie_adu" name="pie_adu" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[5] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_desvrad" name="pie_desvrad" value="">
+                <input type="text" id="pie_desvrad" name="pie_desvrad" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[6] }}">
               </div>
             </td>
             <td>
               <div class="input-field">
-                <input type="text" id="pie_desvcubi" name="pie_desvcubi" value="">
+                <input type="text" id="pie_desvcubi" name="pie_desvcubi" value="{{ explode(',',((explode(';', $paciente13->datos, 11))[10]),8)[7] }}">
               </div>
             </td>
           </tr>
         </tbody>
+
+@endif
       </table>
       <div class="row">
 

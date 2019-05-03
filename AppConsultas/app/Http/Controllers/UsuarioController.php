@@ -354,7 +354,7 @@ else{
 //  dd($splitName[0]);
 //}
 
-        return view('medico.ver_detalles',compact(['paciente1','paciente2','paciente3','paciente4','paciente5','paciente6','paciente14','paciente7','paciente8','paciente10','paciente11','paciente12']));
+        return view('medico.ver_detalles',compact(['paciente1','paciente2','paciente3','paciente4','paciente5','paciente6','paciente14','paciente7','paciente8','paciente10','paciente11','paciente12','paciente13']));
     }
 
 }
