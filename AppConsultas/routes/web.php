@@ -95,6 +95,10 @@ Route::get('/medico/buscar/citas/{idpac}', function(){
   return view('medico.citas');
 })->name('med_bc');
 
+Route::get('/medico/ver_detalles', function(){
+  return view('medico.ver_detalles');
+})->name('med_ver_det');
+
 
 
 ///registro historialcontroller

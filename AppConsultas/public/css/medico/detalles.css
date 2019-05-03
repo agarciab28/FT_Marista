@@ -1,0 +1,25 @@
+.contenedor{
+  text-align: center;
+  align-items: center;
+}
+
+th, td{
+  text-align: center;
+}
+
+thead{
+  background-color: #003865;
+  color: white;
+}
+
+.menu{
+  margin-top: 0.5em;
+}
+
+.btn-floating{
+  background-color: #FFB500;
+}
+
+.btn-floating:hover{
+  background-color: #FFB500;
+}
