@@ -48,7 +48,7 @@
 
     </div>
     <div class="input-field col s12 m3">
-      <input id="edad" name="edad" type="number" class="validate" required>
+      <input id="edad" name="edad" type="number" class="validate" max='150' min='15' required>
       <label for="edad">Edad</label>
       {!! $errors->first('edad', '<span style="color:red" id="error_msj" class="helper-text" data-error="wrong" data-success="right">:message</span>') !!}
     </div>
