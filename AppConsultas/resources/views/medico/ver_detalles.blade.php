@@ -60,7 +60,7 @@
 
     <div class="section container">
 
-        <form class="" id="antecedentes_hf" action="" method="POST">
+        <div class="" id="antecedentes_hf"      >
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Familiares</h5>
           <table class="responsive-table striped">
@@ -822,12 +822,12 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
 
 
       {{-- Antecedentes Personales no patologicos --}}
-      <form class="" id="antecedentes_pnp" action="" method="POST">
+      <div class="" id="antecedentes_pnp"      >
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales no Patologicos</h5>
           <table class="responsive-table striped">
@@ -1226,12 +1226,12 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
 
 
       {{-- Antecedentes Personales patologicos --}}
-      <form class="" id="antecedentes_pp" action="" method="POST">
+      <div class="" id="antecedentes_pp"      >
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Personales Patologicos</h5>
           <table class="responsive-table striped">
@@ -1440,10 +1440,10 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
       {{-- Antecedentes Gineco-obstétricos --}}
-      <form class="" id="antecedentes_go" action="" method="POST">
+      <div class="" id="antecedentes_go"      >
         <div class="row">
           <h5 style="font-weight:bold;">Antecedentes Gineco-obstétricos</h5>
           <table class="responsive-table striped">
@@ -1659,10 +1659,10 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
       {{-- Padecimiento actual --}}
-      <form class=""  id="padecimiento_actual" action="" method="POST">
+      <div class=""  id="padecimiento_actual"      >
         <div class="row" >
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
@@ -1700,11 +1700,11 @@
             <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
           </div>
         </div>
-      </form>
+      </div>
 
 
       {{-- Sintomas Generales --}}
-      <form class="" id="sintomas_generales" action="" method="POST">
+      <div class="" id="sintomas_generales"      >
         <div class="row">
           <h5 style="font-weight:bold;">Sintomas Generales</h5>
           <table>
@@ -1787,11 +1787,11 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
 
       {{-- Aparatos y sistemas --}}
-      <form class="" id="apa_sis" action="" method="POST">
+      <div class="" id="apa_sis"      >
         <div class="row">
           <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
           <table>
@@ -2000,10 +2000,10 @@
           </div>
           <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
-      </form>
+      </div>
 
       {{-- Diagnosticos anteriores --}}
-    <form class="" id="diag_ant" action="" method="POST">
+    <div class="" id="diag_ant"      >
       {{ csrf_field() }}
       <div class="row">
         <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
@@ -2028,10 +2028,10 @@
         </div>
         <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
-    </form>
+    </div>
 
     {{-- Exploracion fisica --}}
-  <form class="" id="explor_fisica" action="" method="POST">
+  <div class="" id="explor_fisica"      >
     {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Exploración Física</h5>
@@ -2080,10 +2080,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
     {{-- Exploracion general--}}
-  <form class="" id="explor_general" action="" method="POST">
+  <div class="" id="explor_general"      >
     <div class="row">
       <h5 style="font-weight:bold;">Exploración General</h5>
       <div class="input-field col s12 m6">
@@ -2123,10 +2123,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Exploracion por region--}}
-  <form class="" id="explor_region" action="" method="POST">
+  <div class="" id="explor_region"      >
     <div class="row">
       <h5 style="font-weight:bold;">Exploración por Región</h5>
       <div class="input-field col s12">
@@ -2182,10 +2182,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Sistemas Musculoesqueletico por regiones--}}
-  <form class="" id="sis_muscu" action="" method="POST">
+  <div class="" id="sis_muscu"      >
     <div class="row">
       <h5 style="font-weight:bold;">Sistema Musculoesquelético por Regiones</h5>
       <h6 style="font-weight:bold;">Columna</h6>
@@ -2240,10 +2240,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Diagnostico Fisioterapeutico--}}
-  <form class="" id="diagnostico_fisio" action="" method="">
+  <div class="" id="diagnostico_fisio"      >
     <div class="row">
       <h5 style="font-weight:bold;">Diagnostico Fisiterapéutico</h5>
       <div class="input-field col s12">
@@ -2287,10 +2287,10 @@
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
     </div>
-  </form>
+  </div>
 
   {{-- Dermatomas, miotomas y pares craneales--}}
-  <form class="" id="dermatomas_etc" action="" method="">
+  <div class="" id="dermatomas_etc"     >
     <div class="row">
       <h5 style="font-weight:bold;">Dermatomas, miotomas y pares craneales</h5>
       <div class="contenedor row">
@@ -2307,10 +2307,10 @@
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
 
     </div>
-  </form>
+  </div>
 
   {{-- Mapa de Dolor--}}
-  <form class="" id="mapa_dolor" action="" method="">
+  <div class="" id="mapa_dolor"      >
     <div class="row">
       <h5 style="font-weight:bold;">Mapa de Dolor</h5>
       <div class="contenedor row">
@@ -2333,10 +2333,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Arcos de Movimiento--}}
-  <form class="" id="arcos_movimiento" action="" method="POST">
+  <div class="" id="arcos_movimiento"      >
     <div class="row">
       <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
       <table class="responsive-table striped">
@@ -2834,10 +2834,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
       </div>
-  </form>
+  </div>
 
   {{-- Par Nervio--}}
-  <form class="" id="par_nervio" action="" method="">
+  <div class="" id="par_nervio"      >
     <div class="row">
       <h5 style="font-weight:bold;">Par Nervio</h5>
       <table class="responsive-table striped">
@@ -2952,10 +2952,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Escala de ashwoth --}}
-  <form class="" id="escala_ashworth" action="" method="">
+  <div class="" id="escala_ashworth"      >
     <div class="row">
       <h5 style="font-weight:bold;">Escala de ashworth</h5>
       <p class="range-field">
@@ -2986,10 +2986,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Reflejos Osteotendinosos --}}
-  <form class="" id="reflejos_osteo" action="" method="">
+  <div class="" id="reflejos_osteo"      >
     <div class="row">
       <h5 style="font-weight:bold;">Reflejos osteotendinosos</h5>
       <table class="responsive-table striped">
@@ -3063,10 +3063,10 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   {{-- Tipo de marcha --}}
-  <form class="" id="tipo_marcha" action="" method="">
+  <div class="" id="tipo_marcha"      >
     <div class="row">
       <h5 style="font-weight:bold;">Tipo de marcha</h5>
       <table class="responsive-table striped">
@@ -3165,7 +3165,7 @@
       </div>
       <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
     </div>
-  </form>
+  </div>
 
   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
