@@ -9,7 +9,7 @@ class hcarcodemovimiento extends Model
     protected $table='hcarcodemovimiento';
     protected $fillable = [
          'datos',
-         'curp'
+         'id_f'
 
     ];
 }

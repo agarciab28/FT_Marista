@@ -2499,7 +2499,8 @@
   </form>
 
   {{-- Arcos de Movimiento--}}
-  <form class="" id="arcos_movimiento" action="" method="">
+  <form class="" id="arcos_movimiento" action="{{ route('arcm',[ $idpac ]) }}" method="POST">
+    {{ csrf_field() }}
     <div class="row">
       <h5 style="font-weight:bold;">Arcos de Movimiento</h5>
       <table class="responsive-table striped">
@@ -3330,8 +3331,21 @@
     </div>
   </form>
 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
 <map name="image-map">
-    <area alt="1" title="1" name="mpd-1" id="mpd-1" href="" coords="485,120,483,80,493,33,520,32,548,30,595,48,601,102,580,60,535,63,498,70,492,88,493,108" shape="poly">
+    <area alt="1" title="1" name="mpd-1" id="mpd-1" value="0" href="" coords="485,120,483,80,493,33,520,32,548,30,595,48,601,102,580,60,535,63,498,70,492,88,493,108" shape="poly">
     <area alt="2" title="2" name="mpd-2" id="mpd-2" href="" coords="483,133,507,195,548,206,586,190,601,141,590,90,581,55,497,65" shape="poly">
     <area alt="3" title="3" name="mpd-3" id="mpd-3" href="" coords="497,211,525,281,460,265" shape="poly">
     <area alt="4" title="4" name="mpd-4" id="mpd-4" href="" coords="586,211,558,280,631,258" shape="poly">
