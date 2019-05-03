@@ -518,18 +518,16 @@ function tiposMarcha(){
 
 function valoracion(){
   $("#valoracion").show();
-  $("#evolucion").hide();
+  $("#evaluacion").hide();
   $("#secciones").hide();
 }
-
-function evolucion(){
+function evaluacion(){
   $("#valoracion").hide();
-  $("#evolucion").show();
+  $("#evaluacion").show();
   $("#secciones").hide();
 }
-
 function secciones(){
   $("#valoracion").hide();
-  $("#evolucion").hide();
+  $("#evaluacion").hide();
   $("#secciones").show();
 }

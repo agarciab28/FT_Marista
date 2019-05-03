@@ -50,7 +50,9 @@ Route::get('/medico/ficha_id', function () {
     return view('medico.ficha_id');
 })->name('reg_fichaid');
 
-
+Route::get('/medico/registrar/{idpac}', function ($idpac) {
+    return view('medico.registrar', compact('idpac'));
+})->name('med_reg');
 
 //Route::get('/medico/registrar', 'UsuarioController@retvar')->name('med_reg');
 
@@ -88,12 +90,8 @@ Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->
 
 Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
 
-Route::get('/medico/registrar/{idpac}', function ($idpac) {
-  return view('medico.registrar', compact('idpac'));
-})->name('med_reg');
-
-Route::get('/medico/buscar/citas/{idpac}', function ($idpac) {
-    return view('medico.citas',compact('idpac'));
+Route::get('/medico/buscar/citas/{idpac}', function () {
+    return view('medico.citas');
 })->name('med_bc');
 
 //Route::get('/medico/ver_detalles/', function(){
@@ -120,14 +118,7 @@ Route::post('/diagf/{idpac}', 'historialcontroller@diagfm')->name('diagf');
 Route::post('/parn/{idpac}', 'historialcontroller@parnm')->name('parn');
 Route::post('/tpm/{idpac}', 'historialcontroller@tpmm')->name('tpm');
 
-//
 Route::get('datos_ficha/{curp}', 'UsuarioController@datos_ficha')->name('datos_ficha');
 Route::get('datos_ficha_med/{id}', 'UsuarioController@datos_ficha_med')->name('datos_ficha_med');
 Route::get('datos_ficha_pra/{curp}', 'UsuarioController@datos_ficha_pra')->name('datos_ficha_pra');
-// registro y consulta de notas ve valoracion y evolucion
-Route::post('/reg_val/{idpac}', 'UsuarioController@reg_val')->name('reg_val');
-Route::post('/reg_evo/{idpac}', 'UsuarioController@reg_evo')->name('reg_evo');
 Route::get('med_ver_det/{id}', 'UsuarioController@med_ver_detm')->name('med_ver_det');
-
-Route::get('lis_not_val/{idpac}', 'UsuarioController@lis_not_val')->name('lis_not_val');
-Route::get('lis_not_evo/{idpac}', 'UsuarioController@lis_not_evo')->name('lis_not_evo');
