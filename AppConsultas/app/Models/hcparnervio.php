@@ -12,6 +12,6 @@ class hcparnervio extends Model
         'escaladeashworth',
         'reflejososteo',
         'tipodemarcha',
-        'curp'
+        'id_f'
     ];
 }
