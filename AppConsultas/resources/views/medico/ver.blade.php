@@ -79,15 +79,11 @@
           <input id="tel2" type="tel" class="validate" disabled value="{{$usuario->celAC}}">
           <label for="tel2">Telefono/Celular</label>
         </div>
-      </div>
-    </form>
-  </div>
-  @endforeach
-  @endif
 
-  <div class="row section container">
+      </div>
+      <div class="row">
     <div class="contenedor col s12 m6 push-m3">
-      <h4>Historial de Consultas</h4>
+      <h4>Historial de Clínico</h4>
     </div>
   </div>
 
@@ -100,7 +96,7 @@
    </tr>
  </thead>
  <tbody>
-  
+
    <tr>
      <td>13/03/2019</td>
      <td>Alejandro</td>
@@ -108,5 +104,12 @@
    </tr>
  </tbody>
 </table>
+    </form>
+
+  </div>
+  @endforeach
+  @endif
+
+
 
 @endsection

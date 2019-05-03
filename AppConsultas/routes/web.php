@@ -9,7 +9,7 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 // Ruta login
 Route::get('/', function () {
@@ -17,41 +17,41 @@ Route::get('/', function () {
 });
 
 // Rutas Admin
-Route::get('/admin', function(){
-  return view('admin.home');
+Route::get('/admin', function () {
+    return view('admin.home');
 });
 
-Route::get('/admin/registrar', function(){return view('admin.registrar');})->name('admin_registrar');
+Route::get('/admin/registrar', function () {return view('admin.registrar');})->name('admin_registrar');
 
-Route::get('/admin/usuarios', function(){
-  return view('admin.usuarios');
+Route::get('/admin/usuarios', function () {
+    return view('admin.usuarios');
 });
 
 Route::get('/admin/buscar', 'UsuarioController@listpacientesadmin');
 
-Route::get('/admin/buscar/ver', function(){
-  return view('admin.ver');
+Route::get('/admin/buscar/ver', function () {
+    return view('admin.ver');
 });
 
-Route::get('/admin/estadisticas', function(){
-  return view('admin.estadisticas');
+Route::get('/admin/estadisticas', function () {
+    return view('admin.estadisticas');
 });
 
-Route::get('/admin/modificar_usuario', function(){
-  return view('admin.modificar_usuario');
+Route::get('/admin/modificar_usuario', function () {
+    return view('admin.modificar_usuario');
 });
 
 // Rutas Medico
-Route::get('/medico', function(){
-  return view('medico.home');
+Route::get('/medico', function () {
+    return view('medico.home');
 });
 //medico---------------------------------------------------------------------------------------------------
-Route::get('/medico/ficha_id', function(){
-  return view('medico.ficha_id');
+Route::get('/medico/ficha_id', function () {
+    return view('medico.ficha_id');
 })->name('reg_fichaid');
 
-Route::get('/medico/registrar/{idpac}', function($idpac){
-  return view('medico.registrar',compact('idpac'));
+Route::get('/medico/registrar/{idpac}', function ($idpac) {
+    return view('medico.registrar', compact('idpac'));
 })->name('med_reg');
 
 //Route::get('/medico/registrar', 'UsuarioController@retvar')->name('med_reg');
@@ -59,22 +59,21 @@ Route::get('/medico/registrar/{idpac}', function($idpac){
 //Route::get('/medico/buscar', function(){return view('medico.buscar');});
 Route::get('/medico/buscar', 'UsuarioController@listpacientes');
 
-Route::get('/medico/buscar/ver', function(){
-  return view('medico.ver');
+Route::get('/medico/buscar/ver', function () {
+    return view('medico.ver');
 });
 
 // Rutas Practicante
-Route::get('/practicante', function(){
-  return view('practicante.home');
+Route::get('/practicante', function () {
+    return view('practicante.home');
 });
 
 //Route::get('/practicante/buscar', function(){return view('practicante.buscar');});
 //Route::get('/practicante/buscar', 'UsuarioController@listpacientes');
 Route::get('/practicante/buscar', 'UsuarioController@listpacientespract');
 
-
-Route::get('/practicante/buscar/ver', function(){
-  return view('practicante.ver');
+Route::get('/practicante/buscar/ver', function () {
+    return view('practicante.ver');
 });
 
 Route::post('login', 'Auth\LoginController@login')->name('login');
@@ -83,7 +82,7 @@ Route::resource('reguser', 'UsuarioController');
 
 Route::get('listu', 'UsuarioController@listusuarios')->name('listu');
 
-Route::post('/registrarf','UsuarioController@store_ficha_id')->name('store_ficha_id');
+Route::post('/registrarf', 'UsuarioController@store_ficha_id')->name('store_ficha_id');
 
 Route::get('modificar_usuario/{id}', 'UsuarioController@listusuarios_mod')->name('modificar_usuario');
 
@@ -91,11 +90,9 @@ Route::post('modifica_usuario_metodo/{id}', 'UsuarioController@modificar_mod')->
 
 Route::get('deleteuser/{id}', 'UsuarioController@deleteuser')->name('deleteuser');
 
-Route::get('/medico/buscar/citas/{idpac}', function(){
-  return view('medico.citas');
+Route::get('/medico/buscar/citas/{idpac}', function () {
+    return view('medico.citas');
 })->name('med_bc');
-
-
 
 ///registro historialcontroller
 Route::post('/ant_hered_fam/{idpac}', 'historialcontroller@ant_hered_fam1')->name('hcahf');

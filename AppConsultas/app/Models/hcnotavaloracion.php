@@ -14,6 +14,6 @@ class hcnotavaloracion extends Model
         'actividadf',
         'fuerza',
         'rom',
-        'curp'
+        'id_f'
     ];
 }

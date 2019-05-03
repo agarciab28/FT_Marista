@@ -515,3 +515,19 @@ function tiposMarcha(){
   $("#reflejos_osteo").hide();
   $("#tipo_marcha").show();
 }
+
+function valoracion(){
+  $("#valoracion").show();
+  $("#evaluacion").hide();
+  $("#secciones").hide();
+}
+function evaluacion(){
+  $("#valoracion").hide();
+  $("#evaluacion").show();
+  $("#secciones").hide();
+}
+function secciones(){
+  $("#valoracion").hide();
+  $("#evaluacion").hide();
+  $("#secciones").show();
+}
