@@ -148,9 +148,9 @@ $x->save();
 }
 
 public function padact(Request $request, $idpac){
-  $x1 = $request->get('ta_pad_inicio').' '.$request->get('eva_inicio');
-  $x2 = $request->get('ta_pad_evol').' '.$request->get('eva_evolucion');
-  $x3 =   $request->get('ta_pad_actual').' '.$request->get('eva_actual');
+  $x1 = $request->get('ta_pad_inicio').';'.$request->get('eva_inicio');
+  $x2 = $request->get('ta_pad_evol').';'.$request->get('eva_evolucion');
+  $x3 =   $request->get('ta_pad_actual').';'.$request->get('eva_actual');
 
   $y = new hcpadeactual([
     'inicio' => $x1,
@@ -164,11 +164,11 @@ $y->save();
 return back();
 }
 public function sintgg(Request $request, $idpac){
-  $x1 = 'Astonia '.$request->get('astenia');
-  $x2 = 'Adinamia '.$request->get('adinamia');
-  $x3 = 'Anorexia '.$request->get('anorexia');
-  $x4 = 'Fiebre '.$request->get('fiebre');
-  $x5 = 'Perdida de peso '.$request->get('perd_peso');
+  $x1 = $request->get('astenia');
+  $x2 = $request->get('adinamia');
+  $x3 = $request->get('anorexia');
+  $x4 = $request->get('fiebre');
+  $x5 = $request->get('perd_peso');
 
 
   $y = new hcsintoasgenerales([
@@ -185,16 +185,16 @@ return back();
 }
 
 public function hapa_sis(Request $request, $idpac){
-  $x1 = 'Aparato Digestivo: '.$request->get('ap_diges').' Cual: '.$request->get('ta_ap_diges');
-  $x2 = 'Aparato Cardiovacular: '.$request->get('ap_cardio').' Cual: '.$request->get('ta_ap_cardio');
-  $x3 = 'Aparato Respiratorio: '.$request->get('ap_respi').' Cual: '.$request->get('ta_ap_respi');
-  $x4 = 'Aparato Urinario: '.$request->get('ap_urin').' Cual: '.$request->get('ta_ap_urin');
-  $x5 = 'Aparato Genital: '.$request->get('ap_genital').' Cual: '.$request->get('ta_ap_genital');
-  $x6 = 'Aparato Hematológico: '.$request->get('ap_hemato').' Cual: '.$request->get('ta_ap_hemato');
-  $x7 = 'Sistema endocrino: '.$request->get('sis_endo').' Cual: '.$request->get('ta_sis_endo');
-  $x8 = 'Sistema Nervioso: '.$request->get('sis_nerv').' Cual: '.$request->get('ta_sis_nerv');
-  $x9 = 'Sistema Sensorial: '.$request->get('sis_senso').' Cual: '.$request->get('ta_sis_senso');
-  $x10 = 'Sistema Osteomuscular: '.$request->get('sis_osteo').' Cual: '.$request->get('ta_sis_osteo');
+  $x1 = $request->get('ap_diges').';'.$request->get('ta_ap_diges');
+  $x2 = $request->get('ap_cardio').';'.$request->get('ta_ap_cardio');
+  $x3 = $request->get('ap_respi').';'.$request->get('ta_ap_respi');
+  $x4 = $request->get('ap_urin').';'.$request->get('ta_ap_urin');
+  $x5 = $request->get('ap_genital').';'.$request->get('ta_ap_genital');
+  $x6 = $request->get('ap_hemato').';'.$request->get('ta_ap_hemato');
+  $x7 = $request->get('sis_endo').';'.$request->get('ta_sis_endo');
+  $x8 = $request->get('sis_nerv').';'.$request->get('ta_sis_nerv');
+  $x9 = $request->get('sis_senso').';'.$request->get('ta_sis_senso');
+  $x10 = $request->get('sis_osteo').';'.$request->get('ta_sis_osteo');
 
   $y = new hcays([
     'aparatodigestivo' => $x1,

@@ -419,75 +419,75 @@
               <tr>
                 <td>Menarca</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->menarca, 2))[0] }}
+{{ (explode(';', $paciente4->menarca, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->menarca, 2))[1] }}
+{{ (explode(';', $paciente4->menarca, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Ritmo Menstrual</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->ritmomenstrual, 2))[0] }}
+{{ (explode(';', $paciente4->ritmomenstrual, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->ritmomenstrual, 2))[1] }}
+{{ (explode(';', $paciente4->ritmomenstrual, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Partos</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->partos, 2))[0] }}
+{{ (explode(';', $paciente4->partos, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->partos, 2))[1] }}
+{{  (explode(';', $paciente4->partos, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Abortos</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->abortos, 2))[0] }}
+{{  (explode(';', $paciente4->abortos, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->abortos, 2))[1] }}
+{{  (explode(';', $paciente4->abortos, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Cesáreas</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->cesareas, 2))[0] }}
+{{  (explode(';', $paciente4->cesareas, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->cesareas, 2))[1] }}
+{{  (explode(';', $paciente4->cesareas, 2))[1] }}
                 </td>
               </tr>
               <tr>
                 <td>Métodos anticonceptivos</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->metodoanticoncept, 2))[0] }}
+{{  (explode(';', $paciente4->metodoanticoncept, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->metodoanticoncept, 2))[1] }}
+{{  (explode(';', $paciente4->metodoanticoncept, 2))[1] }}
                 </td>
               </tr>
 
               <tr>
                 <td>F.U.M</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->fum, 2))[0] }}
+{{  (explode(';', $paciente4->fum, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->fum, 2))[1] }}
+{{  (explode(';', $paciente4->fum, 2))[1] }}
                 </td>
               </tr>
 
               <tr>
                 <td>I.V.S.A</td>
                 <td>
-{{ $pac=(explode(';', $paciente4->ivsa, 2))[0] }}
+{{  (explode(';', $paciente4->ivsa, 2))[0] }}
                 </td>
                 <td>
-{{ $pac=(explode(';', $paciente4->ivsa, 2))[1] }}
+{{  (explode(';', $paciente4->ivsa, 2))[1] }}
                 </td>
               </tr>
 
@@ -501,41 +501,40 @@
       {{-- Padecimiento actual --}}
       <div class=""  id="padecimiento_actual"      >
         <div class="row" >
+          @if (isset($paciente5))
           <h5 style="font-weight:bold;">Padecimiento actual</h5>
           <div class="inicio">
             <h6 style="font-weight:bold; margin-bottom:30px;">Inicio</h6>
             <p class="range-field">
-              <input type="range" id="eva_inicio" name="eva_inicio"class="eva_inicio" min="0" max="10">
+              <input type="range" id="eva_inicio" value="{{  (explode(';', $paciente5->inicio, 2))[1] }}"name="eva_inicio"class="eva_inicio" min="0" max="10">
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_pad_inicio" name="ta_pad_inicio" class="materialize-textarea"></textarea>
-              <label for="ta_pad_inicio">Escribe aquí</label>
+              <input id="ta_pad_inicio"  disabled value="{{  (explode(';', $paciente5->inicio, 2))[0] }}" name="ta_pad_inicio" class="with-gap"></input>
+
             </div>
           </div>
           <div class="evolucion">
             <h6 style="font-weight:bold; margin-bottom:30px;">Evolucion</h6>
             <p class="range-field">
-              <input type="range" id="eva_evolucion" name="eva_evolucion" min="0" max="10" />
+              <input type="range" id="eva_evolucion" value="{{  (explode(';', $paciente5->evolucion, 2))[1] }}" name="eva_evolucion" min="0" max="10" />
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_pad_evol" name="ta_pad_evol" class="materialize-textarea"></textarea>
-              <label for="ta_pad_evol">Escribe aquí</label>
+              <input id="ta_pad_evol" disabled value="{{  (explode(';', $paciente5->evolucion, 2))[0] }}"  name="ta_pad_evol" class="with-gap"></input>
+
             </div>
           </div>
           <div class="actual">
             <h6 style="font-weight:bold; margin-bottom:30px;">Actual</h6>
             <p class="range-field">
-              <input type="range" id="eva_actual" name="eva_actual" min="0" max="10">
+              <input type="range" id="eva_actual" value="{{  (explode(';', $paciente5->actual, 2))[1] }}" name="eva_actual" min="0" max="10">
             </p>
             <div class="input-field col s12">
-              <textarea id="ta_pad_actual" name="ta_pad_actual" class="materialize-textarea"></textarea>
-              <label for="ta_pad_actual">Escribe aquí</label>
-            </div>
-            <div class="row">
+              <input id="ta_pad_actual" disabled value="{{  (explode(';', $paciente5->actual, 2))[0] }}" name="ta_pad_actual" class="with-gap"></input>
 
             </div>
-            <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+
           </div>
+                    @endif
         </div>
       </div>
 
@@ -543,6 +542,7 @@
       {{-- Sintomas Generales --}}
       <div class="" id="sintomas_generales"      >
         <div class="row">
+                    @if (isset($paciente6))
           <h5 style="font-weight:bold;">Sintomas Generales</h5>
           <table>
             <thead>
@@ -556,12 +556,7 @@
                 <td>Astenia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="astenia" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="astenia" value="No" type="radio"/>
-                    <span>No</span>
+{{ $paciente6->astonia }}
                   </label>
                 </td>
               </tr>
@@ -569,12 +564,7 @@
                 <td>Adinamia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="adinamia" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="adinamia" value="No" type="radio"/>
-                    <span>No</span>
+{{ $paciente6->adinamia }}
                   </label>
                 </td>
               </tr>
@@ -582,12 +572,7 @@
                 <td>Anorexia</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="anorexia" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="anorexia" value="No" type="radio"/>
-                    <span>No</span>
+{{ $paciente6->anorexia }}
                   </label>
                 </td>
               </tr>
@@ -595,12 +580,7 @@
                 <td>Fiebre</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="fiebre" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="fiebre" value="No" type="radio"/>
-                    <span>No</span>
+{{ $paciente6->fiebre }}
                   </label>
                 </td>
               </tr>
@@ -608,21 +588,13 @@
                 <td>Perdida de peso</td>
                 <td>
                   <label>
-                    <input class="with-gap" name="perd_peso" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="perd_peso" value="No" type="radio"/>
-                    <span>No</span>
+{{ $paciente6->perdidadepeso }}
                   </label>
                 </td>
               </tr>
             </tbody>
           </table>
-          <div class="row">
-
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+                          @endif
         </div>
       </div>
 
@@ -632,6 +604,7 @@
         <div class="row">
           <h5 style="font-weight:bold;">Aparatos y Sistemas</h5>
           <table>
+            @if (isset($paciente14))
             <thead>
               <tr>
                 <th>Aparato</th>
@@ -642,440 +615,255 @@
             <tbody>
               <tr>
                 <td>Aparato Digestivo</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_diges" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_diges" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_diges" name="ta_ap_diges" class="materialize-textarea"></textarea>
-                    <label for="ta_ap_diges">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatodigestivo, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatodigestivo, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Aparato Cardiovacular</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_cardio" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_cardio" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_cardio" name="ta_ap_cardio" class="materialize-textarea"></textarea>
-                    <label for="ta_ap_cardio">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatocardiovas, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatocardiovas, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Aparato Respiratorio</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_respi" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_respi" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_respi" name="ta_ap_respi" class="materialize-textarea"></textarea>
-                    <label for="ta_ap_respi">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>  {{  (explode(';', $paciente14->aparatorespiratorio, 2))[0] }} </td>
+                <td>  {{  (explode(';', $paciente14->aparatorespiratorio, 2))[1] }} </td>
               </tr>
               <tr>
                 <td>Aparato Urinario</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_urin" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_urin" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_urin" name="ta_ap_urin" class="materialize-textarea"></textarea>
-                    <label for="taap_urin">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatourinario, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatourinario, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Aparato Genital</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_genital" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_genital" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_genital" name="ta_ap_genital" class="materialize-textarea"></textarea>
-                    <label for="ta_ap_genital">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatogenital, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatogenital, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Aparato Hematológico</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="ap_hemato" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="ap_hemato" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_ap_hemato" name="ta_ap_hemato" class="materialize-textarea"></textarea>
-                    <label for="ta_ap_hemato">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatohematologico, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatohematologico, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Sistema endocrino</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="sis_endo" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sis_endo" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sis_endo" name="ta_sis_endo" class="materialize-textarea"></textarea>
-                    <label for="ta_sis_endo">Escribe aquí</label>
-                  </div>
-                </td>
+                <td> {{  (explode(';', $paciente14->aparatoendocrino, 2))[0] }}  </td>
+                <td> {{  (explode(';', $paciente14->aparatoendocrino, 2))[1] }}  </td>
               </tr>
               <tr>
                 <td>Sistema Nervioso</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="sis_nerv" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sis_nerv" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sis_nerv" name="ta_sis_nerv" class="materialize-textarea"></textarea>
-                    <label for="ta_sis_nerv">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>  {{  (explode(';', $paciente14->aparatonervioso, 2))[0] }} </td>
+                <td>  {{  (explode(';', $paciente14->aparatonervioso, 2))[1] }} </td>
               </tr>
               <tr>
                 <td>Sistema Sensorial</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="sis_senso" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sis_senso" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sis_senso" name="ta_sis_senso" class="materialize-textarea"></textarea>
-                    <label for="ta_sis_senso">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>  {{  (explode(';', $paciente14->aparatosensorial, 2))[0] }} </td>
+                <td>  {{  (explode(';', $paciente14->aparatosensorial, 2))[1] }} </td>
               </tr>
               <tr>
                 <td>Sistema Osteomuscular</td>
-                <td>
-                  <label>
-                    <input class="with-gap" name="sis_osteo" value="Si" type="radio"/>
-                    <span>Sí</span>
-                  </label>
-                  <label>
-                    <input class="with-gap" name="sis_osteo" value="No" type="radio"/>
-                    <span>No</span>
-                  </label>
-                </td>
-                <td>
-                  <div class="input-field col s12">
-                    <textarea id="ta_sis_osteo" name="ta_sis_osteo" class="materialize-textarea"></textarea>
-                    <label for="ta_sis_osteo">Escribe aquí</label>
-                  </div>
-                </td>
+                <td>  {{  (explode(';', $paciente14->aparatoosteomuscu, 2))[0] }} </td>
+                <td>  {{  (explode(';', $paciente14->aparatoosteomuscu, 2))[1] }} </td>
               </tr>
             </tbody>
+            @endif
           </table>
-          <div class="row">
 
-          </div>
-          <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
         </div>
       </div>
 
       {{-- Diagnosticos anteriores --}}
     <div class="" id="diag_ant"      >
-      {{ csrf_field() }}
+
       <div class="row">
+                    @if (isset($paciente7))
         <h5 style="font-weight:bold;">Diágnosticos Anteriores</h5>
         <div class="input-field col s12">
-          <textarea id="ta_diag_ant" name="ta_diag_ant" class="materialize-textarea"></textarea>
-          <label for="ta_diag_ant">Diagnosticos Anteriores</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="ta_est_gab" name="ta_est_gab" class="materialize-textarea"></textarea>
-          <label for="ta_est_gab">Estudios de gabinete/Estudios de laboratorio</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="ta_trat_ant" name="ta_trat_ant" class="materialize-textarea"></textarea>
-          <label for="ta_trat_ant">Tratamientos anteriores</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="ta_inquietud" name="ta_inquietud" class="materialize-textarea"></textarea>
-          <label for="ta_inquietud">Inquietud subyacente</label>
-        </div>
-        <div class="row">
+          <input disabled value=" Diagnosticos Anteriores: {{ $paciente7->diagant }}" id="ta_diag_ant" name="ta_diag_ant" class="materialize-textarea"></input>
 
         </div>
-        <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+        <div class="input-field col s12">
+          <input disabled value="Estudios de gabinete/Estudios de laboratorio: {{ $paciente7->estudiog }}" id="ta_est_gab" name="ta_est_gab" class="materialize-textarea"></input>
+
+        </div>
+        <div class="input-field col s12">
+          <input disabled value="Tratamientos anteriores: {{ $paciente7->tratamientosant }}" id="ta_trat_ant" name="ta_trat_ant" class="materialize-textarea"></input>
+
+        </div>
+        <div class="input-field col s12">
+          <input disabled value="Inquietud subyacente: {{ $paciente7->inquietudsub }}" id="ta_inquietud" name="ta_inquietud" class="materialize-textarea"></input>
+
+        </div>
+                    @endif
       </div>
     </div>
 
     {{-- Exploracion fisica --}}
   <div class="" id="explor_fisica"      >
-    {{ csrf_field() }}
     <div class="row">
+      @if (isset($paciente8))
       <h5 style="font-weight:bold;">Exploración Física</h5>
       <div class="input-field col s12 m3">
-        <input type="number" id="t_a" name="t_a" value="">
-        <label for="t_a">T.A.</label>
+        <input value="T.A: {{ $paciente8->ta}}" disabled type="number" id="t_a" name="t_a" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="fc" name="fc" value="">
-        <label for="fc">F.C.</label>
+        <input value="F.C: {{ $paciente8->fc}}" disabled type="number" id="fc" name="fc" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="fr" name="fr" value="">
-        <label for="fc">F.R.</label>
+        <input value="F.R: {{ $paciente8->fr}}" disabled type="number" id="fr" name="fr" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="temp" name="temp" value="">
-        <label for="temp">Temperatura</label>
+        <input value="Temperatura: {{ $paciente8->temp}}" disabled type="number" id="temp" name="temp" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="talla" name="talla" value="">
-        <label for="temp">Talla</label>
+        <input value="Talla: {{ $paciente8->talla}}" disabled type="number" id="talla" name="talla" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="s02" name="s02" value="">
-        <label for="s02">S02</label>
+        <input value="S02: {{ $paciente8->s02}}" disabled type="number" id="s02" name="s02" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="peso_actual" name="peso_actual" value="">
-        <label for="peso_actual">Peso Actual</label>
+        <input value="Peso actual: {{ $paciente8->pesoactual}}" disabled type="number" id="peso_actual" name="peso_actual" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="peso_anterior" name="peso_anterior" value="">
-        <label for="peso_anterior">Peso Anterior</label>
+        <input value="Peso anterior: {{ $paciente8->pesoanterior}}" disabled type="number" id="peso_anterior" name="peso_anterior" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="peso_ideal" name="peso_ideal" value="">
-        <label for="peso_ideal">Peso Ideal</label>
+        <input value="Peso ideal: {{ $paciente8->pesoideal}}" disabled type="number" id="peso_ideal" name="peso_ideal" value="">
       </div>
       <div class="input-field col s12 m3">
-        <input type="number" id="imc" name="imc" value="">
-        <label for="imc">IMC</label>
+        <input value="IMC: {{ $paciente8->imc}}" disabled type="number" id="imc" name="imc" value="">
       </div>
-      <div class="row">
-
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+           @endif
     </div>
   </div>
 
     {{-- Exploracion general--}}
   <div class="" id="explor_general"      >
     <div class="row">
+        @if (isset($paciente10))
       <h5 style="font-weight:bold;">Exploración General</h5>
       <div class="input-field col s12 m6">
-        <input type="text" id="est_conci" name="est_conci" value="">
-        <label for="est_conci">Estado de conciencia</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="acti" name="acti" value="">
-        <label for="acti">Actitud</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="mov_anormales" name="mov_anormales" value="">
-        <label for="mov_anormales">Movimientos anormales</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="postura" name="postura" value="">
-        <label for="psotura">Postura</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="marcha" name="marcha" value="">
-        <label for="marcha">Marcha</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="est_nutri" name="est_nutri" value="">
-        <label for="est_nutri">Estado general de nutrición</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="fuer_m" name="fuer_m" value="">
-        <label for="fuer_m">Fuerza muscular</label>
-      </div>
-      <div class="input-field col s12 m6">
-        <input type="text" id="prub_fun" name="prub_fun" value="">
-        <label for="prub_fun">Pruebas funcionales</label>
-      </div>
-      <div class="row">
+        <input type="text" id="est_conci" name="est_conci" value="Estado de conciencia: {{$paciente10->estadodecon }}">
 
       </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+      <div class="input-field col s12 m6">
+        <input type="text" id="acti" name="acti" value="Actitud: {{$paciente10->actitud }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="mov_anormales" name="mov_anormales" value="Movimientos anormales: {{$paciente10->movimientosanormales }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="postura" name="postura" value="Postura: {{$paciente10->postura }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="marcha" name="marcha" value="Marcha: {{$paciente10->marcha }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="est_nutri" name="est_nutri" value="Estado general de nutrición: {{$paciente10->estadogdn }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="fuer_m" name="fuer_m" value="Fuerza muscular: {{$paciente10->fuerzamuscular }}">
+
+      </div>
+      <div class="input-field col s12 m6">
+        <input type="text" id="prub_fun" name="prub_fun" value="Pruebas funcionales: {{$paciente10->pruebasfuncionales }}">
+
+      </div>
+        @endif
     </div>
   </div>
 
   {{-- Exploracion por region--}}
   <div class="" id="explor_region"      >
     <div class="row">
+              @if (isset($paciente11))
       <h5 style="font-weight:bold;">Exploración por Región</h5>
       <div class="input-field col s12">
-        <input type="text" id="piel" name="piel" value="">
-        <label for="piel">Piel y anexos</label>
+        <input type="text" id="piel" name="piel" value="Piel y anexos: {{$paciente11->pielyanexo}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="cabeza" name="cabeza" value="">
-        <label for="cabeza">Cabeza</label>
+        <input type="text" id="cabeza" name="cabeza" value="Cabeza: {{$paciente11->cabeza}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="ojos" name="ojos" value="">
-        <label for="ojos">Ojos</label>
+        <input type="text" id="ojos" name="ojos" value="Ojos: {{$paciente11->ojos}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="oidos" name="oidos" value="">
-        <label for="oidos">Oídos</label>
+        <input type="text" id="oidos" name="oidos" value="Oídos: {{$paciente11->oidos}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="nariz_senos" name="nariz_senos" value="">
-        <label for="nariz_senos">Nariz y senos</label>
+        <input type="text" id="nariz_senos" name="nariz_senos" value="Nariz y senos: {{$paciente11->narizyseno}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="boca" name="boca" value="">
-        <label for="boca">Boca</label>
+        <input type="text" id="boca" name="boca" value="Boca: {{$paciente11->boca}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="torax" name="torax" value="">
-        <label for="torax">Tórax</label>
+        <input type="text" id="torax" name="torax" value="Tórax: {{$paciente11->torax}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="vasos_sang" name="vasos_sang" value="">
-        <label for="vasos_sang">Vasos Sanguíneos</label>
+        <input type="text" id="vasos_sang" name="vasos_sang" value="Vasos Sanguíneos: {{$paciente11->vasossanguineos}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="mamas" name="mamas" value="">
-        <label for="mamas">Mamas</label>
+        <input type="text" id="mamas" name="mamas" value="Mamas: {{$paciente11->mamas}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="genitales" name="genitales" value="">
-        <label for="genitales">Genitales</label>
+        <input type="text" id="genitales" name="genitales" value="Genitales: {{$paciente11->genitales}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="abdomen" name="abdomen" value="">
-        <label for="abdomen">Abdomen</label>
+        <input type="text" id="abdomen" name="abdomen" value="Abdomen: {{$paciente11->abdomen}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="otros" name="otros" value="">
-        <label for="otros">Otros</label>
+        <input type="text" id="otros" name="otros" value="Otros: {{$paciente11->otros}}">
       </div>
-      <div class="row">
-
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+            @endif
     </div>
   </div>
 
   {{-- Sistemas Musculoesqueletico por regiones--}}
   <div class="" id="sis_muscu"      >
     <div class="row">
+            @if (isset($paciente12))
       <h5 style="font-weight:bold;">Sistema Musculoesquelético por Regiones</h5>
       <h6 style="font-weight:bold;">Columna</h6>
       <div class="input-field col s12">
-        <input type="text" id="cervical" name="cervical" value="">
-        <label for="cervical">Cervical</label>
+        <input type="text" id="cervical" name="cervical" value="Cervical: {{(explode(';', $paciente12->columna, 3))[0]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="dorso" name="dorso" value="">
-        <label for="dorso">Dorsolumbar</label>
+        <input type="text" id="dorso" name="dorso" value="Dorsolumbar: {{(explode(';', $paciente12->columna, 3))[1]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="sacro" name="sacro" value="">
-        <label for="sacro">Sacroiliaca</label>
+        <input type="text" id="sacro" name="sacro" value="Sacroiliaca: {{(explode(';', $paciente12->columna, 3))[2]}}">
       </div>
       <h6 style="font-weight:bold;">Miembro Superior</h6>
       <div class="input-field col s12">
-        <input type="text" id="hombros" name="hombros" value="">
-        <label for="hombros">Hombros</label>
+        <input type="text" id="hombros" name="hombros" value="Hombros: {{(explode(';', $paciente12->miembrosuperior, 4))[0]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="codo" name="codo" value="">
-        <label for="codo">Codo</label>
+        <input type="text" id="codo" name="codo" value="Codo: {{(explode(';', $paciente12->miembrosuperior, 4))[1]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="muñeca" name="muñeca" value="">
-        <label for="muñeca">Muñeca</label>
+        <input type="text" id="muñeca" name="muñeca" value="Muñeca: {{(explode(';', $paciente12->miembrosuperior, 4))[2]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="mano" name="mano" value="">
-        <label for="mano">Mano</label>
+        <input type="text" id="mano" name="mano" value="Mano: {{(explode(';', $paciente12->miembrosuperior, 4))[3]}}">
       </div>
       <h6 style="font-weight:bold;">Miembro Inferior</h6>
       <div class="input-field col s12">
-        <input type="text" id="cadera" name="cadera" value="">
-        <label for="cadera">Cadera</label>
+        <input type="text" id="cadera" name="cadera" value="Cadera: {{(explode(';', $paciente12->miembroinferior, 4))[0]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="rodilla" name="rodilla" value="">
-        <label for="rodilla">Rodilla</label>
+        <input type="text" id="rodilla" name="rodilla" value="Rodilla: {{(explode(';', $paciente12->miembroinferior, 4))[1]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="tobillo" name="tobillo" value="">
-        <label for="tobillo">Tobillo</label>
+        <input type="text" id="tobillo" name="tobillo" value="Tobillo: {{(explode(';', $paciente12->miembroinferior, 4))[2]}}">
       </div>
       <div class="input-field col s12">
-        <input type="text" id="pie" name="pie" value="">
-        <label for="pie">Pie (Pie equino, plano, cavo)</label>
+        <input type="text" id="pie" name="pie" value="Pie (Pie equino, plano, cavo): {{(explode(';', $paciente12->miembroinferior, 4))[3]}}">
       </div>
-      <div class="row">
 
-      </div>
-      <button type="submit" class="btn col s12 m4 push-m4" name="button">Guardar</button>
+  @endif
     </div>
   </div>
 

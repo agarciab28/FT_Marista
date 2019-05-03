@@ -343,18 +343,18 @@ else{
       $paciente6 = hcsintoasgenerales::where('id_f', $id)->get()->first();
       $paciente7 = hcda::where('id_f', $id)->get()->first();
       $paciente8 = hcexploracion_fisica::where('id_f', $id)->get()->first();
-      $paciente9 = hcsintoasgenerales::where('id_f', $id)->get()->first();
       $paciente10 = hcexploracion_general::where('id_f', $id)->get()->first();
       $paciente11 = hcexploracion_por_region::where('id_f', $id)->get()->first();
       $paciente12 = hcsme::where('id_f', $id)->get()->first();
       $paciente13 = hcarcodemovimiento::where('id_f', $id)->get()->first();
+      $paciente14 = hcays::where('id_f', $id)->get()->first();
 
 //if (isset($paciente4)) {
 //  $splitName = explode(';', $paciente4->menarca, 2);
 //  dd($splitName[0]);
 //}
 
-        return view('medico.ver_detalles',compact(['paciente1','paciente2','paciente3','paciente4']));
+        return view('medico.ver_detalles',compact(['paciente1','paciente2','paciente3','paciente4','paciente5','paciente6','paciente14','paciente7','paciente8','paciente10','paciente11','paciente12']));
     }
 
 }
