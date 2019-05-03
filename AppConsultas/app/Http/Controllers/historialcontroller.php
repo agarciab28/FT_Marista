@@ -123,14 +123,14 @@ public function hcapnpp(Request $request, $idpac){
 
 public function hcagoo(Request $request, $idpac){
 
-$y1 = $request->get('ta_menarca').' '.$request->get('fecha1');
-$y2 = $request->get('ta_ritmo').' '.$request->get('fecha2');
-$y3 = $request->get('ta_partos').' '.$request->get('fecha3');
-$y4 = $request->get('ta_abortos').' '.$request->get('fecha4');
-$y5 = $request->get('ta_cesareas').' '.$request->get('fecha5');
-$y6 = $request->get('ta_met_anti').' '.$request->get('fecha6');
-$y7 = $request->get('ta_fum').' '.$request->get('fecha7');
-$y8 = $request->get('ta_ivsa').' '.$request->get('fecha8');
+$y1 = $request->get('ta_menarca').';'.$request->get('fecha1');
+$y2 = $request->get('ta_ritmo').';'.$request->get('fecha2');
+$y3 = $request->get('ta_partos').';'.$request->get('fecha3');
+$y4 = $request->get('ta_abortos').';'.$request->get('fecha4');
+$y5 = $request->get('ta_cesareas').';'.$request->get('fecha5');
+$y6 = $request->get('ta_met_anti').';'.$request->get('fecha6');
+$y7 = $request->get('ta_fum').';'.$request->get('fecha7');
+$y8 = $request->get('ta_ivsa').';'.$request->get('fecha8');
 
   $x = new hcago([
     'menarca' => $y1,
@@ -283,9 +283,9 @@ return back();
 }
 
 public function smprm(Request $request, $idpac){
-$x1 = "Coloumna => Cervical: ".$request->get('cervical')." Dorsolumbar: ".$request->get('dorso')." Sacroiliaca: ".$request->get('sacro');
-$x2 = "Miembro superior => Hombros: ".$request->get('hombros')." Codo: ".$request->get('codo')." Muñeca: ".$request->get('muñeca')." Mano: ".$request->get('mano');
-$x3 = "Miembro inferior => Cadera: ".$request->get('cadera')." Rodilla: ".$request->get('rodilla')." Tobillo: ".$request->get('tobillo')." Pie: ".$request->get('pie');
+$x1 = $request->get('cervical').";".$request->get('dorso').";".$request->get('sacro');
+$x2 = $request->get('hombros').";".$request->get('codo').";".$request->get('muñeca').";".$request->get('mano');
+$x3 = $request->get('cadera').";".$request->get('rodilla').";".$request->get('tobillo').";".$request->get('pie');
   $y = new hcsme([
     'columna' => $x1,
     'miembrosuperior' => $x2,
