@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dd/dad/a00005" kind="file" language="PHP">
+    <compoundname>server.php</compoundname>
+    <innernamespace refid="d4/dee/a00008">Laravel</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$uri</definition>
+        <argsstring></argsstring>
+        <name>$uri</name>
+        <initializer>= urldecode(
+    parse_url($_SERVER[&apos;REQUEST_URI&apos;], PHP_URL_PATH)
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AppConsultas/server.php" line="10" column="1" bodyfile="AppConsultas/server.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dad/a00005_afc8b25b448fd1a3d79f6171af75f39ff_1afc8b25b448fd1a3d79f6171af75f39ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>if($uri !==&apos;/&apos; &amp;&amp;file_exists(__DIR__.&apos;/public&apos;. $uri))</definition>
+        <argsstring>( $uri !==&apos;/&apos; &amp;&amp;file_exists(__DIR__.&apos;/public&apos;. $uri))</argsstring>
+        <name>if</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AppConsultas/server.php" line="17" column="1" bodyfile="AppConsultas/server.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" refkind="member"><highlight class="normal"><ref refid="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" kindref="member">$uri</ref><sp/>=<sp/>urldecode(</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>parse_url($_SERVER[</highlight><highlight class="stringliteral">&apos;REQUEST_URI&apos;</highlight><highlight class="normal">],<sp/>PHP_URL_PATH)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>allows<sp/>us<sp/>to<sp/>emulate<sp/>Apache&apos;s<sp/>&quot;mod_rewrite&quot;<sp/>functionality<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>built-in<sp/>PHP<sp/>web<sp/>server.<sp/>This<sp/>provides<sp/>a<sp/>convenient<sp/>way<sp/>to<sp/>test<sp/>a<sp/>Laravel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>application<sp/>without<sp/>having<sp/>installed<sp/>a<sp/>&quot;real&quot;<sp/>web<sp/>server<sp/>software<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="dd/dad/a00005_afc8b25b448fd1a3d79f6171af75f39ff_1afc8b25b448fd1a3d79f6171af75f39ff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" kindref="member">$uri</ref><sp/>!==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>file_exists(__DIR__.</highlight><highlight class="stringliteral">&apos;/public&apos;</highlight><highlight class="normal">.<ref refid="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" kindref="member">$uri</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">require_once<sp/>__DIR__.</highlight><highlight class="stringliteral">&apos;/public/index.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+    </programlisting>
+    <location file="AppConsultas/server.php"/>
+  </compounddef>
+</doxygen>

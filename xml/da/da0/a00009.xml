@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="da/da0/a00009" kind="page">
+    <compoundname>md_AppConsultas_readme</compoundname>
+    <title>readme</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="logo-laravel.svg" inline="yes">></image>
+</para>
+<para><ulink url="https://travis-ci.org/laravel/framework"><image type="html" name="framework.svg" inline="yes">></image>
+</ulink> <ulink url="https://packagist.org/packages/laravel/framework"><image type="html" name="total.svg" inline="yes">></image>
+</ulink> <ulink url="https://packagist.org/packages/laravel/framework"><image type="html" name="stable.svg" inline="yes">></image>
+</ulink> <ulink url="https://packagist.org/packages/laravel/framework"><image type="html" name="license.svg" inline="yes">></image>
+</ulink> </para>
+<para><heading level="2">About <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref></heading>
+</para>
+<para><ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> takes the pain out of development by easing common tasks used in many web projects, such as:</para>
+<para><itemizedlist>
+<listitem><para><ulink url="https://laravel.com/docs/routing">Simple, fast routing engine</ulink>.</para>
+</listitem><listitem><para><ulink url="https://laravel.com/docs/container">Powerful dependency injection container</ulink>.</para>
+</listitem><listitem><para>Multiple back-ends for <ulink url="https://laravel.com/docs/session">session</ulink> and <ulink url="https://laravel.com/docs/cache">cache</ulink> storage.</para>
+</listitem><listitem><para>Expressive, intuitive <ulink url="https://laravel.com/docs/eloquent">database ORM</ulink>.</para>
+</listitem><listitem><para>Database agnostic <ulink url="https://laravel.com/docs/migrations">schema migrations</ulink>.</para>
+</listitem><listitem><para><ulink url="https://laravel.com/docs/queues">Robust background job processing</ulink>.</para>
+</listitem><listitem><para><ulink url="https://laravel.com/docs/broadcasting">Real-time event broadcasting</ulink>.</para>
+</listitem></itemizedlist>
+</para>
+<para><ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> is accessible, powerful, and provides tools required for large, robust applications.</para>
+<para><heading level="2">Learning <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref></heading>
+</para>
+<para><ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> has the most extensive and thorough <ulink url="https://laravel.com/docs">documentation</ulink> and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.</para>
+<para>If you don&apos;t feel like reading, <ulink url="https://laracasts.com">Laracasts</ulink> can help. Laracasts contains over 1100 video tutorials on a range of topics including <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref>, modern PHP, unit testing, and JavaScript. Boost you and your team&apos;s skills by digging into our comprehensive video library.</para>
+<para><heading level="2"><ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> Sponsors</heading>
+</para>
+<para>We would like to extend our thanks to the following sponsors for funding <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> development. If you are interested in becoming a sponsor, please visit the <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> <ulink url="https://patreon.com/taylorotwell">Patreon page</ulink>.</para>
+<para><itemizedlist>
+<listitem><para><bold><ulink url="https://vehikl.com/">Vehikl</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://tighten.co">Tighten Co.</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://kirschbaumdevelopment.com">Kirschbaum Development Group</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://64robots.com">64 Robots</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://cubettech.com">Cubet Techno Labs</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://cyber-duck.co.uk">Cyber-Duck</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://www.britishsoftware.co">British Software Development</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://www.webdock.io/en">Webdock, Fast VPS Hosting</ulink></bold></para>
+</listitem><listitem><para><bold><ulink url="https://devsquad.com">DevSquad</ulink></bold></para>
+</listitem><listitem><para><ulink url="https://userinsights.com">UserInsights</ulink></para>
+</listitem><listitem><para><ulink url="https://www.fragrantica.com">Fragrantica</ulink></para>
+</listitem><listitem><para><ulink url="https://softonsofa.com/">SOFTonSOFA</ulink></para>
+</listitem><listitem><para><ulink url="https://user10.com">User10</ulink></para>
+</listitem><listitem><para><ulink url="https://soumettre.fr/">Soumettre.fr</ulink></para>
+</listitem><listitem><para><ulink url="https://codebrisk.com">CodeBrisk</ulink></para>
+</listitem><listitem><para><ulink url="https://1forge.com">1Forge</ulink></para>
+</listitem><listitem><para><ulink url="https://tecpresso.co.jp/">TECPRESSO</ulink></para>
+</listitem><listitem><para><ulink url="http://runtimeconverter.com/">Runtime Converter</ulink></para>
+</listitem><listitem><para><ulink url="https://weblagence.com/">WebL&apos;Agence</ulink></para>
+</listitem><listitem><para><ulink url="https://www.invoiceninja.com">Invoice Ninja</ulink></para>
+</listitem><listitem><para><ulink url="https://www.imi-digital.de/">iMi digital</ulink></para>
+</listitem><listitem><para><ulink url="https://www.earthlink.ro/">Earthlink</ulink></para>
+</listitem><listitem><para><ulink url="https://steadfastcollective.com/">Steadfast Collective</ulink></para>
+</listitem><listitem><para><ulink url="https://watr.mx/">We Are The Robots Inc.</ulink></para>
+</listitem><listitem><para><ulink url="https://www.understand.io/">Understand.io</ulink></para>
+</listitem><listitem><para><ulink url="https://abdelelrafa.com">Abdel Elrafa</ulink></para>
+</listitem></itemizedlist>
+</para>
+<para><heading level="2">Contributing</heading>
+</para>
+<para>Thank you for considering contributing to the <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> framework! The contribution guide can be found in the <ulink url="https://laravel.com/docs/contributions">Laravel documentation</ulink>.</para>
+<para><heading level="2">Security Vulnerabilities</heading>
+</para>
+<para>If you discover a security vulnerability within <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref>, please send an e-mail to Taylor Otwell via <ulink url="mailto:taylor@laravel.com">taylor@laravel.com</ulink>. All security vulnerabilities will be promptly addressed.</para>
+<para><heading level="2">License</heading>
+</para>
+<para>The <ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> framework is open-source software licensed under the <ulink url="https://opensource.org/licenses/MIT">MIT license</ulink>. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

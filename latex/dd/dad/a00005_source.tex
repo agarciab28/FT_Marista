@@ -1,0 +1,20 @@
+\hypertarget{a00005_source}{}\subsection{server.\+php}
+\label{a00005_source}\index{AppConsultas/server.php@{AppConsultas/server.php}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 <?php}
+\DoxyCodeLine{00002 }
+\DoxyCodeLine{\Hypertarget{a00005_source_l00010}\mbox{\hyperlink{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}{00010}} \mbox{\hyperlink{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}{\$uri}} = urldecode(}
+\DoxyCodeLine{00011     parse\_url(\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_URI'}], PHP\_URL\_PATH)}
+\DoxyCodeLine{00012 );}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014 \textcolor{comment}{// This file allows us to emulate Apache's "mod\_rewrite" functionality from the}}
+\DoxyCodeLine{00015 \textcolor{comment}{// built-in PHP web server. This provides a convenient way to test a Laravel}}
+\DoxyCodeLine{00016 \textcolor{comment}{// application without having installed a "real" web server software here.}}
+\DoxyCodeLine{\Hypertarget{a00005_source_l00017}\mbox{\hyperlink{a00005_afc8b25b448fd1a3d79f6171af75f39ff_afc8b25b448fd1a3d79f6171af75f39ff}{00017}} \textcolor{keywordflow}{if} (\mbox{\hyperlink{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}{\$uri}} !== \textcolor{charliteral}{'/'} \&\& file\_exists(\_\_DIR\_\_.\textcolor{stringliteral}{'/public'}.\mbox{\hyperlink{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}{\$uri}})) \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00019 \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021 require\_once \_\_DIR\_\_.\textcolor{stringliteral}{'/public/index.php'};}
+
+\end{DoxyCode}

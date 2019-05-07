@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d4/dee/a00008" kind="namespace" language="PHP">
+    <compoundname>Laravel</compoundname>
+    <briefdescription>
+<para><ref refid="d4/dee/a00008" kindref="compound">Laravel</ref> - A PHP Framework For Web Artisans. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Taylor Otwell <ulink url="mailto:taylor@laravel.com">taylor@laravel.com</ulink> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="AppConsultas/server.php" line="5" column="1"/>
+  </compounddef>
+</doxygen>

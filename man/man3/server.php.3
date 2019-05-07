@@ -1,0 +1,45 @@
+.TH "AppConsultas/server.php" 3 "Fri May 3 2019" "Control de citas; Universidad Marista" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AppConsultas/server.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBLaravel\fP"
+.br
+.RI "\fBLaravel\fP - A PHP Framework For Web Artisans\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$uri\fP"
+.br
+.ti -1c
+.RI "\fBif\fP ( $uri !=='/' &&file_exists(__DIR__\&.'/public'\&. $uri))"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$uri"
+\fBInitial value:\fP
+.PP
+.nf
+= urldecode(
+    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+)
+.fi
+.PP
+Definition at line 10 of file server\&.php\&.
+.SS "if($uri !=='/' &&file_exists(__DIR__\&.'/public'\&. $uri))"
+
+.PP
+Definition at line 17 of file server\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Control de citas; Universidad Marista from the source code\&.

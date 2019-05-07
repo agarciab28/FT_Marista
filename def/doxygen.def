@@ -1,0 +1,68 @@
+AutoGen Definitions dummy;
+file = {
+  file-id   = 'd7/d46/a00002';
+  file-name = 'readme.md';
+  file-full-name  = 'C:/xampp/htdocs/GPSMARISTAS/FT_Marista/AppConsultas/readme.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'dd/dad/a00005';
+  file-name = 'server.php';
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = '$uri';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= urldecode(
+    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+)
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'C:/xampp/htdocs/GPSMARISTAS/FT_Marista/AppConsultas/server.php';
+      var-mem-desc-line = '10';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = 'dd/dad/a00005_afc8b25b448fd1a3d79f6171af75f39ff_1afc8b25b448fd1a3d79f6171af75f39ff';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'if';
+      var-mem-desc-file = 'C:/xampp/htdocs/GPSMARISTAS/FT_Marista/AppConsultas/server.php';
+      var-mem-desc-line = '17';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = 'C:/xampp/htdocs/GPSMARISTAS/FT_Marista/AppConsultas/server.php';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="d4/dee/a00008" kind="namespace"><name>Laravel</name>
+  </compound>
+  <compound refid="d7/d46/a00002" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="dd/dad/a00005" kind="file"><name>server.php</name>
+    <member refid="dd/dad/a00005_a653b5458163d338546c47271b4fb81b7_1a653b5458163d338546c47271b4fb81b7" kind="variable"><name>$uri</name></member>
+    <member refid="dd/dad/a00005_afc8b25b448fd1a3d79f6171af75f39ff_1afc8b25b448fd1a3d79f6171af75f39ff" kind="variable"><name>if</name></member>
+  </compound>
+  <compound refid="da/da0/a00009" kind="page"><name>md_AppConsultas_readme</name>
+  </compound>
+  <compound refid="dir_05a17f525a550f35eebfadd163aac914" kind="dir"><name>AppConsultas</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="d7/d46/a00002" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;&lt;img<sp/>src=&quot;https://laravel.com/assets/img/components/logo-laravel.svg&quot;&gt;&lt;/p&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;p<sp/>align=&quot;center&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://travis-ci.org/laravel/framework&quot;&gt;&lt;img<sp/>src=&quot;https://travis-ci.org/laravel/framework.svg&quot;<sp/>alt=&quot;Build<sp/>Status&quot;&gt;&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://packagist.org/packages/laravel/framework&quot;&gt;&lt;img<sp/>src=&quot;https://poser.pugx.org/laravel/framework/d/total.svg&quot;<sp/>alt=&quot;Total<sp/>Downloads&quot;&gt;&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://packagist.org/packages/laravel/framework&quot;&gt;&lt;img<sp/>src=&quot;https://poser.pugx.org/laravel/framework/v/stable.svg&quot;<sp/>alt=&quot;Latest<sp/>Stable<sp/>Version&quot;&gt;&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>href=&quot;https://packagist.org/packages/laravel/framework&quot;&gt;&lt;img<sp/>src=&quot;https://poser.pugx.org/laravel/framework/license.svg&quot;<sp/>alt=&quot;License&quot;&gt;&lt;/a&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/p&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>About<sp/>Laravel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Laravel<sp/>is<sp/>a<sp/>web<sp/>application<sp/>framework<sp/>with<sp/>expressive,<sp/>elegant<sp/>syntax.<sp/>We<sp/>believe<sp/>development<sp/>must<sp/>be<sp/>an<sp/>enjoyable<sp/>and<sp/>creative<sp/>experience<sp/>to<sp/>be<sp/>truly<sp/>fulfilling.<sp/>Laravel<sp/>takes<sp/>the<sp/>pain<sp/>out<sp/>of<sp/>development<sp/>by<sp/>easing<sp/>common<sp/>tasks<sp/>used<sp/>in<sp/>many<sp/>web<sp/>projects,<sp/>such<sp/>as:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[Simple,<sp/>fast<sp/>routing<sp/>engine](https://laravel.com/docs/routing).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Powerful<sp/>dependency<sp/>injection<sp/>container](https://laravel.com/docs/container).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Multiple<sp/>back-ends<sp/>for<sp/>[session](https://laravel.com/docs/session)<sp/>and<sp/>[cache](https://laravel.com/docs/cache)<sp/>storage.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Expressive,<sp/>intuitive<sp/>[database<sp/>ORM](https://laravel.com/docs/eloquent).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Database<sp/>agnostic<sp/>[schema<sp/>migrations](https://laravel.com/docs/migrations).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Robust<sp/>background<sp/>job<sp/>processing](https://laravel.com/docs/queues).</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Real-time<sp/>event<sp/>broadcasting](https://laravel.com/docs/broadcasting).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Laravel<sp/>is<sp/>accessible,<sp/>powerful,<sp/>and<sp/>provides<sp/>tools<sp/>required<sp/>for<sp/>large,<sp/>robust<sp/>applications.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Learning<sp/>Laravel</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Laravel<sp/>has<sp/>the<sp/>most<sp/>extensive<sp/>and<sp/>thorough<sp/>[documentation](https://laravel.com/docs)<sp/>and<sp/>video<sp/>tutorial<sp/>library<sp/>of<sp/>all<sp/>modern<sp/>web<sp/>application<sp/>frameworks,<sp/>making<sp/>it<sp/>a<sp/>breeze<sp/>to<sp/>get<sp/>started<sp/>with<sp/>the<sp/>framework.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>don&apos;t<sp/>feel<sp/>like<sp/>reading,<sp/>[Laracasts](https://laracasts.com)<sp/>can<sp/>help.<sp/>Laracasts<sp/>contains<sp/>over<sp/>1100<sp/>video<sp/>tutorials<sp/>on<sp/>a<sp/>range<sp/>of<sp/>topics<sp/>including<sp/>Laravel,<sp/>modern<sp/>PHP,<sp/>unit<sp/>testing,<sp/>and<sp/>JavaScript.<sp/>Boost<sp/>you<sp/>and<sp/>your<sp/>team&apos;s<sp/>skills<sp/>by<sp/>digging<sp/>into<sp/>our<sp/>comprehensive<sp/>video<sp/>library.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Laravel<sp/>Sponsors</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>would<sp/>like<sp/>to<sp/>extend<sp/>our<sp/>thanks<sp/>to<sp/>the<sp/>following<sp/>sponsors<sp/>for<sp/>funding<sp/>Laravel<sp/>development.<sp/>If<sp/>you<sp/>are<sp/>interested<sp/>in<sp/>becoming<sp/>a<sp/>sponsor,<sp/>please<sp/>visit<sp/>the<sp/>Laravel<sp/>[Patreon<sp/>page](https://patreon.com/taylorotwell).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**[Vehikl](https://vehikl.com/)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Tighten<sp/>Co.](https://tighten.co)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Kirschbaum<sp/>Development<sp/>Group](https://kirschbaumdevelopment.com)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[64<sp/>Robots](https://64robots.com)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Cubet<sp/>Techno<sp/>Labs](https://cubettech.com)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Cyber-Duck](https://cyber-duck.co.uk)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[British<sp/>Software<sp/>Development](https://www.britishsoftware.co)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[Webdock,<sp/>Fast<sp/>VPS<sp/>Hosting](https://www.webdock.io/en)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**[DevSquad](https://devsquad.com)**</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[UserInsights](https://userinsights.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Fragrantica](https://www.fragrantica.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[SOFTonSOFA](https://softonsofa.com/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[User10](https://user10.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Soumettre.fr](https://soumettre.fr/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[CodeBrisk](https://codebrisk.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[1Forge](https://1forge.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[TECPRESSO](https://tecpresso.co.jp/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Runtime<sp/>Converter](http://runtimeconverter.com/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[WebL&apos;Agence](https://weblagence.com/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Invoice<sp/>Ninja](https://www.invoiceninja.com)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[iMi<sp/>digital](https://www.imi-digital.de/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Earthlink](https://www.earthlink.ro/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Steadfast<sp/>Collective](https://steadfastcollective.com/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[We<sp/>Are<sp/>The<sp/>Robots<sp/>Inc.](https://watr.mx/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Understand.io](https://www.understand.io/)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Abdel<sp/>Elrafa](https://abdelelrafa.com)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Contributing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Thank<sp/>you<sp/>for<sp/>considering<sp/>contributing<sp/>to<sp/>the<sp/>Laravel<sp/>framework!<sp/>The<sp/>contribution<sp/>guide<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>[Laravel<sp/>documentation](https://laravel.com/docs/contributions).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Security<sp/>Vulnerabilities</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>discover<sp/>a<sp/>security<sp/>vulnerability<sp/>within<sp/>Laravel,<sp/>please<sp/>send<sp/>an<sp/>e-mail<sp/>to<sp/>Taylor<sp/>Otwell<sp/>via<sp/>[taylor@laravel.com](mailto:taylor@laravel.com).<sp/>All<sp/>security<sp/>vulnerabilities<sp/>will<sp/>be<sp/>promptly<sp/>addressed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Laravel<sp/>framework<sp/>is<sp/>open-source<sp/>software<sp/>licensed<sp/>under<sp/>the<sp/>[MIT<sp/>license](https://opensource.org/licenses/MIT).</highlight></codeline>
+    </programlisting>
+    <location file="AppConsultas/readme.md"/>
+  </compounddef>
+</doxygen>

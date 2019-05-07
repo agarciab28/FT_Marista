@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_a00009">
+
+<para></para>
+
+<para><link xlink:href="https://travis-ci.org/laravel/framework"></link> <link xlink:href="https://packagist.org/packages/laravel/framework"></link> <link xlink:href="https://packagist.org/packages/laravel/framework"></link> <link xlink:href="https://packagist.org/packages/laravel/framework"></link> </para>
+
+<para><formalpara><title>About <link linkend="_a00008">Laravel</link></title></formalpara>
+</para>
+
+<para><link linkend="_a00008">Laravel</link> is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. <link linkend="_a00008">Laravel</link> takes the pain out of development by easing common tasks used in many web projects, such as:</para>
+
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="https://laravel.com/docs/routing">Simple, fast routing engine</link>.</para>
+</listitem><listitem>
+<para><link xlink:href="https://laravel.com/docs/container">Powerful dependency injection container</link>.</para>
+</listitem><listitem>
+<para>Multiple back-ends for <link xlink:href="https://laravel.com/docs/session">session</link> and <link xlink:href="https://laravel.com/docs/cache">cache</link> storage.</para>
+</listitem><listitem>
+<para>Expressive, intuitive <link xlink:href="https://laravel.com/docs/eloquent">database ORM</link>.</para>
+</listitem><listitem>
+<para>Database agnostic <link xlink:href="https://laravel.com/docs/migrations">schema migrations</link>.</para>
+</listitem><listitem>
+<para><link xlink:href="https://laravel.com/docs/queues">Robust background job processing</link>.</para>
+</listitem><listitem>
+<para><link xlink:href="https://laravel.com/docs/broadcasting">Real-time event broadcasting</link>.</para>
+</listitem></itemizedlist>
+</para>
+
+<para><link linkend="_a00008">Laravel</link> is accessible, powerful, and provides tools required for large, robust applications.</para>
+
+<para><formalpara><title>Learning <link linkend="_a00008">Laravel</link></title></formalpara>
+</para>
+
+<para><link linkend="_a00008">Laravel</link> has the most extensive and thorough <link xlink:href="https://laravel.com/docs">documentation</link> and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.</para>
+
+<para>If you don&apos;t feel like reading, <link xlink:href="https://laracasts.com">Laracasts</link> can help. Laracasts contains over 1100 video tutorials on a range of topics including <link linkend="_a00008">Laravel</link>, modern PHP, unit testing, and JavaScript. Boost you and your team&apos;s skills by digging into our comprehensive video library.</para>
+
+<para><formalpara><title><link linkend="_a00008">Laravel</link> Sponsors</title></formalpara>
+</para>
+
+<para>We would like to extend our thanks to the following sponsors for funding <link linkend="_a00008">Laravel</link> development. If you are interested in becoming a sponsor, please visit the <link linkend="_a00008">Laravel</link> <link xlink:href="https://patreon.com/taylorotwell">Patreon page</link>.</para>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold"><link xlink:href="https://vehikl.com/">Vehikl</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://tighten.co">Tighten Co.</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://kirschbaumdevelopment.com">Kirschbaum Development Group</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://64robots.com">64 Robots</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://cubettech.com">Cubet Techno Labs</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://cyber-duck.co.uk">Cyber-Duck</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://www.britishsoftware.co">British Software Development</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://www.webdock.io/en">Webdock, Fast VPS Hosting</link></emphasis></para>
+</listitem><listitem>
+<para><emphasis role="bold"><link xlink:href="https://devsquad.com">DevSquad</link></emphasis></para>
+</listitem><listitem>
+<para><link xlink:href="https://userinsights.com">UserInsights</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.fragrantica.com">Fragrantica</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://softonsofa.com/">SOFTonSOFA</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://user10.com">User10</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://soumettre.fr/">Soumettre.fr</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://codebrisk.com">CodeBrisk</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://1forge.com">1Forge</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://tecpresso.co.jp/">TECPRESSO</link></para>
+</listitem><listitem>
+<para><link xlink:href="http://runtimeconverter.com/">Runtime Converter</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://weblagence.com/">WebL&apos;Agence</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.invoiceninja.com">Invoice Ninja</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.imi-digital.de/">iMi digital</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.earthlink.ro/">Earthlink</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://steadfastcollective.com/">Steadfast Collective</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://watr.mx/">We Are The Robots Inc.</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://www.understand.io/">Understand.io</link></para>
+</listitem><listitem>
+<para><link xlink:href="https://abdelelrafa.com">Abdel Elrafa</link></para>
+</listitem></itemizedlist>
+</para>
+
+<para><formalpara><title>Contributing</title></formalpara>
+</para>
+
+<para>Thank you for considering contributing to the <link linkend="_a00008">Laravel</link> framework! The contribution guide can be found in the <link xlink:href="https://laravel.com/docs/contributions">Laravel documentation</link>.</para>
+
+<para><formalpara><title>Security Vulnerabilities</title></formalpara>
+</para>
+
+<para>If you discover a security vulnerability within <link linkend="_a00008">Laravel</link>, please send an e-mail to Taylor Otwell via <link xlink:href="mailto:taylor@laravel.com">taylor@laravel.com</link>. All security vulnerabilities will be promptly addressed.</para>
+
+<para><formalpara><title>License</title></formalpara>
+</para>
+
+<para>The <link linkend="_a00008">Laravel</link> framework is open-source software licensed under the <link xlink:href="https://opensource.org/licenses/MIT">MIT license</link>. </para>
+</section>

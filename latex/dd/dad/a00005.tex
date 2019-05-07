@@ -1,0 +1,44 @@
+\hypertarget{a00005}{}\subsection{App\+Consultas/server.php File Reference}
+\label{a00005}\index{AppConsultas/server.php@{AppConsultas/server.php}}
+\subsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{a00008}{Laravel}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{a00008}{Laravel}} -\/ A P\+HP Framework For Web Artisans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}{\$uri}}
+\item 
+\mbox{\hyperlink{a00005_afc8b25b448fd1a3d79f6171af75f39ff_afc8b25b448fd1a3d79f6171af75f39ff}{if}} ( \$uri !==\textquotesingle{}/\textquotesingle{} \&\&file\+\_\+exists(\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+.\textquotesingle{}/public\textquotesingle{}. \$uri))
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Variable Documentation}
+\mbox{\Hypertarget{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}\label{a00005_a653b5458163d338546c47271b4fb81b7_a653b5458163d338546c47271b4fb81b7}} 
+\index{server.php@{server.php}!\$uri@{\$uri}}
+\index{\$uri@{\$uri}!server.php@{server.php}}
+\paragraph{\texorpdfstring{\$uri}{$uri}}
+{\footnotesize\ttfamily \$uri}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= urldecode(}
+\DoxyCodeLine{    parse\_url(\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_URI'}], PHP\_URL\_PATH)}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{a00005_source_l00010}{10}} of file \mbox{\hyperlink{a00005_source}{server.\+php}}.
+
+\mbox{\Hypertarget{a00005_afc8b25b448fd1a3d79f6171af75f39ff_afc8b25b448fd1a3d79f6171af75f39ff}\label{a00005_afc8b25b448fd1a3d79f6171af75f39ff_afc8b25b448fd1a3d79f6171af75f39ff}} 
+\index{server.php@{server.php}!if@{if}}
+\index{if@{if}!server.php@{server.php}}
+\paragraph{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if(\$uri !==\textquotesingle{}/\textquotesingle{} \&\&file\+\_\+exists(\+\_\+\+\_\+\+D\+I\+R\+\_\+\+\_\+.\textquotesingle{}/public\textquotesingle{}. \$uri))}
+
+
+
+Definition at line \mbox{\hyperlink{a00005_source_l00017}{17}} of file \mbox{\hyperlink{a00005_source}{server.\+php}}.
+
